@@ -1,7 +1,7 @@
 {
   "catalog": {
     "version": 1,
-    "updated_at": "2026-10-23T07:10:38Z"
+    "updated_at": "2026-10-23T09:31:26Z"
   },
   "mods": [
     {
@@ -29,7 +29,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_audio_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_audio_base/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -39,7 +39,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_audio_base/releases/download/v1.0.0/mod_audio_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_audio_base/releases/download/v1.0.0/mod_audio_base-v1.0.0.zip"
           ],
           "size_bytes": 110675,
           "archive_sha256": "58efd87569bf7e75a04e107ed306615716670717c8d55da910ffb30861990347",
@@ -60,7 +60,7 @@
         "battle",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_card_battle/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_card_battle/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "turn_battle_base>=1"
@@ -70,7 +70,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_card_battle/releases/download/v1.0.0/mod_card_battle-v1.0.0.zip"
+            "https://github.com/cthangover/mod_card_battle/releases/download/v1.0.0/mod_card_battle-v1.0.0.zip"
           ],
           "size_bytes": 713160,
           "archive_sha256": "53699f28afaff979f7288d0eb8544b9592854b1be1e558a862d0ea427f41fa3f",
@@ -104,7 +104,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_characters_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_characters_base/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -114,7 +114,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_characters_base/releases/download/v1.0.0/mod_characters_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_characters_base/releases/download/v1.0.0/mod_characters_base-v1.0.0.zip"
           ],
           "size_bytes": 457906,
           "archive_sha256": "a405391fa16d617e5ecebe887241aa5fa7ae714bf87ece98cd95e14182994a8d",
@@ -146,7 +146,7 @@
         "cooking",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_cooking/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cooking/master/mod.jpg",
       "depends": [
         "cthangover_game>=1",
         "ui_base>=1",
@@ -158,7 +158,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_cooking/releases/download/v1.0.0/mod_cooking-v1.0.0.zip"
+            "https://github.com/cthangover/mod_cooking/releases/download/v1.0.0/mod_cooking-v1.0.0.zip"
           ],
           "size_bytes": 232432,
           "archive_sha256": "fcd92d743d6fa5d69f8bb9d08de9b2c2040b4bdca24a66129fb77ccccf479e23",
@@ -191,7 +191,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_game/raw/branch/master/mod.png",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_game/master/mod.png",
       "depends": [
         "shell2d_base>=1",
         "dialog_base>=1",
@@ -209,7 +209,7 @@
         {
           "version": "2.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_cthangover_game/releases/download/v2.0.0/mod_cthangover_game-v2.0.0.zip"
+            "https://github.com/cthangover/mod_cthangover_game/releases/download/v2.0.0/mod_cthangover_game-v2.0.0.zip"
           ],
           "size_bytes": 123146737,
           "archive_sha256": "b125111f75e6c497a140729c10c7436e840d9506927d5057ad8200fd450c7f34",
@@ -243,7 +243,7 @@
         "story",
         "characters"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_murakami/raw/branch/master/mod.png",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_murakami/master/mod.png",
       "depends": [
         "cthangover_game>=1",
         "ui_base>=1",
@@ -256,7 +256,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_cthangover_murakami/releases/download/v1.0.0/mod_cthangover_murakami-v1.0.0.zip"
+            "https://github.com/cthangover/mod_cthangover_murakami/releases/download/v1.0.0/mod_cthangover_murakami-v1.0.0.zip"
           ],
           "size_bytes": 10470715,
           "archive_sha256": "1f92b0b6181f80acb5bf65b63f81d6a809d3de0e5f2c5f6a30f902ceccd360f2",
@@ -290,7 +290,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_party/raw/branch/master/mod.png",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_party/master/mod.png",
       "depends": [
         "cthangover_game>=1",
         "skills_base>=1"
@@ -300,7 +300,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip"
+            "https://github.com/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip"
           ],
           "size_bytes": 21751,
           "archive_sha256": "eac8bf43efdbe7d36d0ebdfe201dcfba81634dc8ede00a1100c8eb730d99573f",
@@ -334,7 +334,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_dialog_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_dialog_base/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "interactive_base>=1",
@@ -348,7 +348,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_dialog_base/releases/download/v1.0.0/mod_dialog_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_dialog_base/releases/download/v1.0.0/mod_dialog_base-v1.0.0.zip"
           ],
           "size_bytes": 249308,
           "archive_sha256": "95f49402914f5e8d360be5d953d300455d2a35da5ff337ba9fc4356e813a9c08",
@@ -368,7 +368,7 @@
         "editor",
         "tools"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_editor_tools/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_editor_tools/master/mod.jpg",
       "depends": [
         "dialog_base>=1",
         "interactive_base>=1",
@@ -381,7 +381,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_editor_tools/releases/download/v1.0.0/mod_editor_tools-v1.0.0.zip"
+            "https://github.com/cthangover/mod_editor_tools/releases/download/v1.0.0/mod_editor_tools-v1.0.0.zip"
           ],
           "size_bytes": 246362,
           "archive_sha256": "6eb17943b0cda212ac2ceee90b12f666287898a76e0fbf4329ddf1f03ed89ae2",
@@ -415,14 +415,14 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_effects_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_effects_base/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_effects_base/releases/download/v1.0.0/mod_effects_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_effects_base/releases/download/v1.0.0/mod_effects_base-v1.0.0.zip"
           ],
           "size_bytes": 85412,
           "archive_sha256": "156e7cc78d69d5a15eb2aca1d124a555010cbec27a06309fcd520a44d0cfb4c5",
@@ -443,7 +443,7 @@
         "battle",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_ff_battle/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_ff_battle/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "turn_battle_base>=1"
@@ -453,7 +453,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_ff_battle/releases/download/v1.0.0/mod_ff_battle-v1.0.0.zip"
+            "https://github.com/cthangover/mod_ff_battle/releases/download/v1.0.0/mod_ff_battle-v1.0.0.zip"
           ],
           "size_bytes": 234104,
           "archive_sha256": "4aa84b85e372f436a28a1760d1130aabbedd94c12072eb96f5fda6820cb7917f",
@@ -487,7 +487,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_interactive_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_interactive_base/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -497,7 +497,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_interactive_base/releases/download/v1.0.0/mod_interactive_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_interactive_base/releases/download/v1.0.0/mod_interactive_base-v1.0.0.zip"
           ],
           "size_bytes": 108690,
           "archive_sha256": "2d70612eb7cd5b668120b08c0f0f1ae034396ff3591203b836f85c079d712bf3",
@@ -530,7 +530,7 @@
         "base",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_items_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_items_base/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -540,7 +540,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_items_base/releases/download/v1.0.0/mod_items_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_items_base/releases/download/v1.0.0/mod_items_base-v1.0.0.zip"
           ],
           "size_bytes": 162977,
           "archive_sha256": "f45338a3bf24680c465aaca4b542977a3df59389b187192013cbb441573f3450",
@@ -574,7 +574,7 @@
         "library",
         "visual"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_live2d_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_live2d_base/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -583,7 +583,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_live2d_base/releases/download/v1.0.0/mod_live2d_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_live2d_base/releases/download/v1.0.0/mod_live2d_base-v1.0.0.zip"
           ],
           "size_bytes": 48031383,
           "archive_sha256": "9d20f4eda7a3ba7b380fefa5964098dc696b3c8399049614e4cd4a03cc6bb1d6",
@@ -617,14 +617,14 @@
         "tools",
         "debug"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_locale_atlas/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_locale_atlas/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip"
+            "https://github.com/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip"
           ],
           "size_bytes": 140203,
           "archive_sha256": "020675af3f07a726eeed9edfbb655db0712fb0d806a7340ca3bf10217df79633",
@@ -658,7 +658,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_map_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_map_base/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -667,7 +667,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_map_base/releases/download/v1.0.0/mod_map_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_map_base/releases/download/v1.0.0/mod_map_base-v1.0.0.zip"
           ],
           "size_bytes": 152409,
           "archive_sha256": "8a757fd8a0094b9b75752c2d425fbd3a57ea404ccf61a22b1cdc24c1f4373881",
@@ -700,7 +700,7 @@
         "base",
         "ui"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_menu_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_menu_base/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -709,7 +709,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_menu_base/releases/download/v1.0.0/mod_menu_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_menu_base/releases/download/v1.0.0/mod_menu_base-v1.0.0.zip"
           ],
           "size_bytes": 3551797,
           "archive_sha256": "3a48c3cf8a8022b3ec55d824a097efa802597c749baa8197efe39782f3a7803f",
@@ -743,7 +743,7 @@
         "tools",
         "ui"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_mod_manager/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_mod_manager/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -752,7 +752,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_mod_manager/releases/download/v1.0.0/mod_mod_manager-v1.0.0.zip"
+            "https://github.com/cthangover/mod_mod_manager/releases/download/v1.0.0/mod_mod_manager-v1.0.0.zip"
           ],
           "size_bytes": 197367,
           "archive_sha256": "b7e4f3c44fb73232360edac5c7d74ffcbf58c3febfea69c85bdce0f8a93157ca",
@@ -786,7 +786,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_my_novel_game/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_my_novel_game/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "dialog_base>=1",
@@ -798,7 +798,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_my_novel_game/releases/download/v1.0.0/mod_my_novel_game-v1.0.0.zip"
+            "https://github.com/cthangover/mod_my_novel_game/releases/download/v1.0.0/mod_my_novel_game-v1.0.0.zip"
           ],
           "size_bytes": 76252,
           "archive_sha256": "089b55fd3735532c946a9922e022979ea7ec17e839a2fc28bd09dd8161fffe09",
@@ -832,7 +832,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_quests_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_quests_base/master/mod.jpg",
       "depends": [
         "characters_base>=1",
         "ui_base>=1"
@@ -842,7 +842,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_quests_base/releases/download/v1.0.0/mod_quests_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_quests_base/releases/download/v1.0.0/mod_quests_base-v1.0.0.zip"
           ],
           "size_bytes": 132415,
           "archive_sha256": "142eef223e5a369dd3e4d0636a812c190c498c50b6f7934a07269d30e3168b40",
@@ -874,7 +874,7 @@
         "recruiting",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_recruiting/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_recruiting/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "characters_base>=1",
@@ -885,7 +885,7 @@
         {
           "version": "1.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_recruiting/releases/download/v1.1.0/mod_recruiting-v1.1.0.zip"
+            "https://github.com/cthangover/mod_recruiting/releases/download/v1.1.0/mod_recruiting-v1.1.0.zip"
           ],
           "size_bytes": 148984,
           "archive_sha256": "c12b73363aa39361454b7be6a90d852fa1f17722ed0a76c2d981a1292a9818fc",
@@ -919,7 +919,7 @@
         "tools",
         "debug"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_resource_atlas/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_resource_atlas/master/mod.jpg",
       "depends": [
         "validator>=0.1"
       ],
@@ -928,7 +928,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip"
+            "https://github.com/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip"
           ],
           "size_bytes": 108000,
           "archive_sha256": "0b3b5bbce8dd8c9c66c5ae7011dcc6e1c3661c4427db3502c5aae30b88f70f63",
@@ -960,7 +960,7 @@
         "rpg",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1",
@@ -972,7 +972,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_rpg/releases/download/v1.0.0/mod_rpg-v1.0.0.zip"
+            "https://github.com/cthangover/mod_rpg/releases/download/v1.0.0/mod_rpg-v1.0.0.zip"
           ],
           "size_bytes": 138869,
           "archive_sha256": "235d9f766ed01746ae8983f07949c09c6c0c00b344e6b1e01ae42521738e74d3",
@@ -1006,7 +1006,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg_demo_game/master/mod.jpg",
       "depends": [
         "rpg>=1",
         "village_pack>=1",
@@ -1020,7 +1020,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip"
+            "https://github.com/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip"
           ],
           "size_bytes": 118716,
           "archive_sha256": "e9e5fc4f857accd4e2f32a37b775284e3e7528dc9c77688f8a6811a53010d4b3",
@@ -1041,7 +1041,7 @@
         "editor",
         "tools"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_editor/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg_editor/master/mod.jpg",
       "depends": [
         "rpg>=1",
         "editor_tools>=1",
@@ -1052,7 +1052,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_rpg_editor/releases/download/v1.0.0/mod_rpg_editor-v1.0.0.zip"
+            "https://github.com/cthangover/mod_rpg_editor/releases/download/v1.0.0/mod_rpg_editor-v1.0.0.zip"
           ],
           "size_bytes": 124355,
           "archive_sha256": "e490921161633a35ca8c2b8714c542a7e0051f3185b47b167e3d2fe31c95e765",
@@ -1086,7 +1086,7 @@
         "tools",
         "editor"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_scenario_studio/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_scenario_studio/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "dialog_base>=1"
@@ -1096,7 +1096,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip"
+            "https://github.com/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip"
           ],
           "size_bytes": 192261,
           "archive_sha256": "2a548f820cffb23a5078679dffc960afc8fab04d87454e70872356d3987bb304",
@@ -1130,7 +1130,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_shell2d_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_shell2d_base/master/mod.jpg",
       "depends": [
         "time_base>=1",
         "ui_base>=1"
@@ -1140,7 +1140,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_shell2d_base/releases/download/v1.0.0/mod_shell2d_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_shell2d_base/releases/download/v1.0.0/mod_shell2d_base-v1.0.0.zip"
           ],
           "size_bytes": 72196,
           "archive_sha256": "e0d6ff8b46520e617275fb908b54af0891586aaf2952e8c2565ce90787901c2a",
@@ -1174,7 +1174,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_skills_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_skills_base/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -1183,7 +1183,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_skills_base/releases/download/v1.0.0/mod_skills_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_skills_base/releases/download/v1.0.0/mod_skills_base-v1.0.0.zip"
           ],
           "size_bytes": 117109,
           "archive_sha256": "1dc171c2873cdd9fa58c5c7e4f2c0762bb2a619cf666a92be2e65d0cd3e89cdc",
@@ -1218,7 +1218,7 @@
         "patches",
         "other"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_test_defaults_and_patches/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_test_defaults_and_patches/master/mod.jpg",
       "depends": [
         "cthangover_game>=1",
         "cthangover_murakami>=1",
@@ -1231,7 +1231,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_test_defaults_and_patches/releases/download/v1.0.0/mod_test_defaults_and_patches-v1.0.0.zip"
+            "https://github.com/cthangover/mod_test_defaults_and_patches/releases/download/v1.0.0/mod_test_defaults_and_patches-v1.0.0.zip"
           ],
           "size_bytes": 132024,
           "archive_sha256": "87040cd40f3be41d2ad6f7cbb6d505ab2a3bbe443b420bb17ea1b961998ef447",
@@ -1265,7 +1265,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_time_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_time_base/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -1274,7 +1274,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_time_base/releases/download/v1.0.0/mod_time_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_time_base/releases/download/v1.0.0/mod_time_base-v1.0.0.zip"
           ],
           "size_bytes": 150860,
           "archive_sha256": "678d4400f6b3399313208ad2169f3e07b0dddb60ef23bca8046d218652f72f45",
@@ -1308,14 +1308,14 @@
         "visual",
         "audio"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_town_pack/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_town_pack/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_town_pack/releases/download/v1.0.0/mod_town_pack-v1.0.0.zip"
+            "https://github.com/cthangover/mod_town_pack/releases/download/v1.0.0/mod_town_pack-v1.0.0.zip"
           ],
           "size_bytes": 1494160,
           "archive_sha256": "ffb31ae8e592a85c9fea7acc884bb36b4883d61f8b8404539aad32ddaf74fc90",
@@ -1347,7 +1347,7 @@
         "trading",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_trading/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_trading/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "items_base>=1"
@@ -1357,7 +1357,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_trading/releases/download/v1.0.0/mod_trading-v1.0.0.zip"
+            "https://github.com/cthangover/mod_trading/releases/download/v1.0.0/mod_trading-v1.0.0.zip"
           ],
           "size_bytes": 134769,
           "archive_sha256": "754b099e33ba1ffe7b45112bf6916038d136a40e194f4b44a9f2b58bf5ddedda",
@@ -1392,7 +1392,7 @@
         "engine",
         "gameplay"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_turn_battle_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_turn_battle_base/master/mod.jpg",
       "depends": [
         "characters_base>=1",
         "ui_base>=1",
@@ -1405,7 +1405,7 @@
         {
           "version": "2.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_turn_battle_base/releases/download/v2.0.0/mod_turn_battle_base-v2.0.0.zip"
+            "https://github.com/cthangover/mod_turn_battle_base/releases/download/v2.0.0/mod_turn_battle_base-v2.0.0.zip"
           ],
           "size_bytes": 238350,
           "archive_sha256": "b1f99b90752ea39312b6616dc1c5750f6d1fae3ced5803f333bd5859cdff76ed",
@@ -1425,14 +1425,14 @@
         "ui",
         "base"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_ui_base/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_ui_base/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_ui_base/releases/download/v1.0.0/mod_ui_base-v1.0.0.zip"
+            "https://github.com/cthangover/mod_ui_base/releases/download/v1.0.0/mod_ui_base-v1.0.0.zip"
           ],
           "size_bytes": 359315,
           "archive_sha256": "bfe7dc75af7f2a9df8b6d3f2bca68e3200d9ac42cd47b723bcb69624d20640c3",
@@ -1464,7 +1464,7 @@
         "validator",
         "debug"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_validator/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_validator/master/mod.jpg",
       "depends": [
         "dialog_base>=1",
         "interactive_base>=1"
@@ -1474,7 +1474,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip"
+            "https://github.com/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip"
           ],
           "size_bytes": 115667,
           "archive_sha256": "69d8ff2088bb6f815b90c1ff18062a98a798bbdc987fc7448860ebb6680892d5",
@@ -1508,7 +1508,7 @@
         "visual",
         "characters"
       ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_village_pack/raw/branch/master/mod.jpg",
+      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_village_pack/master/mod.jpg",
       "depends": [
         "rpg>=1"
       ],
@@ -1517,7 +1517,7 @@
         {
           "version": "1.0.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_village_pack/releases/download/v1.0.0/mod_village_pack-v1.0.0.zip"
+            "https://github.com/cthangover/mod_village_pack/releases/download/v1.0.0/mod_village_pack-v1.0.0.zip"
           ],
           "size_bytes": 15458812,
           "archive_sha256": "b23a1f458487a0194b12b62aca3490014ed4e3dd02a548626ee506e0440be338",

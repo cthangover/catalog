@@ -1,7 +1,7 @@
 {
   "catalog": {
     "version": 1,
-    "updated_at": "2026-10-23T09:31:26Z"
+    "updated_at": "2026-10-24T14:54:46Z"
   },
   "mods": [
     {
@@ -20,6 +20,31 @@
           "lang": "ru",
           "name": "Аудиодвижок",
           "description": "Звуковая подсистема движка: реализация IAudioService (шины Music/SFX/Ambient), музыкальный плеер с автопродвижением и фабрики аудио (музыка, звуки, плейлисты)."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de audio",
+          "description": "Subsistema de audio del motor: implementación de IAudioService (buses Music/SFX/Ambient), el reproductor de música con avance automático y las fábricas de audio (música, sonidos, listas de reproducción)."
+        },
+        {
+          "lang": "zh",
+          "name": "音频引擎",
+          "description": "引擎音频子系统：IAudioService 实现（Music/SFX/Ambient 总线）、自动切换的音乐播放器以及音频工厂（音乐、音效、播放列表）。"
+        },
+        {
+          "lang": "ja",
+          "name": "オーディオエンジン",
+          "description": "エンジンのオーディオサブシステム：IAudioService の実装（Music/SFX/Ambient バス）、自動で次の曲へ進む音楽プレーヤー、オーディオファクトリー（音楽、効果音、プレイリスト）。"
+        },
+        {
+          "lang": "ko",
+          "name": "오디오 엔진",
+          "description": "엔진 오디오 하위 시스템: IAudioService 구현(Music/SFX/Ambient 버스), 자동으로 다음 곡으로 넘어가는 음악 플레이어, 오디오 팩토리(음악, 효과음, 재생 목록)."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine âm thanh",
+          "description": "Hệ thống con âm thanh của engine: triển khai IAudioService (bus Music/SFX/Ambient), trình phát nhạc tự chuyển bài và các factory âm thanh (nhạc, hiệu ứng âm thanh, danh sách phát)."
         }
       ],
       "category": "engine, library",
@@ -29,7 +54,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_audio_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_audio_base/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -39,11 +64,82 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_audio_base/releases/download/v1.0.0/mod_audio_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_audio_base/releases/download/v1.0.0/mod_audio_base-v1.0.0.zip"
           ],
-          "size_bytes": 110675,
-          "archive_sha256": "58efd87569bf7e75a04e107ed306615716670717c8d55da910ffb30861990347",
-          "install_sha256": "ce2fa446e6d20d4f7d97002da050ebb1870ee6d64e4d60a73b80531bf50b3634"
+          "size_bytes": 112213,
+          "archive_sha256": "5dd3ec939ae63044b5528bab95f6bcfaa92f00e0753d7f1e106a1f6bb90035ac",
+          "install_sha256": "f78b8119cf8cec1a5b7a507d9464ea8a6622bcbb992b8cb5824262fbe783e71a"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "battle_formulas",
+      "name": "Battle Formulas",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Battle actions as data for every battle core: an action entity with Formula= (a.mag * 3 - b.mdf + rand(0, 4)) needs no C# — Effect=damage|heal, Cost=mp:5 spends a stat pool, Pierce=1 ignores shields, State=basic/stun with StateTurns and StateChance puts a status on the target. a.* is the one acting, b.* the target: their stat sheets plus live hp, hp_max, attack, defence, point. Registered as global executors, so the same skill works in the FF core and in the card core. Enemies with stats data get their battle attributes from their sheets when the battle starts.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Battle Formulas",
+          "description": "Battle actions as data for every battle core: an action with “Formula=a.mag * 3 - b.mdf + rand(0, 4)” needs no code — damage or healing, a mana price (Cost=mp:5), shield piercing, a status with a chance. a.* is the one acting, b.* the target: their stats and live health, attack, defence and points. The same skill works in the FF-style battle and in the card battle. Enemies with stats take their battle numbers from their sheets."
+        },
+        {
+          "lang": "ru",
+          "name": "Боевые формулы",
+          "description": "Боевые действия как данные для любого боевого ядра: действие с «Formula=a.mag * 3 - b.mdf + rand(0, 4)» не требует кода — урон или лечение, цена в мане (Cost=mp:5), пробивание щита, наложение состояния с шансом. a.* — кто действует, b.* — цель: их статы и живые здоровье, атака, защита, очки. Один и тот же навык работает и в бою в стиле FF, и в карточном. Враги со статами получают боевые числа из своего листа."
+        },
+        {
+          "lang": "es",
+          "name": "Fórmulas de combate",
+          "description": "Acciones de combate como datos para cualquier núcleo: una acción con «Formula=a.mag * 3 - b.mdf + rand(0, 4)» no necesita código — daño o curación, precio en maná (Cost=mp:5), perforar escudos, un estado con probabilidad. a.* es quien actúa, b.* el objetivo: sus estadísticas y su salud, ataque, defensa y puntos actuales. La misma habilidad funciona en el combate estilo FF y en el de cartas. Los enemigos con estadísticas toman sus números de combate de su hoja."
+        },
+        {
+          "lang": "zh",
+          "name": "战斗公式",
+          "description": "适用于任何战斗核心的数据化战斗动作：带有“Formula=a.mag * 3 - b.mdf + rand(0, 4)”的动作无需代码——伤害或治疗、法力消耗（Cost=mp:5）、穿透护盾、按几率施加状态。a.* 是行动者，b.* 是目标：他们的属性以及实时的生命、攻击、防御和行动点。同一个技能在 FF 风格战斗和卡牌战斗中都能用。带属性的敌人从自己的面板获得战斗数值。"
+        },
+        {
+          "lang": "ja",
+          "name": "バトルの式",
+          "description": "どのバトルコアにも使えるデータとしてのバトル行動：「Formula=a.mag * 3 - b.mdf + rand(0, 4)」を持つ行動はコード不要——ダメージか回復、MP 消費（Cost=mp:5）、シールド貫通、確率付きの状態付与。a.* は行動する者、b.* は対象：そのステータスと現在の HP、攻撃、防御、ポイント。同じスキルが FF 風バトルでもカードバトルでも動く。ステータスを持つ敵はシートから戦闘値を得る。"
+        },
+        {
+          "lang": "ko",
+          "name": "전투 공식",
+          "description": "모든 전투 코어에 쓰는 데이터 전투 행동: “Formula=a.mag * 3 - b.mdf + rand(0, 4)”를 가진 행동은 코드가 필요 없습니다 — 피해나 회복, 마나 비용(Cost=mp:5), 보호막 관통, 확률로 거는 상태. a.*는 행동하는 쪽, b.*는 대상: 그들의 능력치와 현재 체력, 공격, 방어, 포인트. 같은 스킬이 FF 스타일 전투와 카드 전투 모두에서 작동합니다. 능력치가 있는 적은 시트에서 전투 수치를 받습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Công thức chiến đấu",
+          "description": "Hành động chiến đấu là dữ liệu cho mọi lõi chiến đấu: một hành động có «Formula=a.mag * 3 - b.mdf + rand(0, 4)» không cần mã — sát thương hoặc hồi máu, giá mana (Cost=mp:5), xuyên khiên, gây trạng thái theo xác suất. a.* là người hành động, b.* là mục tiêu: chỉ số của họ cùng máu, tấn công, phòng thủ và điểm hiện tại. Cùng một kỹ năng chạy được cả trong trận kiểu FF lẫn trận bài. Kẻ địch có chỉ số lấy con số chiến đấu từ bảng của mình."
+        }
+      ],
+      "category": "gameplay",
+      "tags": [
+        "battle",
+        "formulas",
+        "gameplay"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_battle_formulas/raw/branch/master/mod.jpg",
+      "depends": [
+        "stats_base>=1",
+        "turn_battle_base>=2",
+        "characters_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_battle_formulas/releases/download/v1.0.0/mod_battle_formulas-v1.0.0.zip",
+            "https://github.com/cthangover/mod_battle_formulas/releases/download/v1.0.0/mod_battle_formulas-v1.0.0.zip"
+          ],
+          "size_bytes": 135417,
+          "archive_sha256": "fac893be8029f8f1424e77d9d9e47814e8a86313c3715c22b1486412a9dd8c62",
+          "install_sha256": "7474f9a4652cfa932ef3821cb8fb3ae0e5e5e56aecbb6ffcd876f453a76893ff"
         }
       ],
       "status": "stable"
@@ -54,13 +150,50 @@
       "author": "ct",
       "version": "1.0.0",
       "description": "Card battle implementation on top of turn_battle_base: an action-card hand with attack/defence values, character cards, battle HUD, log and banners, end-turn flow and its own battle sounds.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "CardBattle",
+          "description": "Card battle implementation on top of turn_battle_base: an action-card hand with attack/defence values, character cards, battle HUD, log and banners, end-turn flow and its own battle sounds."
+        },
+        {
+          "lang": "ru",
+          "name": "Карточная битва",
+          "description": "Карточные сражения на платформе turn_battle_base: рука боевых карточек (атака/защита), карточки персонажей, боевой HUD, лог и баннеры, завершение хода и свои звуки боя."
+        },
+        {
+          "lang": "es",
+          "name": "CardBattle",
+          "description": "Combate de cartas sobre turn_battle_base: una mano de cartas de acción con valores de ataque y defensa, cartas de personaje, HUD de combate, registro y rótulos, el flujo de fin de turno y sus propios sonidos."
+        },
+        {
+          "lang": "zh",
+          "name": "CardBattle",
+          "description": "基于 turn_battle_base 的卡牌战斗：带攻击/防御数值的行动卡手牌、角色卡、战斗 HUD、日志和横幅、结束回合流程以及自己的战斗音效。"
+        },
+        {
+          "lang": "ja",
+          "name": "CardBattle",
+          "description": "turn_battle_base 上のカードバトル：攻撃／防御値を持つアクションカードの手札、キャラクターカード、バトル HUD、ログとバナー、ターン終了の流れ、専用のバトル効果音。"
+        },
+        {
+          "lang": "ko",
+          "name": "CardBattle",
+          "description": "turn_battle_base 위의 카드 전투: 공격/방어 수치가 있는 액션 카드 패, 캐릭터 카드, 전투 HUD, 로그와 배너, 턴 종료 흐름, 자체 전투 효과음."
+        },
+        {
+          "lang": "vi",
+          "name": "CardBattle",
+          "description": "Chiến đấu bằng thẻ trên nền turn_battle_base: bộ thẻ hành động có chỉ số tấn công/phòng thủ, thẻ nhân vật, HUD chiến đấu, nhật ký và băng rôn, quy trình kết thúc lượt và âm thanh chiến đấu riêng."
+        }
+      ],
       "category": "gameplay",
       "tags": [
         "card",
         "battle",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_card_battle/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_card_battle/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "turn_battle_base>=1"
@@ -70,11 +203,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_card_battle/releases/download/v1.0.0/mod_card_battle-v1.0.0.zip",
             "https://github.com/cthangover/mod_card_battle/releases/download/v1.0.0/mod_card_battle-v1.0.0.zip"
           ],
-          "size_bytes": 713160,
-          "archive_sha256": "53699f28afaff979f7288d0eb8544b9592854b1be1e558a862d0ea427f41fa3f",
-          "install_sha256": "996cab4a816cdb1cb6f3c1c6f339854fdccbca525bc0bf19dfad1f9fe41951ab"
+          "size_bytes": 718083,
+          "archive_sha256": "e8941aa102e982472963298e25da6a7aa97fe64a57a80cb7ebbf178d956cd597",
+          "install_sha256": "adeffb0848f97428effd7ea0017ba5665c5abb362c8fcefe44638d9956350003"
         }
       ],
       "status": "stable"
@@ -95,6 +229,31 @@
           "lang": "ru",
           "name": "Движок персонажей",
           "description": "Подсистема персонажей движка: фабрики персонажей и боевых карточек, фабрика аватаров и панель персонажа. Ядро получает шаблоны через контракты ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de personajes",
+          "description": "Subsistema de personajes del motor: fábricas de personajes y de cartas de acción, la fábrica de avatares y la interfaz del panel de personajes. El núcleo resuelve las plantillas mediante los contratos ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider."
+        },
+        {
+          "lang": "zh",
+          "name": "角色引擎",
+          "description": "引擎角色子系统：角色与行动卡工厂、头像工厂以及角色面板界面。内核通过 ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider 契约解析模板。"
+        },
+        {
+          "lang": "ja",
+          "name": "キャラクターエンジン",
+          "description": "エンジンのキャラクターサブシステム：キャラクターとアクションカードのファクトリー、アバターファクトリー、キャラクターパネルの UI。カーネルは ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider の契約でテンプレートを解決します。"
+        },
+        {
+          "lang": "ko",
+          "name": "캐릭터 엔진",
+          "description": "엔진 캐릭터 하위 시스템: 캐릭터와 액션 카드 팩토리, 아바타 팩토리, 캐릭터 패널 UI. 커널은 ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider 계약으로 템플릿을 찾습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine nhân vật",
+          "description": "Hệ thống con nhân vật của engine: factory nhân vật và thẻ hành động, factory avatar và giao diện bảng nhân vật. Phần lõi tìm mẫu qua các hợp đồng ICharacterTemplateProvider/IActionTemplateProvider/IAvatarProvider."
         }
       ],
       "category": "engine, library",
@@ -104,7 +263,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_characters_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_characters_base/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -114,11 +273,156 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_characters_base/releases/download/v1.0.0/mod_characters_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_characters_base/releases/download/v1.0.0/mod_characters_base-v1.0.0.zip"
           ],
-          "size_bytes": 457906,
-          "archive_sha256": "a405391fa16d617e5ecebe887241aa5fa7ae714bf87ece98cd95e14182994a8d",
-          "install_sha256": "ed3604fb889fea1cde00bd56b41b512865fb4e38da55099bf78722db645200a1"
+          "size_bytes": 462142,
+          "archive_sha256": "8b4289b8e5fa21a35db97d801de5f4aae1fb59830c73087e583df4b54fca6d20",
+          "install_sha256": "0ba8c3887e27d3aa5ef1f2ebb53c0c294a7aa38ffda86ba6ffb2899542daf2ee"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "characters_editor",
+      "name": "Character Editor",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Editor of the game's characters (characters_base, \"Kind\": \"character\") in the style of the other editor windows: heroes, NPCs and enemies of a writable mod in a searchable list with their portraits, a form with the name in every language of the mod, portrait, the RPG map charset, battle stats and the battle actions picked from the loaded ones; loot and fields of other mods stay editable as JSON. New characters, copies, deletion, undo, and a save the running game sees at once. Opens from the main menu tools and the in-game toolbar.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Character Editor",
+          "description": "Editor of the game's characters — heroes, NPCs and enemies: a searchable list with portraits, the name in every language of the mod, portrait, the RPG map charset, battle stats and actions; a save shows in the game at once."
+        },
+        {
+          "lang": "ru",
+          "name": "Редактор персонажей",
+          "description": "Редактор персонажей игры — героев, NPC и врагов: список с поиском и портретами, имя на всех языках мода, портрет, чарсет для RPG-карты, боевые параметры и действия; сохранение сразу видно в игре."
+        },
+        {
+          "lang": "es",
+          "name": "Editor de personajes",
+          "description": "Editor de los personajes del juego (héroes, PNJ y enemigos): una lista con búsqueda y retratos, el nombre en cada idioma del mod, retrato, charset del mapa RPG, estadísticas y acciones de combate; al guardar se ve en el juego al momento."
+        },
+        {
+          "lang": "zh",
+          "name": "角色编辑器",
+          "description": "游戏角色的编辑器——英雄、NPC 和敌人：带搜索和立绘的列表，模组每种语言的名称，立绘、RPG 地图行走图、战斗属性和行动；保存后游戏中立即可见。"
+        },
+        {
+          "lang": "ja",
+          "name": "キャラクターエディター",
+          "description": "ゲームのキャラクター——主人公、NPC、敵——のエディター：検索と肖像付きの一覧、MOD の各言語での名前、肖像、RPG マップのキャラチップ、戦闘能力値とアクション。保存するとすぐにゲームに反映されます。"
+        },
+        {
+          "lang": "ko",
+          "name": "캐릭터 에디터",
+          "description": "게임 캐릭터 — 영웅, NPC, 적 — 에디터: 검색과 초상화가 있는 목록, 모드의 모든 언어로 된 이름, 초상화, RPG 맵 캐릭터 시트, 전투 능력치와 액션. 저장하면 게임에 바로 보입니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Trình sửa nhân vật",
+          "description": "Trình sửa nhân vật của game — anh hùng, NPC và kẻ địch: danh sách có tìm kiếm và chân dung, tên bằng mọi ngôn ngữ của mod, chân dung, charset bản đồ RPG, chỉ số và hành động chiến đấu; lưu xong là thấy ngay trong game."
+        }
+      ],
+      "category": "tools, editor",
+      "tags": [
+        "characters",
+        "editor",
+        "tools"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_characters_editor/raw/branch/master/mod.jpg",
+      "depends": [
+        "editor_tools>=1",
+        "characters_base>=1",
+        "ui_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_characters_editor/releases/download/v1.0.0/mod_characters_editor-v1.0.0.zip",
+            "https://github.com/cthangover/mod_characters_editor/releases/download/v1.0.0/mod_characters_editor-v1.0.0.zip"
+          ],
+          "size_bytes": 136632,
+          "archive_sha256": "56c9728681ec71eec6b1f1ad9e3160200b686824fdf10615ef937974751fb20e",
+          "install_sha256": "165e68a6971a508fe264490e0f5c571ff8d2a5550bc14bab1dbca21dfa457a5a"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "classic_rpg_pack",
+      "name": "Classic RPG Pack",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Reusable classic fantasy rules any game may take, data only: six attributes (STR, AGI, INT, VIT, CHA, LUK) and derived combat stats (HP bound to health, MP as a pool, ATK bound to attack, DEF bound to the shield, MAG), three archetypes (warrior, mage, rogue) with growth formulas and skills learned by level, equipment slots (weapon, body, accessory), eight pieces of gear and a strength tonic, four formula skills (power strike, fireball, heal, guard break). A novel can take it for charisma checks, a tile RPG for everything.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Classic RPG Pack",
+          "description": "Ready-made classic fantasy rules for any game, data only: six attributes (strength, agility, intelligence, vitality, charisma, luck) and combat stats (health, mana, attack, armour, magic), three classes — warrior, mage, rogue — with growth by level and skills, equipment slots, eight pieces of gear and a strength tonic, four formula skills. A novel can use charisma for checks, an RPG everything at once."
+        },
+        {
+          "lang": "ru",
+          "name": "Классический RPG-пак",
+          "description": "Готовые классические правила фэнтези для любой игры, только данные: шесть атрибутов (сила, ловкость, интеллект, выносливость, харизма, удача) и боевые статы (здоровье, мана, атака, броня, магия), три класса — воин, маг, плут — с ростом по уровням и навыками, слоты снаряжения, восемь вещей и тоник силы, четыре навыка на формулах. Новелле пригодится харизма для проверок, RPG — всё сразу."
+        },
+        {
+          "lang": "es",
+          "name": "Paquete RPG clásico",
+          "description": "Reglas clásicas de fantasía listas para cualquier juego, solo datos: seis atributos (fuerza, agilidad, inteligencia, vitalidad, carisma, suerte) y estadísticas de combate (salud, maná, ataque, armadura, magia), tres clases — guerrero, mago, pícaro — con crecimiento por nivel y habilidades, ranuras de equipo, ocho piezas de equipo y un tónico de fuerza, cuatro habilidades con fórmulas. Una novela puede usar el carisma para tiradas; un RPG, todo a la vez."
+        },
+        {
+          "lang": "zh",
+          "name": "经典 RPG 包",
+          "description": "适用于任何游戏的现成经典奇幻规则，仅为数据：六项属性（力量、敏捷、智力、体力、魅力、幸运）和战斗属性（生命、法力、攻击、护甲、魔力），三个职业——战士、法师、盗贼——带按等级的成长和技能，装备栏位、八件装备和一瓶力量药剂，四个公式技能。小说可用魅力做检定，RPG 则全部都能用。"
+        },
+        {
+          "lang": "ja",
+          "name": "クラシック RPG パック",
+          "description": "どのゲームにも使える既製のクラシックなファンタジールール、データのみ：六つの能力値（筋力、敏捷、知力、体力、カリスマ、運）と戦闘ステータス（HP、MP、攻撃、防具、魔力）、三つの職業——戦士、魔法使い、盗賊——とレベルごとの成長とスキル、装備スロット、八つの装備と力の強壮剤、式で動く四つのスキル。ノベルなら判定にカリスマを、RPG なら全部を使える。"
+        },
+        {
+          "lang": "ko",
+          "name": "클래식 RPG 팩",
+          "description": "어떤 게임에도 쓰는 기성 클래식 판타지 규칙, 데이터만: 여섯 능력치(힘, 민첩, 지능, 체력, 매력, 행운)와 전투 능력치(체력, 마나, 공격, 방어구, 마력), 레벨별 성장과 스킬을 가진 세 직업 — 전사, 마법사, 도적, 장비 슬롯, 장비 여덟 개와 힘의 강장제, 공식으로 동작하는 스킬 네 개. 노벨은 판정에 매력을, RPG는 전부를 쓸 수 있습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Gói RPG cổ điển",
+          "description": "Bộ luật giả tưởng cổ điển dùng ngay cho mọi game, chỉ là dữ liệu: sáu thuộc tính (sức mạnh, nhanh nhẹn, trí tuệ, thể lực, sức hút, may mắn) và chỉ số chiến đấu (máu, mana, tấn công, giáp, phép), ba lớp — chiến binh, pháp sư, đạo tặc — có tăng trưởng theo cấp và kỹ năng, ô trang bị, tám món đồ và một bình thuốc sức mạnh, bốn kỹ năng theo công thức. Tiểu thuyết dùng sức hút để kiểm tra, RPG dùng tất cả."
+        }
+      ],
+      "category": "gameplay, characters, visual",
+      "tags": [
+        "classic",
+        "rpg",
+        "pack",
+        "gameplay",
+        "characters",
+        "visual"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_classic_rpg_pack/raw/branch/master/mod.jpg",
+      "depends": [
+        "stats_base>=1",
+        "equipment>=1",
+        "items_base>=1",
+        "characters_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_classic_rpg_pack/releases/download/v1.0.0/mod_classic_rpg_pack-v1.0.0.zip",
+            "https://github.com/cthangover/mod_classic_rpg_pack/releases/download/v1.0.0/mod_classic_rpg_pack-v1.0.0.zip"
+          ],
+          "size_bytes": 8804731,
+          "archive_sha256": "6f709e09de701931e4d6074a0eaee880f61d13ed58a4ba3cea6fcdcc74fed3df",
+          "install_sha256": "c6b876886de858edf6e6dcccb5dacb61f3a0765e924de29b047ed11aade1d549"
         }
       ],
       "status": "stable"
@@ -139,6 +443,31 @@
           "lang": "ru",
           "name": "Готовка",
           "description": "Механика готовки: верстак на кухне home_kitchen с рецептами (например, волчье мясо в рационы), панель статистики рационов и сценар готовки."
+        },
+        {
+          "lang": "es",
+          "name": "Cocina",
+          "description": "Mecánica de cocina: el banco de cocina en home_kitchen con cocina por recetas (por ejemplo, carne de lobo en raciones), un panel con estadísticas de raciones y el escenario de cocina."
+        },
+        {
+          "lang": "zh",
+          "name": "烹饪",
+          "description": "烹饪机制：home_kitchen 中的厨房工作台，按配方烹饪（例如把狼肉做成口粮）、口粮统计面板以及烹饪剧本。"
+        },
+        {
+          "lang": "ja",
+          "name": "料理",
+          "description": "料理のメカニクス：home_kitchen の調理台でレシピに沿って料理する（狼の肉を糧食にするなど）、糧食の統計パネル、料理のシナリオ。"
+        },
+        {
+          "lang": "ko",
+          "name": "요리",
+          "description": "요리 메카닉: home_kitchen의 부엌 작업대에서 레시피대로 요리(예: 늑대 고기를 식량으로), 식량 통계 패널, 요리 시나리오."
+        },
+        {
+          "lang": "vi",
+          "name": "Nấu ăn",
+          "description": "Cơ chế nấu ăn: bàn bếp trong home_kitchen với nấu ăn theo công thức (ví dụ thịt sói thành khẩu phần), bảng thống kê khẩu phần và kịch bản nấu ăn."
         }
       ],
       "category": "gameplay",
@@ -146,7 +475,7 @@
         "cooking",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cooking/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_cooking/raw/branch/master/mod.jpg",
       "depends": [
         "cthangover_game>=1",
         "ui_base>=1",
@@ -158,11 +487,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_cooking/releases/download/v1.0.0/mod_cooking-v1.0.0.zip",
             "https://github.com/cthangover/mod_cooking/releases/download/v1.0.0/mod_cooking-v1.0.0.zip"
           ],
-          "size_bytes": 232432,
-          "archive_sha256": "fcd92d743d6fa5d69f8bb9d08de9b2c2040b4bdca24a66129fb77ccccf479e23",
-          "install_sha256": "b8bbf8e0dbfe55509f9246a2f6bed5c5e38c7bde405e42511ff21f6a140827bb"
+          "size_bytes": 236248,
+          "archive_sha256": "6653e238bfab739421cbdf6fb574c8f46c51295590751c6ac098a3c968d96ecb",
+          "install_sha256": "80e8eac00fadd76230906890cbd47920f476a1308d5f181e4b00e36303202d6b"
         }
       ],
       "status": "stable"
@@ -183,6 +513,31 @@
           "lang": "ru",
           "name": "Cthangover: сюжет",
           "description": "Сюжетный контент игры Cthangover: сцены, сценарии, персонажи, предметы, квесты, фоны и коллекция основной игры."
+        },
+        {
+          "lang": "es",
+          "name": "Cthangover: historia",
+          "description": "Contenido narrativo del juego Cthangover: escenas, escenarios, personajes, objetos, misiones, fondos y la colección del juego principal."
+        },
+        {
+          "lang": "zh",
+          "name": "Cthangover：故事",
+          "description": "Cthangover 游戏的剧情内容：场景、剧本、角色、物品、任务、背景以及主游戏合集。"
+        },
+        {
+          "lang": "ja",
+          "name": "Cthangover：ストーリー",
+          "description": "ゲーム Cthangover のストーリーコンテンツ：シーン、シナリオ、キャラクター、アイテム、クエスト、背景、メインゲームのコレクション。"
+        },
+        {
+          "lang": "ko",
+          "name": "Cthangover: 이야기",
+          "description": "게임 Cthangover의 스토리 콘텐츠: 장면, 시나리오, 캐릭터, 아이템, 퀘스트, 배경, 메인 게임 컬렉션."
+        },
+        {
+          "lang": "vi",
+          "name": "Cthangover: Câu chuyện",
+          "description": "Nội dung cốt truyện của game Cthangover: cảnh, kịch bản, nhân vật, vật phẩm, nhiệm vụ, phông nền và bộ sưu tập game chính."
         }
       ],
       "category": "story",
@@ -191,7 +546,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_game/master/mod.png",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_game/raw/branch/master/mod.png",
       "depends": [
         "shell2d_base>=1",
         "dialog_base>=1",
@@ -209,11 +564,12 @@
         {
           "version": "2.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_cthangover_game/releases/download/v2.0.0/mod_cthangover_game-v2.0.0.zip",
             "https://github.com/cthangover/mod_cthangover_game/releases/download/v2.0.0/mod_cthangover_game-v2.0.0.zip"
           ],
-          "size_bytes": 123146737,
-          "archive_sha256": "b125111f75e6c497a140729c10c7436e840d9506927d5057ad8200fd450c7f34",
-          "install_sha256": "f8821151af20485b6319c3801910d6b5099f2b74c517a3dcf1d4ae29ec33ce30"
+          "size_bytes": 123172406,
+          "archive_sha256": "d692125de58de969afd86536af07d3d5a566ba74459ef93681de99a8120bda40",
+          "install_sha256": "8fca073929d01101df7a912b46be4110d997e82f4b2dad2bee0bb9082c6a4b02"
         }
       ],
       "status": "stable"
@@ -234,6 +590,31 @@
           "lang": "ru",
           "name": "Cthangover: Мураками",
           "description": "Сюжетная линия Мураками: дикий волк в городе, цепочка сценариев знакомства (бой с волками, вервольф-босс, проводы домой), персонаж Мураками с аватарами и квест встречи."
+        },
+        {
+          "lang": "es",
+          "name": "Cthangover: Murakami",
+          "description": "Línea argumental de Murakami: un lobo salvaje merodea por la ciudad, la cadena de escenarios del encuentro (combate con el lobo, la licántropa jefa, acompañarla a casa), el personaje de Murakami con sus avatares y la misión del encuentro."
+        },
+        {
+          "lang": "zh",
+          "name": "Cthangover：村上",
+          "description": "村上的故事线：一只野狼在城里游荡，相遇的剧本链（与狼战斗、狼人首领、护送回家）、带头像的村上角色以及相遇任务。"
+        },
+        {
+          "lang": "ja",
+          "name": "Cthangover：村上",
+          "description": "村上のストーリー：町をうろつく野生の狼、出会いのシナリオチェーン（狼との戦い、人狼のボス、家まで送る）、アバター付きの村上というキャラクター、出会いのクエスト。"
+        },
+        {
+          "lang": "ko",
+          "name": "Cthangover: 무라카미",
+          "description": "무라카미 스토리 라인: 마을을 배회하는 들늑대, 만남의 시나리오 사슬(늑대 전투, 늑대인간 보스, 집까지 바래다주기), 아바타가 있는 무라카미 캐릭터와 만남 퀘스트."
+        },
+        {
+          "lang": "vi",
+          "name": "Cthangover: Murakami",
+          "description": "Tuyến truyện Murakami: một con sói hoang lảng vảng trong thị trấn, chuỗi kịch bản gặp gỡ (trận chiến với sói, boss người sói, đưa về nhà), nhân vật Murakami với các avatar của cô và nhiệm vụ gặp gỡ."
         }
       ],
       "category": "story, characters",
@@ -243,7 +624,7 @@
         "story",
         "characters"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_murakami/master/mod.png",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_murakami/raw/branch/master/mod.png",
       "depends": [
         "cthangover_game>=1",
         "ui_base>=1",
@@ -256,11 +637,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_cthangover_murakami/releases/download/v1.0.0/mod_cthangover_murakami-v1.0.0.zip",
             "https://github.com/cthangover/mod_cthangover_murakami/releases/download/v1.0.0/mod_cthangover_murakami-v1.0.0.zip"
           ],
-          "size_bytes": 10470715,
-          "archive_sha256": "1f92b0b6181f80acb5bf65b63f81d6a809d3de0e5f2c5f6a30f902ceccd360f2",
-          "install_sha256": "66f110e734c7b5d3a8da9d2bad1481b0ba014dc3119e29499286fbf0f595d875"
+          "size_bytes": 10479299,
+          "archive_sha256": "6c904e815873fde8ae51d81f53ca5edc2bd410be8777e6b86fffc26fd4e82328",
+          "install_sha256": "bdea61164e726b057ee0c09f1f1b50b1b10aa06751e777fe0a6889b17cde9ce0"
         }
       ],
       "status": "stable"
@@ -281,6 +663,31 @@
           "lang": "ru",
           "name": "Cthangover: стартовая партия",
           "description": "Выдаёт стартовую партию (Марао) и умение slave_master после готовности ресурсов модов и восстанавливает её на событии новой игры. Вынесено из cthangover_game, чтобы базовый контент-мод оставался чистым контентом."
+        },
+        {
+          "lang": "es",
+          "name": "Cthangover: grupo inicial",
+          "description": "Crea el grupo inicial por defecto (Marao) y la habilidad slave_master cuando los recursos de los mods están listos, y lo restaura con NewGameStartedEvent. Separado de cthangover_game para que el mod de contenido base siga siendo solo contenido."
+        },
+        {
+          "lang": "zh",
+          "name": "Cthangover：初始队伍",
+          "description": "在模组资源就绪后建立默认初始队伍（Marao）和 slave_master 技能，并在 NewGameStartedEvent 时恢复。从 cthangover_game 中拆分出来，使基础内容模组保持纯内容。"
+        },
+        {
+          "lang": "ja",
+          "name": "Cthangover：初期パーティ",
+          "description": "MOD のリソースが揃った後に既定の初期パーティ（Marao）と slave_master スキルを用意し、NewGameStartedEvent で元に戻します。基本コンテンツ MOD を純粋なコンテンツに保つため cthangover_game から分離されています。"
+        },
+        {
+          "lang": "ko",
+          "name": "Cthangover: 시작 파티",
+          "description": "모드 리소스가 준비되면 기본 시작 파티(Marao)와 slave_master 스킬을 만들고 NewGameStartedEvent 때 복원합니다. 기본 콘텐츠 모드가 순수한 콘텐츠로 남도록 cthangover_game에서 분리되었습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Cthangover: Tổ đội khởi đầu",
+          "description": "Tạo tổ đội khởi đầu mặc định (Marao) và kỹ năng slave_master khi tài nguyên mod đã sẵn sàng, và khôi phục nó khi có NewGameStartedEvent. Được tách khỏi cthangover_game để mod nội dung cơ bản chỉ chứa nội dung."
         }
       ],
       "category": "engine, library",
@@ -290,7 +697,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_cthangover_party/master/mod.png",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_party/raw/branch/master/mod.png",
       "depends": [
         "cthangover_game>=1",
         "skills_base>=1"
@@ -300,11 +707,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip",
             "https://github.com/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip"
           ],
-          "size_bytes": 21751,
-          "archive_sha256": "eac8bf43efdbe7d36d0ebdfe201dcfba81634dc8ede00a1100c8eb730d99573f",
-          "install_sha256": "e8532eed96db7771c49e7f0d1b61aa7414d7148151cb878ff6a44554129943d3"
+          "size_bytes": 23558,
+          "archive_sha256": "11f49f5ecce959e3003e8d73ff02c2d7df89312aa613010990698e89b56c8181",
+          "install_sha256": "d1ff270e3d3628761bf7efa4e96ad4199842913468e215278fb1ca962cbdddcc"
         }
       ],
       "status": "stable"
@@ -325,6 +733,31 @@
           "lang": "ru",
           "name": "Движок диалогов",
           "description": "Подсистема диалогов движка: UI DialogBox/DialogCanvas/AnswerBox, очередь диалогов с полным набором DSL-действий, парсер .scenario, цепочки событий и /root/DialogRunner для интерактивных диалогов."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de diálogos",
+          "description": "Subsistema de diálogos del motor: interfaz DialogBox/DialogCanvas/AnswerBox, la cola de diálogos con el conjunto completo de acciones del DSL, el analizador de .scenario, cadenas de eventos ejecutables y /root/DialogRunner para los diálogos interactivos."
+        },
+        {
+          "lang": "zh",
+          "name": "对话引擎",
+          "description": "引擎对话子系统：DialogBox/DialogCanvas/AnswerBox 界面、带完整 DSL 动作集的对话队列、.scenario 解析器、可执行事件链以及用于交互对话的 /root/DialogRunner。"
+        },
+        {
+          "lang": "ja",
+          "name": "ダイアログエンジン",
+          "description": "エンジンのダイアログサブシステム：DialogBox/DialogCanvas/AnswerBox の UI、DSL の全アクションを備えたダイアログキュー、.scenario パーサー、実行可能なイベントチェーン、インタラクティブなダイアログ用の /root/DialogRunner。"
+        },
+        {
+          "lang": "ko",
+          "name": "대화 엔진",
+          "description": "엔진 대화 하위 시스템: DialogBox/DialogCanvas/AnswerBox UI, 전체 DSL 액션을 갖춘 대화 큐, .scenario 파서, 실행 가능한 이벤트 체인, 상호작용 대화용 /root/DialogRunner."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine hội thoại",
+          "description": "Hệ thống con hội thoại của engine: giao diện DialogBox/DialogCanvas/AnswerBox, hàng đợi hội thoại với đầy đủ hành động DSL, trình phân tích .scenario, chuỗi sự kiện thực thi được và /root/DialogRunner cho hội thoại tương tác."
         }
       ],
       "category": "engine, library",
@@ -334,7 +767,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_dialog_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_dialog_base/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "interactive_base>=1",
@@ -348,11 +781,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_dialog_base/releases/download/v1.0.0/mod_dialog_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_dialog_base/releases/download/v1.0.0/mod_dialog_base-v1.0.0.zip"
           ],
-          "size_bytes": 249308,
-          "archive_sha256": "95f49402914f5e8d360be5d953d300455d2a35da5ff337ba9fc4356e813a9c08",
-          "install_sha256": "801504a00465f0f5f6cfdfe1c98998d9d614af153f3ff75d40a1b057dbf38514"
+          "size_bytes": 261941,
+          "archive_sha256": "12d7168c23b4923ca6712e51a6ed9eda893c0ee48dfc6ebeebd4ed0b07ded5a6",
+          "install_sha256": "d93decf089a06f7b36cef36478b12609e42e6e8d2c285813aca85b9efbf68fe0"
         }
       ],
       "status": "stable"
@@ -362,30 +796,69 @@
       "name": "Editor Tools",
       "author": "ct",
       "version": "1.0.0",
-      "description": "Developer toolbox of ToolBox windows: scenario graph editor, scene editor (create and change the places of a novel: backgrounds, ambient sound, default scenario, the scene's scenarios), map editor with zones, scene builder with inspector, interactive and light editors, and the mod catalog export window.",
+      "description": "Developer toolbox of ToolBox windows: scenario graph editor, scene editor (create and change the places of a novel: backgrounds, ambient sound, default scenario, the scene's scenarios), map editor with zones, scene builder with inspector, interactive and light editors, the base of the data editors (items, characters: a searchable list and a form over JSON entities with texts in every language of the mod) and the mod catalog export window.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Editor Tools",
+          "description": "Developer toolbox: scenario graph editor, map editor with zones, scene builder with inspector, interactive and light editors, and the mod catalog export window."
+        },
+        {
+          "lang": "ru",
+          "name": "Редакторы",
+          "description": "Инструменты разработчика: редактор сценариев (граф), редактор карты с зонами, конструктор сцен с инспектором, редакторы интерактива и света, экспорт каталога модов."
+        },
+        {
+          "lang": "es",
+          "name": "Herramientas de edición",
+          "description": "Caja de herramientas del desarrollador: editor de grafos de escenarios, editor de mapas con zonas, constructor de escenas con inspector, editores de interactivos y de luces, y la ventana de exportación al catálogo de mods."
+        },
+        {
+          "lang": "zh",
+          "name": "编辑工具",
+          "description": "开发者工具箱：剧本图编辑器、带区域的地图编辑器、带检查器的场景构建器、交互物和光照编辑器，以及模组目录导出窗口。"
+        },
+        {
+          "lang": "ja",
+          "name": "エディターツール",
+          "description": "開発者向けツールボックス：シナリオのグラフエディター、ゾーン付きのマップエディター、インスペクター付きのシーンビルダー、インタラクティブとライトのエディター、MOD カタログの書き出しウィンドウ。"
+        },
+        {
+          "lang": "ko",
+          "name": "에디터 도구",
+          "description": "개발자 도구 상자: 시나리오 그래프 에디터, 구역이 있는 맵 에디터, 인스펙터가 있는 장면 빌더, 상호작용과 조명 에디터, 모드 카탈로그 내보내기 창."
+        },
+        {
+          "lang": "vi",
+          "name": "Công cụ chỉnh sửa",
+          "description": "Hộp công cụ cho nhà phát triển: trình sửa đồ thị kịch bản, trình sửa bản đồ có vùng, trình dựng cảnh có thanh thuộc tính, trình sửa tương tác và ánh sáng, và cửa sổ xuất danh mục mod."
+        }
+      ],
       "category": "tools, editor",
       "tags": [
         "editor",
         "tools"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_editor_tools/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_editor_tools/raw/branch/master/mod.jpg",
       "depends": [
         "dialog_base>=1",
         "interactive_base>=1",
         "time_base>=1",
         "map_base>=1",
-        "ui_base>=1"
+        "ui_base>=1",
+        "schema_base>=1"
       ],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_editor_tools/releases/download/v1.0.0/mod_editor_tools-v1.0.0.zip",
             "https://github.com/cthangover/mod_editor_tools/releases/download/v1.0.0/mod_editor_tools-v1.0.0.zip"
           ],
-          "size_bytes": 246362,
-          "archive_sha256": "6eb17943b0cda212ac2ceee90b12f666287898a76e0fbf4329ddf1f03ed89ae2",
-          "install_sha256": "4425bf7978a9188f56c653fdd6756a6d42066ada643e126fef2bb0f4bc5b2203"
+          "size_bytes": 309382,
+          "archive_sha256": "d93199484e33d526d50696d3d94bafcfe4c90760a1cc0f5422080d9e4dee99f2",
+          "install_sha256": "3408df9fc32d326ee55fc6b47987bd1917f803152478fbb67f35a3a8fd0f331a"
         }
       ],
       "status": "stable"
@@ -406,6 +879,31 @@
           "lang": "ru",
           "name": "Движок эффектов",
           "description": "Подсистема визуальных эффектов движка: фабрика PackedScene-эффектов и контроллеры кадровых и анимированных эффектов."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de efectos",
+          "description": "Subsistema de efectos del motor: fábrica de efectos visuales PackedScene y los controladores de efectos por fotogramas y animados."
+        },
+        {
+          "lang": "zh",
+          "name": "特效引擎",
+          "description": "引擎特效子系统：PackedScene 视觉特效工厂以及逐帧和动画特效控制器。"
+        },
+        {
+          "lang": "ja",
+          "name": "エフェクトエンジン",
+          "description": "エンジンのエフェクトサブシステム：PackedScene の視覚エフェクトファクトリーと、フレーム／アニメーションエフェクトのコントローラー。"
+        },
+        {
+          "lang": "ko",
+          "name": "효과 엔진",
+          "description": "엔진 효과 하위 시스템: PackedScene 시각 효과 팩토리와 프레임/애니메이션 효과 컨트롤러."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine hiệu ứng",
+          "description": "Hệ thống con hiệu ứng của engine: factory hiệu ứng hình ảnh PackedScene và các bộ điều khiển hiệu ứng theo khung hình và hoạt ảnh."
         }
       ],
       "category": "engine, library",
@@ -415,18 +913,89 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_effects_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_effects_base/raw/branch/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_effects_base/releases/download/v1.0.0/mod_effects_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_effects_base/releases/download/v1.0.0/mod_effects_base-v1.0.0.zip"
           ],
-          "size_bytes": 85412,
-          "archive_sha256": "156e7cc78d69d5a15eb2aca1d124a555010cbec27a06309fcd520a44d0cfb4c5",
-          "install_sha256": "5ea8e67d8da4ec6ba25c8c2388a479106f37dea17364850c0f06e07db282b5a8"
+          "size_bytes": 86720,
+          "archive_sha256": "28b62bf0973c028b830676cbe2c22ffeb7d4f4be8136344dffde032fbfacaabe",
+          "install_sha256": "0de4be940c1cf10d7d79d51167fab92127d652d6b250ea6ba54001d4214097ba"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "equipment",
+      "name": "Equipment",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Gear for any game with stats: slots as data (\"Kind\": \"equip_slot\": weapon, body, accessory — or outfit and jewellery in a novel), items become gear by two keys of their own JSON (\"Equip\": the equip type, \"Traits\": what they do while worn), optional \"Archetypes\" limits. Worn items feed the stats as a trait source, so battle attributes, checks and conditions follow at once. The item action action/equip uses the inventory's own target picker; scenario actions equip.put and equip.remove; condition equipped(who, item); the Equipment block of the character sheet.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Equipment",
+          "description": "Gear for any game with stats: slots as data (weapon, armour, accessory — or an outfit and jewellery in a novel); an item becomes gear by two keys of its own JSON (“Equip” — the type, “Traits” — what it gives while worn). What is worn feeds the stats, so battles, checks and conditions change at once. Put on through the inventory's usual target picker; actions equip.put and equip.remove; condition equipped(who, item)."
+        },
+        {
+          "lang": "ru",
+          "name": "Снаряжение",
+          "description": "Снаряжение для любой игры со статами: слоты как данные (оружие, броня, аксессуар — или наряд и украшения в новелле), предмет становится снаряжением двумя ключами своего JSON («Equip» — тип, «Traits» — что он даёт, пока надет). Надетое питает статы, поэтому бой, проверки и условия меняются сразу. Надевается через обычный выбор цели в инвентаре; действия equip.put и equip.remove; условие equipped(кто, предмет)."
+        },
+        {
+          "lang": "es",
+          "name": "Equipo",
+          "description": "Equipo para cualquier juego con estadísticas: ranuras como datos (arma, armadura, accesorio — o atuendo y joyas en una novela); un objeto se vuelve equipo con dos claves de su propio JSON («Equip» — el tipo, «Traits» — lo que da mientras se lleva). Lo que se lleva alimenta las estadísticas, así que combates, tiradas y condiciones cambian al instante. Se equipa con el selector de objetivo habitual del inventario; acciones equip.put y equip.remove; condición equipped(quién, objeto)."
+        },
+        {
+          "lang": "zh",
+          "name": "装备",
+          "description": "适用于任何有属性的游戏的装备：栏位即数据（武器、护甲、饰品——或小说里的服装和首饰）；物品只需自身 JSON 中的两个键就成为装备（“Equip”——类型，“Traits”——穿戴时提供什么）。穿戴的物品会影响属性，因此战斗、检定和条件立即随之改变。通过背包常用的目标选择来穿戴；动作 equip.put 和 equip.remove；条件 equipped(谁, 物品)。"
+        },
+        {
+          "lang": "ja",
+          "name": "装備",
+          "description": "ステータスのあるどのゲームにも使える装備：スロットはデータ（武器、防具、アクセサリー——ノベルなら服装や装身具）。アイテムは自分の JSON の二つのキー（「Equip」——種類、「Traits」——装備中に与えるもの）だけで装備品になる。装備はステータスに反映されるので、バトル、判定、条件がすぐに変わる。インベントリのいつもの対象選択で装備。アクション equip.put と equip.remove、条件 equipped(誰, アイテム)。"
+        },
+        {
+          "lang": "ko",
+          "name": "장비",
+          "description": "능력치가 있는 모든 게임을 위한 장비: 데이터로 정의하는 슬롯(무기, 방어구, 장신구 — 노벨이라면 의상과 액세서리). 아이템은 자기 JSON의 키 두 개(“Equip” — 종류, “Traits” — 착용 중 주는 효과)만으로 장비가 됩니다. 착용한 것이 능력치에 반영되므로 전투, 판정, 조건이 바로 바뀝니다. 인벤토리의 평소 대상 선택으로 착용, 액션 equip.put과 equip.remove, 조건 equipped(누가, 아이템)."
+        },
+        {
+          "lang": "vi",
+          "name": "Trang bị",
+          "description": "Trang bị cho mọi game có chỉ số: ô trang bị là dữ liệu (vũ khí, giáp, phụ kiện — hoặc trang phục và trang sức trong tiểu thuyết); vật phẩm thành trang bị nhờ hai khóa trong JSON của chính nó («Equip» — loại, «Traits» — tác dụng khi mặc). Đồ đang mặc nuôi chỉ số, nên chiến đấu, kiểm tra và điều kiện thay đổi ngay. Mặc qua bộ chọn mục tiêu quen thuộc của túi đồ; hành động equip.put và equip.remove; điều kiện equipped(ai, vật phẩm)."
+        }
+      ],
+      "category": "gameplay",
+      "tags": [
+        "equipment",
+        "gameplay"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_equipment/raw/branch/master/mod.jpg",
+      "depends": [
+        "stats_base>=1",
+        "items_base>=1",
+        "characters_base>=1",
+        "ui_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_equipment/releases/download/v1.0.0/mod_equipment-v1.0.0.zip",
+            "https://github.com/cthangover/mod_equipment/releases/download/v1.0.0/mod_equipment-v1.0.0.zip"
+          ],
+          "size_bytes": 108738,
+          "archive_sha256": "c9c5683fe01aa52c42fdfbb800b85d97609e3869e152c000fa8f38b627e2b806",
+          "install_sha256": "391ebcd0265c02b5ae96f71bb2e67fa9e60f60752f2b3ca1b4529783845834de"
         }
       ],
       "status": "stable"
@@ -437,13 +1006,50 @@
       "author": "ct",
       "version": "1.0.0",
       "description": "Final Fantasy style battle system on top of turn_battle_base: menu-driven commands (attack/defence/item/stun), enemy and party panels, per-action animations and executors, battle HUD and log.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "FFBattle",
+          "description": "Final Fantasy style battle system on top of turn_battle_base: menu-driven commands (attack/defence/item/stun), enemy and party panels, per-action animations and executors, battle HUD and log."
+        },
+        {
+          "lang": "ru",
+          "name": "FF Битва",
+          "description": "Боевая система в стиле Final Fantasy на платформе turn_battle_base: командное меню (атака/защита/предмет/оглушение), панели партии и врагов, анимации и исполнители действий, HUD и лог боя."
+        },
+        {
+          "lang": "es",
+          "name": "FFBattle",
+          "description": "Sistema de combate al estilo Final Fantasy sobre turn_battle_base: órdenes por menú (atacar, defender, objeto, aturdir), paneles de enemigos y del grupo, animaciones y ejecutores por acción, HUD y registro de combate."
+        },
+        {
+          "lang": "zh",
+          "name": "FFBattle",
+          "description": "基于 turn_battle_base 的 Final Fantasy 风格战斗系统：菜单式指令（攻击/防御/物品/眩晕）、敌方和队伍面板、每个动作的动画与执行器、战斗 HUD 和日志。"
+        },
+        {
+          "lang": "ja",
+          "name": "FFBattle",
+          "description": "turn_battle_base 上の Final Fantasy 風バトルシステム：メニュー式のコマンド（攻撃／防御／アイテム／スタン）、敵とパーティのパネル、アクションごとのアニメーションと実行器、バトル HUD とログ。"
+        },
+        {
+          "lang": "ko",
+          "name": "FFBattle",
+          "description": "turn_battle_base 위의 Final Fantasy 스타일 전투 시스템: 메뉴식 명령(공격/방어/아이템/기절), 적과 파티 패널, 액션별 애니메이션과 실행기, 전투 HUD와 로그."
+        },
+        {
+          "lang": "vi",
+          "name": "FFBattle",
+          "description": "Hệ thống chiến đấu phong cách Final Fantasy trên nền turn_battle_base: lệnh qua menu (tấn công/phòng thủ/vật phẩm/choáng), bảng kẻ địch và tổ đội, hoạt ảnh và bộ thực thi cho từng hành động, HUD và nhật ký chiến đấu."
+        }
+      ],
       "category": "gameplay",
       "tags": [
         "ff",
         "battle",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_ff_battle/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_ff_battle/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "turn_battle_base>=1"
@@ -453,11 +1059,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_ff_battle/releases/download/v1.0.0/mod_ff_battle-v1.0.0.zip",
             "https://github.com/cthangover/mod_ff_battle/releases/download/v1.0.0/mod_ff_battle-v1.0.0.zip"
           ],
-          "size_bytes": 234104,
-          "archive_sha256": "4aa84b85e372f436a28a1760d1130aabbedd94c12072eb96f5fda6820cb7917f",
-          "install_sha256": "27a5324b2a824f2a19f062383fb161fe5d5c4fcc8457f48bfb9f815d2a0999fc"
+          "size_bytes": 241270,
+          "archive_sha256": "6e5cb07d76c17e765cb041def111bb1b9980ca531438d8c8a569857c23d9b8f3",
+          "install_sha256": "8feb3ddfe8159730e031f55a3c99676cb1c871c6bfabb291216883c05eb5abe3"
         }
       ],
       "status": "stable"
@@ -478,6 +1085,31 @@
           "lang": "ru",
           "name": "Интерактивные объекты",
           "description": "Подсистема интерактивных объектов: JSON-описания зон наведения и клика с подсветкой и сценарными действиями, InteractiveManager и данные редактора интерактива."
+        },
+        {
+          "lang": "es",
+          "name": "Base interactiva",
+          "description": "Subsistema de objetos interactivos: interactivos de escena definidos en JSON (zonas de paso del ratón y clic, efectos de resaltado) con acciones de clic en DSL o escenario, el InteractiveManager y la capa de datos del editor de interactivos."
+        },
+        {
+          "lang": "zh",
+          "name": "交互基础",
+          "description": "交互对象子系统：由 JSON 定义的场景交互物（悬停/点击区域、高亮效果）、DSL/剧本点击动作、InteractiveManager 以及交互编辑器的数据层。"
+        },
+        {
+          "lang": "ja",
+          "name": "インタラクティブ基盤",
+          "description": "インタラクティブオブジェクトのサブシステム：JSON で定義するシーンのインタラクティブ（ホバー／クリック判定、ハイライト効果）、DSL／シナリオによるクリック動作、InteractiveManager、インタラクティブエディターのデータ層。"
+        },
+        {
+          "lang": "ko",
+          "name": "상호작용 기반",
+          "description": "상호작용 오브젝트 하위 시스템: JSON으로 정의하는 장면 상호작용(호버/클릭 영역, 강조 효과), DSL/시나리오 클릭 액션, InteractiveManager, 상호작용 에디터의 데이터 계층."
+        },
+        {
+          "lang": "vi",
+          "name": "Nền tảng tương tác",
+          "description": "Hệ thống con đối tượng tương tác: các đối tượng tương tác trong cảnh định nghĩa bằng JSON (vùng rê chuột/nhấp, hiệu ứng làm nổi bật) với hành động nhấp bằng DSL/kịch bản, InteractiveManager và lớp dữ liệu của trình sửa tương tác."
         }
       ],
       "category": "engine, library",
@@ -487,7 +1119,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_interactive_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_interactive_base/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -497,11 +1129,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_interactive_base/releases/download/v1.0.0/mod_interactive_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_interactive_base/releases/download/v1.0.0/mod_interactive_base-v1.0.0.zip"
           ],
-          "size_bytes": 108690,
-          "archive_sha256": "2d70612eb7cd5b668120b08c0f0f1ae034396ff3591203b836f85c079d712bf3",
-          "install_sha256": "d431edc162377e26b0f721b31ffbc28ee80022aaff2a57eb94a21bb31b3b4947"
+          "size_bytes": 113399,
+          "archive_sha256": "39a623228e3cbcd0311c0c3806d49fac0ceaca7d8d769fa724291bce1f2af4b9",
+          "install_sha256": "70d8d4bbe9dfa997eb573805a300f16afc8c9ae93ca12df64b9aa8f54f8818a7"
         }
       ],
       "status": "stable"
@@ -522,6 +1155,31 @@
           "lang": "ru",
           "name": "Предметы и инвентарь",
           "description": "Определения предметов и фабрики, состояние инвентаря и рецептов, интерфейс инвентаря и их сохранение."
+        },
+        {
+          "lang": "es",
+          "name": "Base de objetos",
+          "description": "Definiciones y fábricas de objetos, estado del inventario y de las recetas, la interfaz del inventario y su guardado."
+        },
+        {
+          "lang": "zh",
+          "name": "物品基础",
+          "description": "物品定义与工厂、背包和配方状态、背包界面及其存档状态。"
+        },
+        {
+          "lang": "ja",
+          "name": "アイテム基盤",
+          "description": "アイテムの定義とファクトリー、インベントリとレシピの状態、インベントリ UI とそのセーブ状態。"
+        },
+        {
+          "lang": "ko",
+          "name": "아이템 기반",
+          "description": "아이템 정의와 팩토리, 인벤토리와 레시피 상태, 인벤토리 UI와 그 저장 상태."
+        },
+        {
+          "lang": "vi",
+          "name": "Nền tảng vật phẩm",
+          "description": "Định nghĩa và factory vật phẩm, trạng thái túi đồ và công thức, giao diện túi đồ và trạng thái lưu của chúng."
         }
       ],
       "category": "gameplay",
@@ -530,7 +1188,7 @@
         "base",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_items_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_items_base/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1"
@@ -540,11 +1198,82 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_items_base/releases/download/v1.0.0/mod_items_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_items_base/releases/download/v1.0.0/mod_items_base-v1.0.0.zip"
           ],
-          "size_bytes": 162977,
-          "archive_sha256": "f45338a3bf24680c465aaca4b542977a3df59389b187192013cbb441573f3450",
-          "install_sha256": "fd1281b9d086dee76958a6439079f6f61364340043cb800cef3321b2cb1e65b4"
+          "size_bytes": 168077,
+          "archive_sha256": "6ed2f23da4d0b26904f1084a31704e8af144f7fd03719c5c4a5036488b9205dd",
+          "install_sha256": "e5f48237e34c49705a15811b492937cb1f284f4b5a1c99032c140b4726b35276"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "items_editor",
+      "name": "Item Editor",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Editor of the game's items (items_base, \"Kind\": \"item\") in the style of the other editor windows: the items of a writable mod in a searchable list with their pictures, a form with the name and the description in every language of the mod, price, picture picked from the items folders, item types and the use action; fields of other mods stay editable as JSON. New items, copies, deletion, undo, and a save the running game sees at once. Opens from the main menu tools and the in-game toolbar.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Item Editor",
+          "description": "Editor of the game's items: a searchable list with pictures, name and description in every language of the mod, price, icon, types and the use action; a save shows in the game at once."
+        },
+        {
+          "lang": "ru",
+          "name": "Редактор предметов",
+          "description": "Редактор предметов игры: список с поиском и картинками, название и описание на всех языках мода, цена, иконка, типы и действие при использовании; сохранение сразу видно в игре."
+        },
+        {
+          "lang": "es",
+          "name": "Editor de objetos",
+          "description": "Editor de los objetos del juego: una lista con búsqueda e imágenes, nombre y descripción en cada idioma del mod, precio, icono, tipos y la acción de uso; al guardar se ve en el juego al momento."
+        },
+        {
+          "lang": "zh",
+          "name": "物品编辑器",
+          "description": "游戏物品的编辑器：带搜索和图片的列表，模组每种语言的名称和描述，价格、图标、类型和使用动作；保存后游戏中立即可见。"
+        },
+        {
+          "lang": "ja",
+          "name": "アイテムエディター",
+          "description": "ゲームのアイテムのエディター：検索と画像付きの一覧、MOD の各言語での名前と説明、価格、アイコン、種類、使用時のアクション。保存するとすぐにゲームに反映されます。"
+        },
+        {
+          "lang": "ko",
+          "name": "아이템 에디터",
+          "description": "게임 아이템 에디터: 검색과 그림이 있는 목록, 모드의 모든 언어로 된 이름과 설명, 가격, 아이콘, 유형, 사용 액션. 저장하면 게임에 바로 보입니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Trình sửa vật phẩm",
+          "description": "Trình sửa vật phẩm của game: danh sách có tìm kiếm và hình ảnh, tên và mô tả bằng mọi ngôn ngữ của mod, giá, biểu tượng, loại và hành động khi dùng; lưu xong là thấy ngay trong game."
+        }
+      ],
+      "category": "tools, editor",
+      "tags": [
+        "items",
+        "editor",
+        "tools"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_items_editor/raw/branch/master/mod.jpg",
+      "depends": [
+        "editor_tools>=1",
+        "items_base>=1",
+        "ui_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_items_editor/releases/download/v1.0.0/mod_items_editor-v1.0.0.zip",
+            "https://github.com/cthangover/mod_items_editor/releases/download/v1.0.0/mod_items_editor-v1.0.0.zip"
+          ],
+          "size_bytes": 123100,
+          "archive_sha256": "deb5280752bc68482d977ce96c1bf8f928bd2453721858708696e373d13cd537",
+          "install_sha256": "aba80ac06cde7035cdb67a506126eeb1c5d538b4cb35556d782ff013b6b00013"
         }
       ],
       "status": "stable"
@@ -565,6 +1294,31 @@
           "lang": "ru",
           "name": "Live2D Cubism",
           "description": "C#-рантайм Live2D Cubism: загрузка и отрисовка моделей, физика, анимации и эффекты."
+        },
+        {
+          "lang": "es",
+          "name": "Live2D Cubism",
+          "description": "Runtime de Live2D Cubism en C#: carga de modelos, renderizado, física, animación, efectos."
+        },
+        {
+          "lang": "zh",
+          "name": "Live2D Cubism",
+          "description": "Live2D Cubism C# 运行时：模型加载、渲染、物理、动画、特效。"
+        },
+        {
+          "lang": "ja",
+          "name": "Live2D Cubism",
+          "description": "Live2D Cubism の C# ランタイム：モデルの読み込み、描画、物理、アニメーション、エフェクト。"
+        },
+        {
+          "lang": "ko",
+          "name": "Live2D Cubism",
+          "description": "Live2D Cubism C# 런타임: 모델 로드, 렌더링, 물리, 애니메이션, 효과."
+        },
+        {
+          "lang": "vi",
+          "name": "Live2D Cubism",
+          "description": "Runtime Live2D Cubism bằng C#: tải mô hình, kết xuất, vật lý, hoạt ảnh, hiệu ứng."
         }
       ],
       "category": "library, visual",
@@ -574,7 +1328,7 @@
         "library",
         "visual"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_live2d_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_live2d_base/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -583,11 +1337,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_live2d_base/releases/download/v1.0.0/mod_live2d_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_live2d_base/releases/download/v1.0.0/mod_live2d_base-v1.0.0.zip"
           ],
-          "size_bytes": 48031383,
-          "archive_sha256": "9d20f4eda7a3ba7b380fefa5964098dc696b3c8399049614e4cd4a03cc6bb1d6",
-          "install_sha256": "abece6c284f36c35e1b975025dc7b465009f67ce42870c9ad896c5816bb01df4"
+          "size_bytes": 47960363,
+          "archive_sha256": "9a36d70736d48f7a32fd78fca0e518f2514e116cfb838f6fa424fd9e491fe360",
+          "install_sha256": "964a64630f2471b8f4d0e7f3074d318268c25231a247d1045d7e13d1bf5711ae"
         }
       ],
       "status": "stable"
@@ -608,6 +1363,31 @@
           "lang": "ru",
           "name": "Карта локализации",
           "description": "Карта ключей локализации: ключи, которых нет в части языков, пустые, необъявленные или повторные, непереведённые тексты коллекций и кодировка каждого файла локализации."
+        },
+        {
+          "lang": "es",
+          "name": "Atlas de localización",
+          "description": "Mapa de claves de localización: claves que faltan en algún idioma, vacías, no declaradas o duplicadas, textos de colecciones sin traducir y la codificación de cada archivo de localización."
+        },
+        {
+          "lang": "zh",
+          "name": "本地化图谱",
+          "description": "本地化键图：某些语言缺失、为空、未声明或重复的键，未翻译的合集文本，以及每个本地化文件的编码。"
+        },
+        {
+          "lang": "ja",
+          "name": "ローカライズアトラス",
+          "description": "ローカライズキーの地図：一部の言語で欠けている・空・未宣言・重複しているキー、未翻訳のコレクションテキスト、各ローカライズファイルのエンコーディング。"
+        },
+        {
+          "lang": "ko",
+          "name": "로컬라이즈 아틀라스",
+          "description": "로컬라이즈 키 지도: 일부 언어에서 빠졌거나 비었거나 선언되지 않았거나 중복된 키, 번역되지 않은 컬렉션 텍스트, 모든 로컬라이즈 파일의 인코딩."
+        },
+        {
+          "lang": "vi",
+          "name": "Bản đồ bản địa hóa",
+          "description": "Bản đồ khóa bản địa hóa: khóa thiếu ở một số ngôn ngữ, trống, chưa khai báo hoặc trùng lặp, văn bản bộ sưu tập chưa dịch và mã hóa của từng tệp bản địa hóa."
         }
       ],
       "category": "tools, debug",
@@ -617,18 +1397,19 @@
         "tools",
         "debug"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_locale_atlas/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_locale_atlas/raw/branch/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "0.1.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip"
           ],
-          "size_bytes": 140203,
-          "archive_sha256": "020675af3f07a726eeed9edfbb655db0712fb0d806a7340ca3bf10217df79633",
-          "install_sha256": "0be57ac5ba0ca1bed645c6a4c6f3bb85efc794719ccac4db8781d9bc879e1888"
+          "size_bytes": 141594,
+          "archive_sha256": "4a7e66fe05d132ac7545b06be892f5d8b6e2eca720dec51922ce4bf68dafb35b",
+          "install_sha256": "37c39707cc15751e29725ca7d09df54f2b1b2297d4cf0150ff947cfaae24e2ee"
         }
       ],
       "status": "stable"
@@ -649,6 +1430,31 @@
           "lang": "ru",
           "name": "Движок карты мира",
           "description": "Подсистема карты мира: полноэкранный оверлей карты, полигональные зоны, маркеры, список зон, сценарные действия open/close/show/hide и общие правила стиля и входа в зоны."
+        },
+        {
+          "lang": "es",
+          "name": "Motor del mapa del mundo",
+          "description": "Subsistema del mapa del mundo: la superposición del mapa a pantalla completa, zonas poligonales, marcadores, la lista de zonas, el servicio de mapa para los escenarios (acciones open/close/show/hide) y el estilo común de zonas y las reglas de acceso."
+        },
+        {
+          "lang": "zh",
+          "name": "世界地图引擎",
+          "description": "引擎世界地图子系统：全屏地图叠加层、多边形区域、标记、区域列表、面向剧本的地图服务（open/close/show/hide 动作）以及共用的区域样式和进入规则。"
+        },
+        {
+          "lang": "ja",
+          "name": "ワールドマップエンジン",
+          "description": "エンジンのワールドマップサブシステム：全画面のマップオーバーレイ、多角形のゾーン、マーカー、ゾーン一覧、シナリオ向けのマップサービス（open/close/show/hide アクション）、共通のゾーンスタイルと進入ルール。"
+        },
+        {
+          "lang": "ko",
+          "name": "월드 맵 엔진",
+          "description": "엔진 월드 맵 하위 시스템: 전체 화면 맵 오버레이, 다각형 구역, 마커, 구역 목록, 시나리오용 맵 서비스(open/close/show/hide 액션), 공통 구역 스타일과 진입 규칙."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine bản đồ thế giới",
+          "description": "Hệ thống con bản đồ thế giới của engine: lớp phủ bản đồ toàn màn hình, vùng đa giác, điểm đánh dấu, danh sách vùng, dịch vụ bản đồ cho kịch bản (hành động open/close/show/hide) cùng kiểu vùng và quy tắc vào vùng dùng chung."
         }
       ],
       "category": "engine, library",
@@ -658,7 +1464,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_map_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_map_base/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -667,11 +1473,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_map_base/releases/download/v1.0.0/mod_map_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_map_base/releases/download/v1.0.0/mod_map_base-v1.0.0.zip"
           ],
-          "size_bytes": 152409,
-          "archive_sha256": "8a757fd8a0094b9b75752c2d425fbd3a57ea404ccf61a22b1cdc24c1f4373881",
-          "install_sha256": "c6e18819864674e28a71c26403810ca8b8921b1a620885734c8ca1556069c5de"
+          "size_bytes": 156778,
+          "archive_sha256": "ee2ca6d82781f466d7830c8a594e38d2019feef62112bff3428d1cbe20c21fa2",
+          "install_sha256": "5a0825abaea47a2dc5c2fefca41362aeb5d019c2e39260c572494ec59bc36cef"
         }
       ],
       "status": "stable"
@@ -692,6 +1499,31 @@
           "lang": "ru",
           "name": "Меню",
           "description": "Главное меню на реестрах: встроенные кнопки, настройки и панели сохранения/загрузки, вынесенные из ядра."
+        },
+        {
+          "lang": "es",
+          "name": "Menú",
+          "description": "Menú principal basado en registros: botones integrados, ajustes y paneles de guardar/cargar sacados del núcleo."
+        },
+        {
+          "lang": "zh",
+          "name": "菜单",
+          "description": "基于注册表的主菜单：内置按钮、设置以及从内核中移出的存档/读档面板。"
+        },
+        {
+          "lang": "ja",
+          "name": "メニュー",
+          "description": "レジストリで組み立てるメインメニュー：組み込みのボタン、設定、コアから切り出したセーブ／ロードのパネル。"
+        },
+        {
+          "lang": "ko",
+          "name": "메뉴",
+          "description": "레지스트리 기반 메인 메뉴: 기본 버튼, 설정, 코어에서 분리한 저장/불러오기 패널."
+        },
+        {
+          "lang": "vi",
+          "name": "Menu",
+          "description": "Menu chính dựa trên sổ đăng ký: nút tích hợp, cài đặt và bảng lưu/tải được tách khỏi phần lõi."
         }
       ],
       "category": "ui",
@@ -700,7 +1532,7 @@
         "base",
         "ui"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_menu_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_menu_base/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -709,11 +1541,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_menu_base/releases/download/v1.0.0/mod_menu_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_menu_base/releases/download/v1.0.0/mod_menu_base-v1.0.0.zip"
           ],
-          "size_bytes": 3551797,
-          "archive_sha256": "3a48c3cf8a8022b3ec55d824a097efa802597c749baa8197efe39782f3a7803f",
-          "install_sha256": "48a9afdba7fc08244778a63db196b8f54927dc04d0428f2faae4594d202ccfab"
+          "size_bytes": 3563813,
+          "archive_sha256": "7fd926326f9335732f2ee822c2639126b4f795491131f7af01ea6ed9df46efab",
+          "install_sha256": "5df4286edfaf90d9364ebb13b9aa0fa801f65311636609969ac2dabc63868c2b"
         }
       ],
       "status": "stable"
@@ -734,6 +1567,31 @@
           "lang": "ru",
           "name": "Менеджер модов",
           "description": "Менеджер модов в стиле Nexus: каталог, фильтры по категориям, установка, обновление и удаление."
+        },
+        {
+          "lang": "es",
+          "name": "Gestor de mods",
+          "description": "Gestor de mods al estilo Nexus: explorar el catálogo, filtros por categoría, instalar, actualizar y eliminar."
+        },
+        {
+          "lang": "zh",
+          "name": "模组管理器",
+          "description": "Nexus 风格的模组管理器：浏览目录、按分类筛选、安装、更新和删除。"
+        },
+        {
+          "lang": "ja",
+          "name": "MOD マネージャー",
+          "description": "Nexus 風の MOD マネージャー：カタログの閲覧、カテゴリーでの絞り込み、インストール、更新、削除。"
+        },
+        {
+          "lang": "ko",
+          "name": "모드 관리자",
+          "description": "Nexus 스타일 모드 관리자: 카탈로그 탐색, 분류 필터, 설치, 업데이트, 삭제."
+        },
+        {
+          "lang": "vi",
+          "name": "Trình quản lý mod",
+          "description": "Trình quản lý mod kiểu Nexus: duyệt danh mục, lọc theo thể loại, cài đặt, cập nhật và gỡ bỏ."
         }
       ],
       "category": "tools, ui",
@@ -743,7 +1601,7 @@
         "tools",
         "ui"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_mod_manager/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_mod_manager/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -752,11 +1610,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_mod_manager/releases/download/v1.0.0/mod_mod_manager-v1.0.0.zip",
             "https://github.com/cthangover/mod_mod_manager/releases/download/v1.0.0/mod_mod_manager-v1.0.0.zip"
           ],
-          "size_bytes": 197367,
-          "archive_sha256": "b7e4f3c44fb73232360edac5c7d74ffcbf58c3febfea69c85bdce0f8a93157ca",
-          "install_sha256": "37786d16cd0fb19eb2bdfe6dde5aa2ff1f1d044ddd1b206eccc1542947062ecb"
+          "size_bytes": 214290,
+          "archive_sha256": "1314b96bfa04de8d55fb63501924e431885794b08da1fc626b036934a6742edc",
+          "install_sha256": "235146401fb0a9384dd21c9a963082aced419e3e9dd4934c25a07d6f438c8169"
         }
       ],
       "status": "stable"
@@ -777,6 +1636,31 @@
           "lang": "ru",
           "name": "Моя новелла",
           "description": "Собственные сцены и сценарии шаблона новеллы: город с баром и домом, связанные переходами между сценами. Фоны и звук берутся из городского пака."
+        },
+        {
+          "lang": "es",
+          "name": "Mi novela",
+          "description": "Las escenas y escenarios propios de la plantilla de novela: una ciudad con un bar y una casa, unidos por cambios de escena. Los fondos y el sonido vienen del paquete de la ciudad."
+        },
+        {
+          "lang": "zh",
+          "name": "我的小说",
+          "description": "小说模板自己的场景和剧本：一座有酒吧和住宅的城镇，通过场景切换相连。背景和声音来自城镇素材包。"
+        },
+        {
+          "lang": "ja",
+          "name": "マイノベル",
+          "description": "ノベルテンプレート独自のシーンとシナリオ：バーと家のある町を、シーン切り替えでつないでいます。背景と音は町パックのものです。"
+        },
+        {
+          "lang": "ko",
+          "name": "마이 노벨",
+          "description": "노벨 템플릿 자체의 장면과 시나리오: 바와 집이 있는 마을을 장면 전환으로 연결합니다. 배경과 소리는 마을 팩에서 가져옵니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Tiểu thuyết của tôi",
+          "description": "Các cảnh và kịch bản riêng của mẫu tiểu thuyết: một thị trấn có quán bar và ngôi nhà, nối với nhau bằng chuyển cảnh. Phông nền và âm thanh lấy từ gói thị trấn."
         }
       ],
       "category": "story",
@@ -786,7 +1670,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_my_novel_game/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_my_novel_game/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "dialog_base>=1",
@@ -798,11 +1682,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_my_novel_game/releases/download/v1.0.0/mod_my_novel_game-v1.0.0.zip",
             "https://github.com/cthangover/mod_my_novel_game/releases/download/v1.0.0/mod_my_novel_game-v1.0.0.zip"
           ],
-          "size_bytes": 76252,
-          "archive_sha256": "089b55fd3735532c946a9922e022979ea7ec17e839a2fc28bd09dd8161fffe09",
-          "install_sha256": "04b66cc3b15bb12a4bfff7f8a0cec224808d5c18bcdc62745d4568a6bc73cc01"
+          "size_bytes": 80096,
+          "archive_sha256": "91259f939e656a978f2f25700484ce88c12af40a90e6a1c28bbd258f9052c07e",
+          "install_sha256": "8850624eb63e43ee4d7e44b2c8ff9c7f5a67212ecb1ea79938d8540dcc30b2f6"
         }
       ],
       "status": "stable"
@@ -823,6 +1708,31 @@
           "lang": "ru",
           "name": "Движок квестов",
           "description": "Подсистема квестов движка: фабрика квестов и их состояние, реализация IQuestService, сценарные действия, условия квестов в сценах и журнал квестов."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de misiones",
+          "description": "Subsistema de misiones del motor: la fábrica de misiones y su estado en ejecución, la implementación de IQuestService, acciones de escenario de misiones, condiciones de escena de misiones y la interfaz del diario."
+        },
+        {
+          "lang": "zh",
+          "name": "任务引擎",
+          "description": "引擎任务子系统：任务工厂和运行时状态、IQuestService 实现、任务剧本动作、任务场景条件以及任务日志界面。"
+        },
+        {
+          "lang": "ja",
+          "name": "クエストエンジン",
+          "description": "エンジンのクエストサブシステム：クエストファクトリーと実行時の状態、IQuestService の実装、クエストのシナリオアクション、クエストのシーン条件、クエスト日誌の UI。"
+        },
+        {
+          "lang": "ko",
+          "name": "퀘스트 엔진",
+          "description": "엔진 퀘스트 하위 시스템: 퀘스트 팩토리와 실행 상태, IQuestService 구현, 퀘스트 시나리오 액션, 퀘스트 장면 조건, 퀘스트 일지 UI."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine nhiệm vụ",
+          "description": "Hệ thống con nhiệm vụ của engine: factory nhiệm vụ và trạng thái khi chạy, triển khai IQuestService, hành động kịch bản nhiệm vụ, điều kiện cảnh nhiệm vụ và giao diện nhật ký nhiệm vụ."
         }
       ],
       "category": "engine, library",
@@ -832,7 +1742,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_quests_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_quests_base/raw/branch/master/mod.jpg",
       "depends": [
         "characters_base>=1",
         "ui_base>=1"
@@ -842,11 +1752,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_quests_base/releases/download/v1.0.0/mod_quests_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_quests_base/releases/download/v1.0.0/mod_quests_base-v1.0.0.zip"
           ],
-          "size_bytes": 132415,
-          "archive_sha256": "142eef223e5a369dd3e4d0636a812c190c498c50b6f7934a07269d30e3168b40",
-          "install_sha256": "1f318051198c88660206635e0694825258688e0786a0fb7266e88a34d793c420"
+          "size_bytes": 137602,
+          "archive_sha256": "83edf02b8a68e02f257a9385abec56a4ae849007c8efd02e9b0fd49331c8a70a",
+          "install_sha256": "67aaa02c3b67d35abe7515db86ada02462f24e168ead6010e2e9c5376d5ebcfd"
         }
       ],
       "status": "stable"
@@ -867,6 +1778,31 @@
           "lang": "ru",
           "name": "Рекрутинг",
           "description": "Вербовка побеждённых персонажей: панель ростера, условия присоединения (например, порабощение врага), поведение рекрутов (например, питание), мост в партию, тики и сохранение состояния."
+        },
+        {
+          "lang": "es",
+          "name": "Reclutamiento",
+          "description": "Reclutamiento de personajes derrotados: el panel de la plantilla, condiciones para unirse (por ejemplo, esclavizar a un enemigo derrotado), comportamientos por recluta como la alimentación, el puente con el grupo, actualizaciones por tick y el guardado."
+        },
+        {
+          "lang": "zh",
+          "name": "招募",
+          "description": "招募被击败的角色：名册面板、加入条件（例如奴役被击败的敌人）、每个招募者的行为（如饮食）、与队伍的桥接、按时刻更新以及存档状态。"
+        },
+        {
+          "lang": "ja",
+          "name": "勧誘",
+          "description": "倒したキャラクターの勧誘：名簿パネル、加入条件（倒した敵を奴隷にするなど）、栄養などメンバーごとの振る舞い、パーティとの橋渡し、時間経過による更新、セーブ状態。"
+        },
+        {
+          "lang": "ko",
+          "name": "영입",
+          "description": "쓰러뜨린 캐릭터의 영입: 명단 패널, 합류 조건(예: 쓰러뜨린 적을 노예로 삼기), 영입자별 행동(영양 등), 파티 연결, 시간 경과 업데이트, 저장 상태."
+        },
+        {
+          "lang": "vi",
+          "name": "Chiêu mộ",
+          "description": "Chiêu mộ nhân vật bị đánh bại: bảng danh sách, điều kiện gia nhập (ví dụ biến kẻ thù bị đánh bại thành nô lệ), hành vi riêng của từng người như ăn uống, cầu nối với tổ đội, cập nhật theo nhịp và trạng thái lưu."
         }
       ],
       "category": "gameplay",
@@ -874,7 +1810,7 @@
         "recruiting",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_recruiting/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_recruiting/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "characters_base>=1",
@@ -885,11 +1821,12 @@
         {
           "version": "1.1.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_recruiting/releases/download/v1.1.0/mod_recruiting-v1.1.0.zip",
             "https://github.com/cthangover/mod_recruiting/releases/download/v1.1.0/mod_recruiting-v1.1.0.zip"
           ],
-          "size_bytes": 148984,
-          "archive_sha256": "c12b73363aa39361454b7be6a90d852fa1f17722ed0a76c2d981a1292a9818fc",
-          "install_sha256": "91b4df86739927e7acfdb8ef8892848fee1e5fd427998a573364c4a273c81466"
+          "size_bytes": 151386,
+          "archive_sha256": "57b0b5369334f2917228cef968bd60421eb0e331da198b51d78a5b3d522e9ded",
+          "install_sha256": "0303bc622a6b6739e75fee02fa1bc908f5a92857a347a05f340a087fffdebeb9"
         }
       ],
       "status": "stable"
@@ -910,6 +1847,31 @@
           "lang": "ru",
           "name": "Карта ресурсов",
           "description": "Карта ресурсов между модами: кто запрашивает, переопределяет или патчит ресурсы другого мода и объявлено ли это в depends манифеста."
+        },
+        {
+          "lang": "es",
+          "name": "Atlas de recursos",
+          "description": "Mapa de recursos entre mods: quién solicita, sustituye o parchea recursos de otro mod y si las dependencias del manifiesto lo declaran."
+        },
+        {
+          "lang": "zh",
+          "name": "资源图谱",
+          "description": "跨模组资源图：谁请求、覆盖或修补了其他模组的资源，以及清单中的依赖是否声明了这一点。"
+        },
+        {
+          "lang": "ja",
+          "name": "リソースアトラス",
+          "description": "MOD 間のリソース地図：誰が他の MOD のリソースを要求・置き換え・パッチしているか、そしてマニフェストの depends がそれを宣言しているか。"
+        },
+        {
+          "lang": "ko",
+          "name": "리소스 아틀라스",
+          "description": "모드 간 리소스 지도: 누가 다른 모드의 리소스를 요청하거나 대체하거나 패치하는지, 그리고 매니페스트의 depends가 이를 선언하는지."
+        },
+        {
+          "lang": "vi",
+          "name": "Bản đồ tài nguyên",
+          "description": "Bản đồ tài nguyên giữa các mod: ai yêu cầu, ghi đè hoặc vá tài nguyên của mod khác, và phần depends trong manifest có khai báo điều đó hay không."
         }
       ],
       "category": "tools, debug",
@@ -919,7 +1881,7 @@
         "tools",
         "debug"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_resource_atlas/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_resource_atlas/raw/branch/master/mod.jpg",
       "depends": [
         "validator>=0.1"
       ],
@@ -928,11 +1890,12 @@
         {
           "version": "0.1.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip"
           ],
-          "size_bytes": 108000,
-          "archive_sha256": "0b3b5bbce8dd8c9c66c5ae7011dcc6e1c3661c4427db3502c5aae30b88f70f63",
-          "install_sha256": "49ba17295cef52b42183c9b176e25b64f7f9d0158e8a14e68af047a2388e6a1b"
+          "size_bytes": 109314,
+          "archive_sha256": "2c43ddfda3fd6ba7903051b81821c416c766ae17afc6e01e1e425c42cc30ec06",
+          "install_sha256": "700edcb009c6d7f4d4bea178237fb53e90884f2b6cdf4597ee76119b0e27a633"
         }
       ],
       "status": "stable"
@@ -953,6 +1916,31 @@
           "lang": "ru",
           "name": "RPG-мир",
           "description": "Мир из тайлов с видом сверху в духе RPG Maker: три слоя тайлов и слой коллизий, ходьба по клеткам на WASD, события по клавише действия E/F, случайные встречи и бои с возвратом на карту."
+        },
+        {
+          "lang": "es",
+          "name": "Mundo RPG",
+          "description": "Mundo de casillas visto desde arriba al estilo de RPG Maker: tres capas de casillas y una de colisiones, movimiento por cuadrícula con WASD, eventos con la tecla de acción E/F, encuentros aleatorios y combates que vuelven al mapa."
+        },
+        {
+          "lang": "zh",
+          "name": "RPG 世界",
+          "description": "RPG Maker 风格的俯视瓦片世界：三层瓦片和一层碰撞层，用 WASD 按网格行走，用动作键 E/F 触发事件，随机遇敌，战斗结束后回到地图。"
+        },
+        {
+          "lang": "ja",
+          "name": "RPG ワールド",
+          "description": "RPG Maker 風の見下ろし型タイルワールド：3 つのタイルレイヤーと衝突レイヤー、WASD でのマス目移動、アクションキー E/F のイベント、ランダムエンカウント、マップに戻ってくるバトル。"
+        },
+        {
+          "lang": "ko",
+          "name": "RPG 월드",
+          "description": "RPG Maker 스타일의 탑다운 타일 월드: 타일 레이어 3개와 충돌 레이어, WASD 격자 이동, 액션 키 E/F 이벤트, 랜덤 인카운터, 맵으로 돌아오는 전투."
+        },
+        {
+          "lang": "vi",
+          "name": "Thế giới RPG",
+          "description": "Thế giới ô nhìn từ trên xuống theo phong cách RPG Maker: ba lớp ô và một lớp va chạm, di chuyển theo lưới bằng WASD, sự kiện bằng phím hành động E/F, chạm trán ngẫu nhiên và các trận chiến quay về bản đồ."
         }
       ],
       "category": "gameplay",
@@ -960,10 +1948,11 @@
         "rpg",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg/raw/branch/master/mod.jpg",
       "depends": [
         "shell2d_base>=1",
         "ui_base>=1",
+        "time_base>=1",
         "dialog_base>=1",
         "turn_battle_base>=2"
       ],
@@ -972,11 +1961,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_rpg/releases/download/v1.0.0/mod_rpg-v1.0.0.zip",
             "https://github.com/cthangover/mod_rpg/releases/download/v1.0.0/mod_rpg-v1.0.0.zip"
           ],
-          "size_bytes": 138869,
-          "archive_sha256": "235d9f766ed01746ae8983f07949c09c6c0c00b344e6b1e01ae42521738e74d3",
-          "install_sha256": "50f6eb7d7bf5f8a4d843804b9a3bdd8ae70894ad42213881cc42bd4cd0c0706a"
+          "size_bytes": 166580,
+          "archive_sha256": "94b7488557ad59f2c8f3bcba7504fabecf8e370905e0c00db9e28b197cf941e6",
+          "install_sha256": "d99743083cd50b2ddcf1d331208a70dbf3cafa5fa45003d7649af2e1b747ad98"
         }
       ],
       "status": "stable"
@@ -997,6 +1987,31 @@
           "lang": "ru",
           "name": "RPG-демо",
           "description": "Содержимое RPG-демо: деревня, дом старосты и лес с волком у пещеры. Только карты, события и сценарии."
+        },
+        {
+          "lang": "es",
+          "name": "RPG Demo",
+          "description": "Contenido de la demo RPG: una aldea, la casa del anciano y un bosque con un lobo junto a la cueva. Solo mapas, eventos y escenarios."
+        },
+        {
+          "lang": "zh",
+          "name": "RPG Demo",
+          "description": "RPG 演示的内容：一座村庄、村长的家，以及洞穴旁有一只狼的森林。只有地图、事件和剧本。"
+        },
+        {
+          "lang": "ja",
+          "name": "RPG Demo",
+          "description": "RPG デモのコンテンツ：村、村長の家、洞窟のそばに狼がいる森。マップ、イベント、シナリオのみ。"
+        },
+        {
+          "lang": "ko",
+          "name": "RPG Demo",
+          "description": "RPG 데모의 콘텐츠: 마을, 촌장의 집, 동굴 옆에 늑대가 있는 숲. 맵, 이벤트, 시나리오만 있습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "RPG Demo",
+          "description": "Nội dung của bản demo RPG: một ngôi làng, ngôi nhà của trưởng làng và khu rừng có con sói bên hang. Chỉ có bản đồ, sự kiện và kịch bản."
         }
       ],
       "category": "story",
@@ -1006,7 +2021,7 @@
         "game",
         "story"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg_demo_game/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/raw/branch/master/mod.jpg",
       "depends": [
         "rpg>=1",
         "village_pack>=1",
@@ -1020,11 +2035,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip",
             "https://github.com/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip"
           ],
-          "size_bytes": 118716,
-          "archive_sha256": "e9e5fc4f857accd4e2f32a37b775284e3e7528dc9c77688f8a6811a53010d4b3",
-          "install_sha256": "18a4dfe1b65a292c30884f8b790e3e05e6f177eeb058c4082a2b7af054aacead"
+          "size_bytes": 129491,
+          "archive_sha256": "74f8218d765478d6b636349f9b91dbe46b707d838b996ce6bfd25dd9c8b5fa1a",
+          "install_sha256": "9111320af1e03dc8629360de485a88ba4cb6f079bc92e40c3030731d44ee8c0e"
         }
       ],
       "status": "stable"
@@ -1034,16 +2050,55 @@
       "name": "RPG Map Editor",
       "author": "ct",
       "version": "1.0.0",
-      "description": "Editor of the rpg mod's tile maps (maps/*.json): paints the back, main and front tile layers and the collision layer with a pencil, an eraser and a flood fill from the tileset palette, places and edits map events (look, trigger, scenario, inline commands, teleport, condition), sets the map size, spawn and random encounters. Undo/redo, live update of the running world after saving, play from the spawn. Opens from the main menu tools, the novel editor hub and the in-game toolbar.",
+      "description": "Editor of the rpg mod's tile maps (maps/*.json): paints the back, main and front tile layers and the collision layer with a pencil, an eraser and a flood fill from the tileset palette, places and edits map events (look, trigger, scenario, inline commands, teleport, condition), sets the map size, spawn and random encounters. Undo/redo, live update of the running world after saving, play from the spawn. Opens from the main menu tools and the in-game toolbar.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "RPG Map Editor",
+          "description": "Editor of tile maps for the RPG world: three tile layers, the collision layer and map events, with undo and a live preview in the running game."
+        },
+        {
+          "lang": "ru",
+          "name": "Редактор RPG-карт",
+          "description": "Редактор тайловых карт RPG-мира: три слоя тайлов, слой коллизий и события на карте, с отменой и живым предпросмотром в запущенной игре."
+        },
+        {
+          "lang": "es",
+          "name": "Editor de mapas RPG",
+          "description": "Editor de mapas de casillas del mundo RPG: tres capas de casillas, la capa de colisiones y los eventos del mapa, con deshacer y vista previa en vivo en el juego en marcha."
+        },
+        {
+          "lang": "zh",
+          "name": "RPG 地图编辑器",
+          "description": "RPG 世界的瓦片地图编辑器：三层瓦片、碰撞层和地图事件，支持撤销，并在运行中的游戏里实时预览。"
+        },
+        {
+          "lang": "ja",
+          "name": "RPG マップエディター",
+          "description": "RPG ワールドのタイルマップエディター：3 つのタイルレイヤー、衝突レイヤー、マップのイベント。元に戻す機能と、実行中のゲームでのライブプレビュー付き。"
+        },
+        {
+          "lang": "ko",
+          "name": "RPG 맵 에디터",
+          "description": "RPG 월드의 타일 맵 에디터: 타일 레이어 3개, 충돌 레이어, 맵 이벤트. 되돌리기와 실행 중인 게임에서의 실시간 미리 보기 지원."
+        },
+        {
+          "lang": "vi",
+          "name": "Trình sửa bản đồ RPG",
+          "description": "Trình sửa bản đồ ô cho thế giới RPG: ba lớp ô, lớp va chạm và sự kiện trên bản đồ, có hoàn tác và xem trước trực tiếp trong game đang chạy."
+        }
+      ],
       "category": "tools, editor",
       "tags": [
         "rpg",
         "editor",
         "tools"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_rpg_editor/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_editor/raw/branch/master/mod.jpg",
       "depends": [
         "rpg>=1",
+        "characters_base>=1",
+        "items_base>=1",
         "editor_tools>=1",
         "ui_base>=1"
       ],
@@ -1052,11 +2107,90 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_rpg_editor/releases/download/v1.0.0/mod_rpg_editor-v1.0.0.zip",
             "https://github.com/cthangover/mod_rpg_editor/releases/download/v1.0.0/mod_rpg_editor-v1.0.0.zip"
           ],
-          "size_bytes": 124355,
-          "archive_sha256": "e490921161633a35ca8c2b8714c542a7e0051f3185b47b167e3d2fe31c95e765",
-          "install_sha256": "e7a5ec3bb49ca64fafe273e74d6d4136a1a10ffac416ac16e8d7b3cc5ba50503"
+          "size_bytes": 152021,
+          "archive_sha256": "5fb24a994a2081bde18b3aed21d7806d498af19576ad0188acd985a1f0c91e21",
+          "install_sha256": "bc236fe47ecefb35b0260509361dce28a9c34b5da75dcfc77a7bd4c813fec4e3"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "rpg_plus_game",
+      "name": "RPG Plus",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Content of the RPG Plus sample (collection rpg_plus), built on top of the RPG demo instead of beside it: a visual-novel prologue at a crossroads where the player picks the hero's class (warrior, mage, rogue: stats_base archetypes) and starting gear, and makes a first charisma check; then the whole rpg_demo village and forest, untouched, with a trainer and a fortune teller added through this mod's own map_events file, a training yard novel scene with exp and a strength check, the merchant selling the classic pack's gear (a shop patch), the wolf given stats (a character patch). Only data and scenarios, no C#.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "RPG Plus",
+          "description": "The story of the RPG Plus sample, built on top of the RPG demo rather than beside it: a novel-style prologue at a crossroads with a class choice and a first charisma check, then the whole rpg_demo village and forest without a single edit — a trainer and a fortune teller are added by this mod's own map events file, a training yard scene, gear at the merchant's (a shop patch), a wolf with stats (a character patch). Only data and scenarios."
+        },
+        {
+          "lang": "ru",
+          "name": "RPG Plus",
+          "description": "Сюжет образца RPG Plus, построенный поверх RPG-демо, а не рядом с ним: пролог-новелла на перекрёстке с выбором класса и первой проверкой харизмы, затем вся деревня и лес rpg_demo без единой правки — наставник и гадалка добавлены собственным файлом событий карты, сцена тренировочной площадки, снаряжение у торговца (патч лавки), волк со статами (патч персонажа). Только данные и сценарии."
+        },
+        {
+          "lang": "es",
+          "name": "RPG Plus",
+          "description": "La historia del ejemplo RPG Plus, construida encima de la demo RPG y no a su lado: un prólogo estilo novela en un cruce con elección de clase y una primera tirada de carisma, luego toda la aldea y el bosque de rpg_demo sin tocar nada — un maestro y una adivina añadidos con el propio archivo de eventos de mapa del mod, una escena del patio de entrenamiento, equipo en la tienda (un parche de la tienda), un lobo con estadísticas (un parche de personaje). Solo datos y escenarios."
+        },
+        {
+          "lang": "zh",
+          "name": "RPG Plus",
+          "description": "RPG Plus 示例的故事，建立在 RPG 演示之上而非之旁：十字路口的小说式序章，选择职业并进行第一次魅力检定；之后是 rpg_demo 的整个村庄和森林，一处未改——导师和占卜师由本模组自己的地图事件文件加入，练武场场景，商人处的装备（商店补丁），带属性的狼（角色补丁）。仅有数据和剧本。"
+        },
+        {
+          "lang": "ja",
+          "name": "RPG Plus",
+          "description": "RPG Plus サンプルの物語。RPG デモの横ではなく上に作られている：十字路でのノベル風プロローグで職業を選び、最初のカリスマ判定。その後は rpg_demo の村と森をそのまま——師匠と占い師はこの MOD 自身のマップイベントファイルで追加、稽古場のシーン、商人の装備（店のパッチ）、ステータス付きの狼（キャラクターのパッチ）。データとシナリオのみ。"
+        },
+        {
+          "lang": "ko",
+          "name": "RPG Plus",
+          "description": "RPG Plus 샘플의 이야기. RPG 데모 옆이 아니라 그 위에 만들었습니다: 갈림길의 노벨식 프롤로그에서 직업을 고르고 첫 매력 판정을 하고, 이어서 rpg_demo의 마을과 숲 전체를 한 줄도 고치지 않고 — 스승과 점쟁이는 이 모드의 자체 맵 이벤트 파일로 추가, 수련장 장면, 상인의 장비(상점 패치), 능력치를 가진 늑대(캐릭터 패치). 데이터와 시나리오만."
+        },
+        {
+          "lang": "vi",
+          "name": "RPG Plus",
+          "description": "Câu chuyện của mẫu RPG Plus, xây trên bản demo RPG chứ không đặt cạnh nó: phần mở đầu kiểu tiểu thuyết ở ngã ba với lựa chọn lớp nhân vật và lần kiểm tra sức hút đầu tiên, rồi toàn bộ làng và rừng của rpg_demo không sửa một dòng — sư phụ và bà thầy bói được thêm bằng chính tệp sự kiện bản đồ của mod, cảnh bãi tập, trang bị ở cửa hàng (bản vá cửa hàng), con sói có chỉ số (bản vá nhân vật). Chỉ dữ liệu và kịch bản."
+        }
+      ],
+      "category": "story",
+      "tags": [
+        "rpg",
+        "plus",
+        "game",
+        "story"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_plus_game/raw/branch/master/mod.jpg",
+      "depends": [
+        "rpg_demo_game>=1",
+        "classic_rpg_pack>=1",
+        "stat_checks>=1",
+        "equipment>=1",
+        "battle_formulas>=1",
+        "rpg>=1",
+        "trading>=1",
+        "dialog_base>=1",
+        "characters_base>=1",
+        "items_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_rpg_plus_game/releases/download/v1.0.0/mod_rpg_plus_game-v1.0.0.zip",
+            "https://github.com/cthangover/mod_rpg_plus_game/releases/download/v1.0.0/mod_rpg_plus_game-v1.0.0.zip"
+          ],
+          "size_bytes": 6970653,
+          "archive_sha256": "dfb407d09c0a598663ed1e016366dae2e0ae543382ef3e018f809515731663be",
+          "install_sha256": "02b39fe635bba878d76c375a7454cbe752301672fc63fe9dec9b1d890508c912"
         }
       ],
       "status": "stable"
@@ -1077,6 +2211,31 @@
           "lang": "ru",
           "name": "Студия сценариев",
           "description": "Отладка и правка сценариев прямо во время игры: пауза, шаг, перезапуск, текущая строка, причины запуска сценариев, состояние игры, журнал и карта сцен. Режимы «Автор» и «Новичок»."
+        },
+        {
+          "lang": "es",
+          "name": "Estudio de escenarios",
+          "description": "Depura y edita escenarios mientras el juego está en marcha: pausa, paso a paso, reinicio, la línea actual, por qué empezaron los escenarios, el estado del juego, un registro de eventos y el mapa de escenas. Modos Autor y Principiante."
+        },
+        {
+          "lang": "zh",
+          "name": "剧本工作室",
+          "description": "在游戏运行时调试和编辑剧本：暂停、单步、重启、当前行、剧本为何启动、游戏状态、事件日志以及场景地图。作者模式和新手模式。"
+        },
+        {
+          "lang": "ja",
+          "name": "シナリオスタジオ",
+          "description": "ゲームの実行中にシナリオをデバッグ・編集：一時停止、ステップ、再開始、現在の行、シナリオが始まった理由、ゲームの状態、イベントログ、シーンマップ。作者モードと初心者モード。"
+        },
+        {
+          "lang": "ko",
+          "name": "시나리오 스튜디오",
+          "description": "게임 실행 중에 시나리오를 디버그하고 편집: 일시 정지, 한 단계씩, 다시 시작, 현재 줄, 시나리오가 시작된 이유, 게임 상태, 이벤트 로그, 장면 지도. 작성자 모드와 초보자 모드."
+        },
+        {
+          "lang": "vi",
+          "name": "Xưởng kịch bản",
+          "description": "Gỡ lỗi và chỉnh sửa kịch bản khi game đang chạy: tạm dừng, từng bước, khởi động lại, dòng hiện tại, vì sao kịch bản bắt đầu, trạng thái game, nhật ký sự kiện và bản đồ cảnh. Chế độ Tác giả và Người mới."
         }
       ],
       "category": "tools, editor",
@@ -1086,7 +2245,7 @@
         "tools",
         "editor"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_scenario_studio/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_scenario_studio/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "dialog_base>=1"
@@ -1096,11 +2255,150 @@
         {
           "version": "0.1.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip",
             "https://github.com/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip"
           ],
-          "size_bytes": 192261,
-          "archive_sha256": "2a548f820cffb23a5078679dffc960afc8fab04d87454e70872356d3987bb304",
-          "install_sha256": "9bb2742403cdf0737d8766cf76f05f1bacbaf66a1b8d2d0b6d05e8bd4a7e0aa1"
+          "size_bytes": 206614,
+          "archive_sha256": "7a057ea6cfd34bc01d776d574c80d71fb7f5c000aff4a02635d642235e9d24b6",
+          "install_sha256": "1a28038f63eb1b3c9a08d13a8c5cd41d114ebcea8da5ac1ec739f2a20ad357e7"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "schema_base",
+      "name": "Schemas",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Annotations as data: schemas/*.json files any mod ships describe scenario actions, DSL commands (parameters, types, entity references) and the fields of entity kinds — its own or another mod's. The catalog merges them in load order (an action or command is replaced whole, a kind is merged field by field), the checker validates values, the line writer builds DSL lines, the entity index knows the ids of any kind. The validator, the data editors and the Data Editor window build on it.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Schemas",
+          "description": "Annotations as data: schemas/*.json files of any mod describe scenario actions and commands (parameters, types, entity references) and the fields of entity kinds — their own and other mods'. The catalog merges them in load order, the checker validates values, the line writer builds scenario lines, the index knows the ids of any kind. The validator, the data editors and the Data Editor window build on it."
+        },
+        {
+          "lang": "ru",
+          "name": "Схемы",
+          "description": "Аннотации как данные: файлы schemas/*.json любого мода описывают действия и команды сценариев (параметры, типы, ссылки на сущности) и поля видов сущностей — свои и чужие. Каталог сливает их по порядку загрузки, проверка сверяет значения, построитель пишет строки сценария, индекс знает id любого вида. На этом стоят валидатор, редакторы данных и окно «Редактор данных»."
+        },
+        {
+          "lang": "es",
+          "name": "Esquemas",
+          "description": "Anotaciones como datos: los archivos schemas/*.json de cualquier mod describen acciones y comandos de escenarios (parámetros, tipos, referencias a entidades) y los campos de los tipos de entidades, propios y ajenos. El catálogo los fusiona por orden de carga, el comprobador valida valores, el escritor arma líneas de escenario y el índice conoce los id de cualquier tipo. Sobre esto se apoyan el validador, los editores de datos y la ventana Editor de datos."
+        },
+        {
+          "lang": "zh",
+          "name": "模式",
+          "description": "数据化的注解：任何模组的 schemas/*.json 文件描述剧本的动作和命令（参数、类型、实体引用）以及实体类型的字段——自己的和其他模组的。目录按加载顺序合并它们，检查器验证数值，行生成器写出剧本行，索引知道任何类型的 id。验证器、数据编辑器和“数据编辑器”窗口都建立在其上。"
+        },
+        {
+          "lang": "ja",
+          "name": "スキーマ",
+          "description": "データとしての注釈：どの MOD の schemas/*.json もシナリオの行動とコマンド（パラメーター、型、エンティティ参照）とエンティティの種類のフィールドを記述する——自分のものも他の MOD のものも。カタログが読み込み順に統合し、チェッカーが値を検査し、行ライターがシナリオの行を書き、インデックスがあらゆる種類の id を知る。バリデーター、データエディター、「データエディター」ウィンドウがこれに乗っている。"
+        },
+        {
+          "lang": "ko",
+          "name": "스키마",
+          "description": "데이터로 된 주석: 어떤 모드의 schemas/*.json이든 시나리오의 행동과 명령(매개변수, 유형, 엔티티 참조), 엔티티 종류의 필드를 설명합니다 — 자기 것이든 다른 모드의 것이든. 카탈로그가 로드 순서대로 합치고, 검사기가 값을 검증하고, 줄 작성기가 시나리오 줄을 쓰고, 색인이 모든 종류의 id를 압니다. 검증기, 데이터 에디터, ‘데이터 에디터’ 창이 이 위에 있습니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Lược đồ",
+          "description": "Chú thích dưới dạng dữ liệu: tệp schemas/*.json của mọi mod mô tả hành động và lệnh kịch bản (tham số, kiểu, tham chiếu thực thể) cùng các trường của loại thực thể — của mình hay của mod khác. Danh mục gộp chúng theo thứ tự tải, bộ kiểm tra soát giá trị, bộ viết tạo dòng kịch bản, chỉ mục biết id của mọi loại. Trình kiểm tra, các trình sửa dữ liệu và cửa sổ Trình sửa dữ liệu đều dựa trên nó."
+        }
+      ],
+      "category": "engine, library",
+      "tags": [
+        "schema",
+        "base",
+        "engine",
+        "library"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_schema_base/raw/branch/master/mod.jpg",
+      "depends": [],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_schema_base/releases/download/v1.0.0/mod_schema_base-v1.0.0.zip",
+            "https://github.com/cthangover/mod_schema_base/releases/download/v1.0.0/mod_schema_base-v1.0.0.zip"
+          ],
+          "size_bytes": 153763,
+          "archive_sha256": "168f1ac5f30a110fee26e491c9ad2f38b237f828e14e6693a20acd6f8e27cb25",
+          "install_sha256": "c6f43be5dee9196a78f67dc31c4bce84f07e7dd5174f233cf007edc63ddb4b37"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "schema_tools",
+      "name": "Schema Tools",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "The authoring tools over the schemas of schema_base: the Data Editor window edits any described entity kind with forms built from the merged fields of all mods (entity pickers, formula fields, lists of traits, stat maps, texts in every language), and the command palette builds scenario lines from action and command schemas, checks them and inserts them into the scenario editor. The schemas themselves live with the mods that own the actions and kinds.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Schema Tools",
+          "description": "Editors built from annotations — RPG Maker plugin parameters turned into data any mod ships: schemas/*.json files describe scenario actions and commands and the fields of entity kinds; the mods' schemas merge, so a mod that adds a field to someone else's kind gets an editor for it at once. The Data Editor window edits any described kind with forms, the command palette builds scenario lines with a form and inserts them into the editor, the validator checks every mod's scenarios and data against the schemas."
+        },
+        {
+          "lang": "ru",
+          "name": "Инструменты схем",
+          "description": "Редакторы по аннотациям — идея параметров плагинов RPG Maker, ставшая данными любого мода: файлы schemas/*.json описывают действия и команды сценариев и поля видов сущностей; схемы модов сливаются, поэтому мод, добавивший поле к чужому виду, сразу получает для него редактор. Окно «Редактор данных» правит любой описанный вид формами, палитра команд собирает строки сценария формой и вставляет их в редактор, валидатор проверяет сценарии и данные всех модов по схемам."
+        },
+        {
+          "lang": "es",
+          "name": "Herramientas de esquemas",
+          "description": "Editores construidos a partir de anotaciones: los parámetros de plugins de RPG Maker convertidos en datos que cualquier mod incluye. Los archivos schemas/*.json describen acciones y comandos de escenarios y los campos de los tipos de entidades; los esquemas de los mods se fusionan, así que un mod que añade un campo a un tipo ajeno obtiene su editor al instante. La ventana Editor de datos edita cualquier tipo descrito con formularios, la paleta de comandos arma líneas de escenario con un formulario y las inserta en el editor, el validador comprueba los escenarios y datos de todos los mods según los esquemas."
+        },
+        {
+          "lang": "zh",
+          "name": "模式工具",
+          "description": "基于注解的编辑器——把 RPG Maker 的插件参数变成任何模组都能附带的数据：schemas/*.json 文件描述剧本的动作与命令以及实体类型的字段；各模组的模式会合并，所以给别人的类型加字段的模组立刻就有对应的编辑器。“数据编辑器”窗口用表单编辑任何已描述的类型，命令面板用表单拼出剧本行并插入编辑器，验证器按模式检查所有模组的剧本和数据。"
+        },
+        {
+          "lang": "ja",
+          "name": "スキーマツール",
+          "description": "注釈から作るエディター——RPG Maker のプラグインパラメーターを、どの MOD でも同梱できるデータにしたもの：schemas/*.json がシナリオの行動とコマンド、エンティティの種類のフィールドを記述する。各 MOD のスキーマは統合されるので、他人の種類にフィールドを足した MOD はすぐにそのエディターを得る。「データエディター」ウィンドウは記述された種類をフォームで編集し、コマンドパレットはフォームでシナリオの行を組み立ててエディターに挿入し、バリデーターは全 MOD のシナリオとデータをスキーマで検査する。"
+        },
+        {
+          "lang": "ko",
+          "name": "스키마 도구",
+          "description": "주석으로 만드는 에디터 — RPG Maker 플러그인 매개변수를 어떤 모드든 담을 수 있는 데이터로 바꾼 것: schemas/*.json 파일이 시나리오의 행동과 명령, 엔티티 종류의 필드를 설명합니다. 모드들의 스키마가 합쳐지므로, 남의 종류에 필드를 더한 모드는 즉시 그 에디터를 얻습니다. ‘데이터 에디터’ 창은 설명된 모든 종류를 양식으로 편집하고, 명령 팔레트는 양식으로 시나리오 줄을 만들어 에디터에 넣으며, 검증기는 모든 모드의 시나리오와 데이터를 스키마로 검사합니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Công cụ lược đồ",
+          "description": "Trình sửa dựng từ chú thích — tham số plugin của RPG Maker biến thành dữ liệu mà mọi mod đều kèm được: các tệp schemas/*.json mô tả hành động, lệnh kịch bản và trường của các loại thực thể; lược đồ của các mod được gộp, nên mod thêm trường cho loại của người khác có ngay trình sửa cho nó. Cửa sổ Trình sửa dữ liệu sửa mọi loại đã mô tả bằng biểu mẫu, bảng lệnh dựng dòng kịch bản bằng biểu mẫu và chèn vào trình sửa, trình kiểm tra soát kịch bản và dữ liệu của mọi mod theo lược đồ."
+        }
+      ],
+      "category": "tools, editor",
+      "tags": [
+        "schema",
+        "tools",
+        "editor"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_schema_tools/raw/branch/master/mod.jpg",
+      "depends": [
+        "editor_tools>=1",
+        "dialog_base>=1",
+        "ui_base>=1",
+        "schema_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_schema_tools/releases/download/v1.0.0/mod_schema_tools-v1.0.0.zip",
+            "https://github.com/cthangover/mod_schema_tools/releases/download/v1.0.0/mod_schema_tools-v1.0.0.zip"
+          ],
+          "size_bytes": 188201,
+          "archive_sha256": "a51d52479fd17bce1b2bbe890728a05e9df2a59406d836af400c0f4a1b0aebc7",
+          "install_sha256": "a3097b6b715d50b79a127e5a1b7eaea8a2bc9eab1eb879d8b946e3cae4e33c3c"
         }
       ],
       "status": "stable"
@@ -1121,6 +2419,31 @@
           "lang": "ru",
           "name": "2D-оболочка",
           "description": "Базовая 2D-платформа: сцена-оболочка с ViewBox, тулбаром, слотами панелей и уведомлениями. Родитель для всех 2D-модов; контент-моды наполняют оболочку через патчи сцен."
+        },
+        {
+          "lang": "es",
+          "name": "Carcasa 2D",
+          "description": "Plataforma de presentación 2D: escena base de la carcasa con el visor, la barra de herramientas, las ranuras de paneles y las notificaciones. Padre de todos los mods 2D; los mods de contenido la rellenan mediante parches de escena."
+        },
+        {
+          "lang": "zh",
+          "name": "2D 外壳",
+          "description": "2D 表现平台：带视图框、工具栏、面板槽和通知的基础外壳场景。所有 2D 模组的父级；内容模组通过场景补丁填充外壳。"
+        },
+        {
+          "lang": "ja",
+          "name": "2D シェル",
+          "description": "2D の表示プラットフォーム：ビューボックス、ツールバー、パネルスロット、通知を備えた基本のシェルシーン。すべての 2D MOD の親で、コンテンツ MOD はシーンパッチでシェルを満たします。"
+        },
+        {
+          "lang": "ko",
+          "name": "2D 셸",
+          "description": "2D 표현 플랫폼: 뷰 박스, 툴바, 패널 슬롯, 알림이 있는 기본 셸 장면. 모든 2D 모드의 부모이며 콘텐츠 모드는 장면 패치로 셸을 채웁니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Vỏ 2D",
+          "description": "Nền tảng trình bày 2D: cảnh vỏ cơ sở với khung hiển thị, thanh công cụ, các khe bảng và thông báo. Là cha của mọi mod 2D; mod nội dung lấp đầy vỏ bằng các bản vá cảnh."
         }
       ],
       "category": "engine, library",
@@ -1130,7 +2453,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_shell2d_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_shell2d_base/raw/branch/master/mod.jpg",
       "depends": [
         "time_base>=1",
         "ui_base>=1"
@@ -1140,11 +2463,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_shell2d_base/releases/download/v1.0.0/mod_shell2d_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_shell2d_base/releases/download/v1.0.0/mod_shell2d_base-v1.0.0.zip"
           ],
-          "size_bytes": 72196,
-          "archive_sha256": "e0d6ff8b46520e617275fb908b54af0891586aaf2952e8c2565ce90787901c2a",
-          "install_sha256": "53e104b9984b0cf8fd93382fa14d89b4ec2407300dc76406e0f483edf28d0774"
+          "size_bytes": 73746,
+          "archive_sha256": "fa59fde36fa50d9350db8c872622d5f9f0cc195c253c84c4b553ed4ffae2b669",
+          "install_sha256": "70647b618284977bcdeba1aa1e69371bdb51b8a4e8ff68c72731a1b4a2dec1d6"
         }
       ],
       "status": "stable"
@@ -1165,6 +2489,31 @@
           "lang": "ru",
           "name": "Движок умений",
           "description": "Подсистема умений движка: карточные определения умений, сервис выдачи (умение + связанное действие), панель умений и плашка эффекта коллекции."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de habilidades",
+          "description": "Subsistema de habilidades del motor: habilidades definidas como cartas, el servicio de concesión (habilidad + acción concedida), la interfaz del panel de habilidades y la placa de efectos de la colección."
+        },
+        {
+          "lang": "zh",
+          "name": "技能引擎",
+          "description": "引擎技能子系统：基于卡牌的技能定义、授予服务（技能与授予动作配对）、技能面板界面以及收藏效果牌。"
+        },
+        {
+          "lang": "ja",
+          "name": "スキルエンジン",
+          "description": "エンジンのスキルサブシステム：カード形式のスキル定義、付与サービス（スキルと付与されるアクションの組み合わせ）、スキルパネルの UI、コレクション効果のプレート。"
+        },
+        {
+          "lang": "ko",
+          "name": "스킬 엔진",
+          "description": "엔진 스킬 하위 시스템: 카드 기반 스킬 정의, 부여 서비스(스킬과 부여되는 액션의 짝), 스킬 패널 UI, 컬렉션 효과 판."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine kỹ năng",
+          "description": "Hệ thống con kỹ năng của engine: kỹ năng định nghĩa dạng thẻ, dịch vụ cấp (ghép kỹ năng với hành động được cấp), giao diện bảng kỹ năng và tấm hiệu ứng bộ sưu tập."
         }
       ],
       "category": "engine, library",
@@ -1174,7 +2523,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_skills_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_skills_base/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -1183,11 +2532,152 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_skills_base/releases/download/v1.0.0/mod_skills_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_skills_base/releases/download/v1.0.0/mod_skills_base-v1.0.0.zip"
           ],
-          "size_bytes": 117109,
-          "archive_sha256": "1dc171c2873cdd9fa58c5c7e4f2c0762bb2a619cf666a92be2e65d0cd3e89cdc",
-          "install_sha256": "7fb28f2b16d07014129766a8a86a9b8f214c701af7862ed7709c41cca8705b7c"
+          "size_bytes": 120634,
+          "archive_sha256": "e437a14f6f6e3436e10420b565fdc47364121ef5546a333105d94f6cf361c4ed",
+          "install_sha256": "321383f727a23087e7ae16c83dbaeb115cdcc91352f34ceb80022f9aa8a083ed"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "stat_checks",
+      "name": "Stat Checks",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Stat checks for any scenario: `check cha 12 [dice=d20] [bonus=2] [else=label] -> :success` rolls a stat plus dice against a difficulty, shows the outcome line and branches (a novel's persuasion, a tile RPG's locked door). The roll is left in dialog variables (check_total, check_roll, …) for ptext lines. Dice default to the game setting checks.dice, else d20; dice=none makes a plain threshold. The conditional jump `when` and option conditions live in dialog_base.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Stat Checks",
+          "description": "Stat checks in any scenario: “check cha 12 -> :success” rolls a stat plus dice against a difficulty, shows the outcome line and branches the story — talking a guard round in a novel, forcing a door in an RPG. The roll stays in dialog variables for lines of your own. Dice default to the game setting checks.dice, else d20; dice=none makes a plain threshold."
+        },
+        {
+          "lang": "ru",
+          "name": "Проверки характеристик",
+          "description": "Проверки характеристик в любом сценарии: «check cha 12 -> :успех» бросает стат плюс кубики против сложности, показывает строку с исходом и ветвит историю — уговорить стражника в новелле, выбить дверь в RPG. Бросок остаётся в переменных диалога для своих строк. Кубики по умолчанию — настройка игры checks.dice, иначе d20; dice=none — простой порог."
+        },
+        {
+          "lang": "es",
+          "name": "Tiradas de característica",
+          "description": "Tiradas de característica en cualquier escenario: «check cha 12 -> :éxito» tira una estadística más dados contra una dificultad, muestra la línea con el resultado y ramifica la historia: convencer a un guardia en una novela, forzar una puerta en un RPG. La tirada queda en variables del diálogo para tus propias líneas. Los dados por defecto son el ajuste checks.dice, si no d20; dice=none es un umbral simple."
+        },
+        {
+          "lang": "zh",
+          "name": "属性检定",
+          "description": "任何剧本中的属性检定：“check cha 12 -> :成功”用属性加骰子对抗难度，显示结果行并让故事分支——在小说里说服守卫，在 RPG 里撬开门。掷骰结果留在对话变量里，供你自己的台词使用。骰子默认取游戏设置 checks.dice，否则为 d20；dice=none 即简单门槛。"
+        },
+        {
+          "lang": "ja",
+          "name": "能力値判定",
+          "description": "どのシナリオでも使える能力値判定：「check cha 12 -> :成功」はステータスとダイスを難易度と比べ、結果の行を出して物語を分岐させる——ノベルで門番を説得し、RPG で扉をこじ開ける。出目は会話変数に残り、自分の行で使える。ダイスの既定はゲーム設定 checks.dice、なければ d20。dice=none なら単純なしきい値。"
+        },
+        {
+          "lang": "ko",
+          "name": "능력치 판정",
+          "description": "모든 시나리오에서 쓰는 능력치 판정: “check cha 12 -> :성공”은 능력치와 주사위를 난이도와 겨루고, 결과 줄을 보여 주며 이야기를 갈래로 나눕니다 — 노벨에서 경비병 설득, RPG에서 문 부수기. 굴림 결과는 대화 변수에 남아 직접 쓴 줄에 쓸 수 있습니다. 주사위 기본값은 게임 설정 checks.dice, 없으면 d20. dice=none은 단순 기준값."
+        },
+        {
+          "lang": "vi",
+          "name": "Kiểm tra chỉ số",
+          "description": "Kiểm tra chỉ số trong mọi kịch bản: «check cha 12 -> :thành_công» tung chỉ số cộng xúc xắc so với độ khó, hiện dòng kết quả và rẽ nhánh câu chuyện — thuyết phục lính gác trong tiểu thuyết, phá cửa trong RPG. Kết quả tung còn lại trong biến hội thoại cho dòng của riêng bạn. Xúc xắc mặc định theo cài đặt checks.dice, không thì d20; dice=none là ngưỡng đơn giản."
+        }
+      ],
+      "category": "gameplay",
+      "tags": [
+        "stat",
+        "checks",
+        "gameplay"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_stat_checks/raw/branch/master/mod.jpg",
+      "depends": [
+        "stats_base>=1",
+        "dialog_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_stat_checks/releases/download/v1.0.0/mod_stat_checks-v1.0.0.zip",
+            "https://github.com/cthangover/mod_stat_checks/releases/download/v1.0.0/mod_stat_checks-v1.0.0.zip"
+          ],
+          "size_bytes": 86552,
+          "archive_sha256": "3f195e6c33570bb3870a293a30b77dc24959fc4fcabed6f3142d6e5af497300f",
+          "install_sha256": "15b030b4e358c5b94e3919df75921f51410c0096bea6abaece53a9d1a4c194e9"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "stats_base",
+      "name": "Stats",
+      "author": "ct",
+      "version": "1.0.0",
+      "description": "Genre-neutral stats engine: stats as data (\"Kind\": \"stat\": strength, charisma, max health, sanity — no built-in list), archetypes (\"Kind\": \"archetype\": RPG classes or a novel's temperaments) with stat formulas per level and exp curves, traits (stat modifiers any entity may carry in a \"Traits\" key: items, characters, statuses) and trait sources other mods plug in. A formula language for derived stats and battle numbers, sheets per character, permanent bonuses, pools, levels from exp. Bound stats are written into the battle attributes, so every battle core uses them unchanged. Conditions stat(who, stat), level(who), archetype(who, id); actions stat.add, stat.archetype, stat.exp, stat.restore; a character sheet panel.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Stats",
+          "description": "A stats engine for any genre: stats as data (strength, charisma, health, sanity — there is no built-in list), archetypes (RPG classes or a novel's temperaments) with per-level formulas and an exp curve, traits — modifiers any entity may carry (an item, a character, a status). Formulas for derived stats and battles, a character sheet, levels from exp. Bound stats are written into the battle attributes, so every battle core uses them unchanged."
+        },
+        {
+          "lang": "ru",
+          "name": "Статы",
+          "description": "Движок статов для любого жанра: статы как данные (сила, харизма, здоровье, рассудок — встроенного списка нет), архетипы (классы RPG или характеры новеллы) с формулами по уровню и кривой опыта, черты — модификаторы, которые несёт любая сущность (предмет, персонаж, состояние). Формулы для производных статов и боя, лист персонажа, уровни из опыта. Привязанные статы пишутся в боевые атрибуты, поэтому любое боевое ядро работает с ними без изменений."
+        },
+        {
+          "lang": "es",
+          "name": "Estadísticas",
+          "description": "Un motor de estadísticas para cualquier género: estadísticas como datos (fuerza, carisma, salud, cordura — no hay lista fija), arquetipos (clases de RPG o temperamentos de una novela) con fórmulas por nivel y curva de experiencia, rasgos — modificadores que puede llevar cualquier entidad (un objeto, un personaje, un estado). Fórmulas para estadísticas derivadas y combates, hoja de personaje, niveles por experiencia. Las estadísticas vinculadas se escriben en los atributos de combate, así que cualquier núcleo de combate las usa sin cambios."
+        },
+        {
+          "lang": "zh",
+          "name": "属性",
+          "description": "适用于任何类型的属性引擎：属性即数据（力量、魅力、生命、理智——没有内置列表），原型（RPG 职业或小说人物的性格）带有按等级的公式和经验曲线，特性——任何实体（物品、角色、状态）都能携带的修正。用于派生属性和战斗的公式、角色面板、由经验带来的等级。绑定的属性会写入战斗属性，因此任何战斗核心无需改动即可使用。"
+        },
+        {
+          "lang": "ja",
+          "name": "ステータス",
+          "description": "どのジャンルにも使えるステータスエンジン：ステータスはデータ（筋力、カリスマ、HP、正気度——組み込みの一覧はない）、アーキタイプ（RPG の職業やノベルの気質）はレベルごとの式と経験値曲線を持ち、特性はどのエンティティ（アイテム、キャラクター、状態）にも付けられる修正。派生ステータスとバトルの式、キャラクターシート、経験値によるレベルアップ。結び付けたステータスはバトル属性に書き込まれるので、どのバトルコアもそのまま使える。"
+        },
+        {
+          "lang": "ko",
+          "name": "능력치",
+          "description": "어떤 장르에도 쓰는 능력치 엔진: 데이터로 정의하는 능력치(힘, 매력, 체력, 정신력 — 내장 목록은 없음), 레벨별 공식과 경험치 곡선을 가진 원형(RPG 직업이나 노벨의 기질), 어떤 엔티티(아이템, 캐릭터, 상태)든 지닐 수 있는 수정치인 특성. 파생 능력치와 전투용 공식, 캐릭터 시트, 경험치로 오르는 레벨. 연결된 능력치는 전투 속성에 기록되므로 모든 전투 코어가 그대로 사용합니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Chỉ số",
+          "description": "Bộ máy chỉ số cho mọi thể loại: chỉ số là dữ liệu (sức mạnh, sức hút, máu, lý trí — không có danh sách cố định), nguyên mẫu (lớp nhân vật RPG hay tính cách trong tiểu thuyết) có công thức theo cấp và đường kinh nghiệm, đặc tính — bộ điều chỉnh mà mọi thực thể (vật phẩm, nhân vật, trạng thái) đều mang được. Công thức cho chỉ số phái sinh và chiến đấu, bảng nhân vật, lên cấp nhờ kinh nghiệm. Chỉ số được gắn sẽ ghi vào thuộc tính chiến đấu, nên mọi lõi chiến đấu dùng được mà không cần sửa."
+        }
+      ],
+      "category": "engine, library",
+      "tags": [
+        "stats",
+        "base",
+        "engine",
+        "library"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_stats_base/raw/branch/master/mod.jpg",
+      "depends": [
+        "characters_base>=1",
+        "shell2d_base>=1",
+        "ui_base>=1"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "1.0.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_stats_base/releases/download/v1.0.0/mod_stats_base-v1.0.0.zip",
+            "https://github.com/cthangover/mod_stats_base/releases/download/v1.0.0/mod_stats_base-v1.0.0.zip"
+          ],
+          "size_bytes": 165468,
+          "archive_sha256": "32ef5a71ff72dc5f889fb7eac4aae878b0c460c37c3ea38ff33a9c73703ad45a",
+          "install_sha256": "139130ce53fda578b0a62326795882203715cd3d42d66dd68d91ed3638c508ff"
         }
       ],
       "status": "stable"
@@ -1208,6 +2698,31 @@
           "lang": "ru",
           "name": "Тест: значения по умолчанию и патчи",
           "description": "Тестовый мод системы патчей свойств: wildcard-патчи и точечные патчи значений."
+        },
+        {
+          "lang": "es",
+          "name": "Prueba de valores por defecto y parches",
+          "description": "Mod de prueba que muestra el sistema de parches de propiedades con parches comodín y dirigidos."
+        },
+        {
+          "lang": "zh",
+          "name": "默认值与补丁测试",
+          "description": "演示属性补丁系统（通配补丁和定向补丁）的测试模组。"
+        },
+        {
+          "lang": "ja",
+          "name": "既定値とパッチのテスト",
+          "description": "ワイルドカードと対象指定のパッチでプロパティパッチの仕組みを示すテスト MOD。"
+        },
+        {
+          "lang": "ko",
+          "name": "기본값과 패치 테스트",
+          "description": "와일드카드 패치와 대상 지정 패치로 속성 패치 시스템을 보여 주는 테스트 모드."
+        },
+        {
+          "lang": "vi",
+          "name": "Thử nghiệm mặc định và bản vá",
+          "description": "Mod thử nghiệm minh họa hệ thống vá thuộc tính với bản vá ký tự đại diện và bản vá có đích."
         }
       ],
       "category": "other",
@@ -1218,7 +2733,7 @@
         "patches",
         "other"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_test_defaults_and_patches/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_test_defaults_and_patches/raw/branch/master/mod.jpg",
       "depends": [
         "cthangover_game>=1",
         "cthangover_murakami>=1",
@@ -1231,11 +2746,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_test_defaults_and_patches/releases/download/v1.0.0/mod_test_defaults_and_patches-v1.0.0.zip",
             "https://github.com/cthangover/mod_test_defaults_and_patches/releases/download/v1.0.0/mod_test_defaults_and_patches-v1.0.0.zip"
           ],
-          "size_bytes": 132024,
-          "archive_sha256": "87040cd40f3be41d2ad6f7cbb6d505ab2a3bbe443b420bb17ea1b961998ef447",
-          "install_sha256": "e16bc30ae52eba8e6a997c6388cf0de8130e93a9666fee514188c95807367ba0"
+          "size_bytes": 133339,
+          "archive_sha256": "17ca1285e6537282c4baea454e143f6b20fdc6462b5eca564f19b9967d49466a",
+          "install_sha256": "8111c966970fb885235884ae50d4f0787556ab004cd0d1edeb816fa2cdfddb56"
         }
       ],
       "status": "stable"
@@ -1256,6 +2772,31 @@
           "lang": "ru",
           "name": "Движок времени",
           "description": "Подсистема игрового времени: контроллер тиков часов, HUD-виджет часов, стек 2D-освещения (UiLightController, LampBehaviour, LightDef) и сценарное действие lighting.clear_map."
+        },
+        {
+          "lang": "es",
+          "name": "Motor del tiempo",
+          "description": "Subsistema del tiempo del motor: el controlador del reloj del juego, el widget del reloj en el HUD, la pila de iluminación 2D (UiLightController, LampBehaviour, LightDef) y la acción de escenario lighting.clear_map."
+        },
+        {
+          "lang": "zh",
+          "name": "时间引擎",
+          "description": "引擎时间子系统：游戏内时钟控制器、HUD 时钟组件、2D 光照栈（UiLightController、LampBehaviour、LightDef）以及 lighting.clear_map 剧本动作。"
+        },
+        {
+          "lang": "ja",
+          "name": "時間エンジン",
+          "description": "エンジンの時間サブシステム：ゲーム内時計のコントローラー、HUD の時計ウィジェット、2D ライティング（UiLightController、LampBehaviour、LightDef）、シナリオアクション lighting.clear_map。"
+        },
+        {
+          "lang": "ko",
+          "name": "시간 엔진",
+          "description": "엔진 시간 하위 시스템: 게임 내 시계 컨트롤러, HUD 시계 위젯, 2D 조명 스택(UiLightController, LampBehaviour, LightDef), lighting.clear_map 시나리오 액션."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine thời gian",
+          "description": "Hệ thống con thời gian của engine: bộ điều khiển đồng hồ trong game, widget đồng hồ trên HUD, ngăn xếp chiếu sáng 2D (UiLightController, LampBehaviour, LightDef) và hành động kịch bản lighting.clear_map."
         }
       ],
       "category": "engine, library",
@@ -1265,7 +2806,7 @@
         "engine",
         "library"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_time_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_time_base/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1"
       ],
@@ -1274,11 +2815,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_time_base/releases/download/v1.0.0/mod_time_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_time_base/releases/download/v1.0.0/mod_time_base-v1.0.0.zip"
           ],
-          "size_bytes": 150860,
-          "archive_sha256": "678d4400f6b3399313208ad2169f3e07b0dddb60ef23bca8046d218652f72f45",
-          "install_sha256": "97eb33a66c086dd8fcdf2bdba5cc84e21014bd2d838b927f65dcbc2a0bdfcc86"
+          "size_bytes": 152526,
+          "archive_sha256": "8ce2fba8990d9c7e08abf16044caac2563afd31c9fa7ad824b2e28688fe4eb58",
+          "install_sha256": "c37fca778d958e43372236ec7e0f52c5adb175c1ba3fc35d328b6ab1e480ced5"
         }
       ],
       "status": "stable"
@@ -1299,6 +2841,31 @@
           "lang": "ru",
           "name": "Городской пак",
           "description": "Городской контент для любой игры: въезд в город, прихожая дома, бар и звук бара."
+        },
+        {
+          "lang": "es",
+          "name": "Paquete de la ciudad",
+          "description": "Contenido de ciudad reutilizable para cualquier juego: la entrada de la ciudad, el recibidor de una casa, un bar y el ambiente del bar."
+        },
+        {
+          "lang": "zh",
+          "name": "城镇素材包",
+          "description": "可供任何游戏复用的城镇内容：城镇入口、住宅门厅、一间酒吧和酒吧环境音。"
+        },
+        {
+          "lang": "ja",
+          "name": "町パック",
+          "description": "どのゲームでも使える町のコンテンツ：町の入口、家の玄関、バーとバーの環境音。"
+        },
+        {
+          "lang": "ko",
+          "name": "마을 팩",
+          "description": "어느 게임에서나 쓸 수 있는 마을 콘텐츠: 마을 입구, 집 현관, 바와 바의 환경음."
+        },
+        {
+          "lang": "vi",
+          "name": "Gói thị trấn",
+          "description": "Nội dung thị trấn dùng lại được cho mọi game: lối vào thị trấn, tiền sảnh một ngôi nhà, một quán bar và âm thanh nền của quán bar."
         }
       ],
       "category": "visual, audio",
@@ -1308,18 +2875,19 @@
         "visual",
         "audio"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_town_pack/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_town_pack/raw/branch/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_town_pack/releases/download/v1.0.0/mod_town_pack-v1.0.0.zip",
             "https://github.com/cthangover/mod_town_pack/releases/download/v1.0.0/mod_town_pack-v1.0.0.zip"
           ],
-          "size_bytes": 1494160,
-          "archive_sha256": "ffb31ae8e592a85c9fea7acc884bb36b4883d61f8b8404539aad32ddaf74fc90",
-          "install_sha256": "6fb87acaf6bd7fa6934292d2224bcc6ebfc84a72f8999909c7865c339dd9f8ce"
+          "size_bytes": 1491538,
+          "archive_sha256": "8359c2c665cc6f11dcc1877232abbf66e6be3dbb079848b86e5f3173bf7ceb33",
+          "install_sha256": "fd33a42fe6183a7ceac4562312a2923ee60b2a59735cabf57da7e75bd63fd8a6"
         }
       ],
       "status": "stable"
@@ -1340,6 +2908,31 @@
           "lang": "ru",
           "name": "Торговля",
           "description": "Лавки торговцев: что продают, что скупают и почём (данные «Kind»: «shop»), и окно торговли из двух инвентарей — товары торговца и сумка игрока. Деньги — обычный предмет, золотая монета."
+        },
+        {
+          "lang": "es",
+          "name": "Comercio",
+          "description": "Tiendas de mercaderes: qué venden, qué compran y a qué precio (datos \"Kind\": \"shop\"), y una ventana de comercio con dos inventarios: los artículos del mercader y la bolsa del jugador. El dinero es un objeto corriente, la moneda de oro."
+        },
+        {
+          "lang": "zh",
+          "name": "交易",
+          "description": "商人的商店：卖什么、回收什么以及价格（\"Kind\": \"shop\" 数据），以及一个由两个背包组成的交易窗口：商人的货物和玩家的背包。钱是一种普通物品——金币。"
+        },
+        {
+          "lang": "ja",
+          "name": "交易",
+          "description": "商人の店：何を売り、何を買い取り、いくらなのか（\"Kind\": \"shop\" のデータ）と、2 つのインベントリ——商人の品物とプレイヤーのかばん——からなる取引ウィンドウ。お金は普通のアイテム、金貨。"
+        },
+        {
+          "lang": "ko",
+          "name": "거래",
+          "description": "상인의 가게: 무엇을 팔고, 무엇을 사들이며, 얼마인지(\"Kind\": \"shop\" 데이터)와, 상인의 물건과 플레이어의 가방이라는 두 인벤토리로 된 거래 창. 돈은 평범한 아이템인 금화다."
+        },
+        {
+          "lang": "vi",
+          "name": "Giao dịch",
+          "description": "Cửa hàng của thương nhân: bán gì, mua lại gì và với giá nào (dữ liệu \"Kind\": \"shop\"), cùng một cửa sổ giao dịch gồm hai túi đồ: hàng của thương nhân và túi của người chơi. Tiền là một vật phẩm bình thường, đồng vàng."
         }
       ],
       "category": "gameplay",
@@ -1347,7 +2940,7 @@
         "trading",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_trading/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_trading/raw/branch/master/mod.jpg",
       "depends": [
         "ui_base>=1",
         "items_base>=1"
@@ -1357,11 +2950,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_trading/releases/download/v1.0.0/mod_trading-v1.0.0.zip",
             "https://github.com/cthangover/mod_trading/releases/download/v1.0.0/mod_trading-v1.0.0.zip"
           ],
-          "size_bytes": 134769,
-          "archive_sha256": "754b099e33ba1ffe7b45112bf6916038d136a40e194f4b44a9f2b58bf5ddedda",
-          "install_sha256": "408b93af91a1e5ddf725544e78bcc936f2ac5353c9c516873c6f141f8f9e6f3f"
+          "size_bytes": 141862,
+          "archive_sha256": "6b5c08027e828646951c91bc666c14f27570320581513f3cdf350fe467c65dea",
+          "install_sha256": "89ff004b09d2b37a55e3a1fe091637027a8e83e6fe875e44a433b7d85f1cb167"
         }
       ],
       "status": "stable"
@@ -1382,6 +2976,31 @@
           "lang": "ru",
           "name": "Движок пошаговых боёв",
           "description": "Платформа пошаговых боёв: контракты боевых ядер (IBattleCore), реестр ядер, исполнители действий, статус-эффекты, боевая сцена, экраны победы/поражения и отчёты опыта и добычи."
+        },
+        {
+          "lang": "es",
+          "name": "Motor de combate por turnos",
+          "description": "Plataforma de combate por turnos: contratos de reglas de combate (IBattleCore), el registro de núcleos, ejecutores de acciones, efectos de estado, la escena de combate, pantallas de victoria y derrota e informes de EXP y botín."
+        },
+        {
+          "lang": "zh",
+          "name": "回合制战斗引擎",
+          "description": "回合制战斗平台：战斗规则契约（IBattleCore）、核心注册表、动作执行器、状态效果、战斗场景、胜利/失败画面以及经验与战利品报告。"
+        },
+        {
+          "lang": "ja",
+          "name": "ターン制バトルエンジン",
+          "description": "ターン制バトルのプラットフォーム：バトルルールの契約（IBattleCore）、コアのレジストリ、アクション実行器、状態異常、バトルシーン、勝利／敗北画面、経験値と戦利品のレポート。"
+        },
+        {
+          "lang": "ko",
+          "name": "턴제 전투 엔진",
+          "description": "턴제 전투 플랫폼: 전투 규칙 계약(IBattleCore), 코어 레지스트리, 액션 실행기, 상태 효과, 전투 장면, 승리/패배 화면, 경험치와 전리품 보고."
+        },
+        {
+          "lang": "vi",
+          "name": "Engine chiến đấu theo lượt",
+          "description": "Nền tảng chiến đấu theo lượt: hợp đồng luật chiến đấu (IBattleCore), sổ đăng ký lõi, bộ thực thi hành động, hiệu ứng trạng thái, cảnh chiến đấu, màn hình thắng/thua và báo cáo EXP/chiến lợi phẩm."
         }
       ],
       "category": "engine, gameplay",
@@ -1392,7 +3011,7 @@
         "engine",
         "gameplay"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_turn_battle_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_turn_battle_base/raw/branch/master/mod.jpg",
       "depends": [
         "characters_base>=1",
         "ui_base>=1",
@@ -1405,11 +3024,12 @@
         {
           "version": "2.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_turn_battle_base/releases/download/v2.0.0/mod_turn_battle_base-v2.0.0.zip",
             "https://github.com/cthangover/mod_turn_battle_base/releases/download/v2.0.0/mod_turn_battle_base-v2.0.0.zip"
           ],
-          "size_bytes": 238350,
-          "archive_sha256": "b1f99b90752ea39312b6616dc1c5750f6d1fae3ced5803f333bd5859cdff76ed",
-          "install_sha256": "de4c47070766ac40954697428e60d15108bfa3311a070241f6cc07badf1918af"
+          "size_bytes": 245435,
+          "archive_sha256": "41fa7734b72b3468ce03f8dab5f4d4a632fed56e04923ac8762848b2046dbe93",
+          "install_sha256": "a326348eaa83f57cb55d21ae609b4ffd1c6b3e7b019733cd90c041fe5ffab8b4"
         }
       ],
       "status": "stable"
@@ -1420,23 +3040,61 @@
       "author": "ct",
       "version": "1.0.0",
       "description": "Engine UI subsystem: widget toolkit (Widget/ModWidget/lists), ViewBox background viewport, ToolBox toolbar, GameMenu/SaveIcon, notification panels, UiKit design system, DeviceInput. Kernel keeps only contracts (IWidget, IDialogBox, IToolbarHost, ISaveIconHost, IBackgroundView, IUiLazyConstruct, MenuRegistry, ToolFactory, NotificationBuffer, SceneEventController, CthangoverTheme/UiTokens boot styling) and drives this mod through those seams.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "UI",
+          "description": "Engine UI subsystem: widget toolkit (Widget/ModWidget/lists), ViewBox background viewport, ToolBox toolbar, GameMenu/SaveIcon, notification panels, UiKit design system and DeviceInput."
+        },
+        {
+          "lang": "ru",
+          "name": "Интерфейс",
+          "description": "Подсистема UI движка: набор виджетов (Widget/ModWidget, списки), ViewBox фона, тулбар ToolBox, GameMenu/SaveIcon, панели уведомлений, дизайн-система UiKit и DeviceInput. Ядро работает с модом через контракты IWidget/IToolbarHost и мосты."
+        },
+        {
+          "lang": "es",
+          "name": "Interfaz",
+          "description": "Subsistema de interfaz del motor: kit de widgets (Widget/ModWidget/listas), visor de fondos ViewBox, barra de herramientas ToolBox, GameMenu/SaveIcon, paneles de notificaciones, el sistema de diseño UiKit y DeviceInput."
+        },
+        {
+          "lang": "zh",
+          "name": "界面",
+          "description": "引擎界面子系统：组件工具包（Widget/ModWidget/列表）、ViewBox 背景视口、ToolBox 工具栏、GameMenu/SaveIcon、通知面板、UiKit 设计系统以及 DeviceInput。"
+        },
+        {
+          "lang": "ja",
+          "name": "UI",
+          "description": "エンジンの UI サブシステム：ウィジェットキット（Widget/ModWidget/リスト）、背景ビューポート ViewBox、ツールバー ToolBox、GameMenu/SaveIcon、通知パネル、デザインシステム UiKit、DeviceInput。"
+        },
+        {
+          "lang": "ko",
+          "name": "UI",
+          "description": "엔진 UI 하위 시스템: 위젯 키트(Widget/ModWidget/목록), 배경 뷰포트 ViewBox, 툴바 ToolBox, GameMenu/SaveIcon, 알림 패널, 디자인 시스템 UiKit, DeviceInput."
+        },
+        {
+          "lang": "vi",
+          "name": "Giao diện",
+          "description": "Hệ thống con giao diện của engine: bộ widget (Widget/ModWidget/danh sách), khung nhìn phông nền ViewBox, thanh công cụ ToolBox, GameMenu/SaveIcon, bảng thông báo, hệ thống thiết kế UiKit và DeviceInput."
+        }
+      ],
       "category": "ui",
       "tags": [
         "ui",
         "base"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_ui_base/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_ui_base/raw/branch/master/mod.jpg",
       "depends": [],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_ui_base/releases/download/v1.0.0/mod_ui_base-v1.0.0.zip",
             "https://github.com/cthangover/mod_ui_base/releases/download/v1.0.0/mod_ui_base-v1.0.0.zip"
           ],
-          "size_bytes": 359315,
-          "archive_sha256": "bfe7dc75af7f2a9df8b6d3f2bca68e3200d9ac42cd47b723bcb69624d20640c3",
-          "install_sha256": "eeef02dba74236006b95d5ad33e806691b6da56caa7e17b315b06c78bf026718"
+          "size_bytes": 378706,
+          "archive_sha256": "ce49012461d9d6bc16df055cf7486321aa24cd94a9f5aa45cea4a1bd9a97aec4",
+          "install_sha256": "73f0dfffabcc8d6b3bdbf900401f4409bc8a12e757bedfc0b49d2e8cf98cf9f1"
         }
       ],
       "status": "stable"
@@ -1457,6 +3115,31 @@
           "lang": "ru",
           "name": "Валидатор",
           "description": "Статическая проверка модов без запуска игры: схема манифеста, стратегии сущностей (персонажи, предметы, квесты, умения, рецепты, действия), перекрёстные ссылки, depends, команды сценариев и патчи сцен, текстовый отчёт."
+        },
+        {
+          "lang": "es",
+          "name": "Validador",
+          "description": "Validación estática de mods sin ejecutar el juego: esquema del manifiesto, estrategias por entidad (personajes, objetos, misiones, habilidades, recetas, acciones), referencias cruzadas, dependencias, comandos de escenario y parches de escena, con un informe de texto."
+        },
+        {
+          "lang": "zh",
+          "name": "验证器",
+          "description": "无需运行游戏的模组静态验证：清单结构、实体策略（角色、物品、任务、技能、配方、动作）、交叉引用、依赖、剧本命令和场景补丁，并生成文本报告。"
+        },
+        {
+          "lang": "ja",
+          "name": "バリデーター",
+          "description": "ゲームを動かさずに行う MOD の静的検証：マニフェストのスキーマ、エンティティごとの戦略（キャラクター、アイテム、クエスト、スキル、レシピ、アクション）、相互参照、depends、シナリオコマンド、シーンパッチ。テキストのレポート付き。"
+        },
+        {
+          "lang": "ko",
+          "name": "검증기",
+          "description": "게임을 실행하지 않는 모드 정적 검증: 매니페스트 스키마, 엔티티별 전략(캐릭터, 아이템, 퀘스트, 스킬, 레시피, 액션), 교차 참조, depends, 시나리오 명령과 장면 패치, 텍스트 보고서 포함."
+        },
+        {
+          "lang": "vi",
+          "name": "Trình kiểm tra",
+          "description": "Kiểm tra tĩnh các mod mà không cần chạy game: lược đồ manifest, chiến lược theo thực thể (nhân vật, vật phẩm, nhiệm vụ, kỹ năng, công thức, hành động), tham chiếu chéo, depends, lệnh kịch bản và bản vá cảnh, kèm báo cáo văn bản."
         }
       ],
       "category": "debug",
@@ -1464,21 +3147,23 @@
         "validator",
         "debug"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_validator/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_validator/raw/branch/master/mod.jpg",
       "depends": [
         "dialog_base>=1",
-        "interactive_base>=1"
+        "interactive_base>=1",
+        "schema_base>=1"
       ],
       "conflicts_with": [],
       "downloads": [
         {
           "version": "0.1.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip",
             "https://github.com/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip"
           ],
-          "size_bytes": 115667,
-          "archive_sha256": "69d8ff2088bb6f815b90c1ff18062a98a798bbdc987fc7448860ebb6680892d5",
-          "install_sha256": "1de256e6a838ea14b25e45d81e96db551c65d5c855439bcd683435ab88c74e6e"
+          "size_bytes": 121017,
+          "archive_sha256": "303a7a2692e8fce9b1045919b91691352174b8bcda80ec3939456fad36f9b02d",
+          "install_sha256": "f49c89bc7c648e3e56fe38fdbdbc22766e6a12e03c85469b7306f21e3b6d7e85"
         }
       ],
       "status": "stable"
@@ -1499,6 +3184,31 @@
           "lang": "ru",
           "name": "Деревенский пак",
           "description": "Пиксельная графика для RPG-карт: деревенский тайлсет, чарсеты жителей и монстров, портреты для боя и фоны для сражений."
+        },
+        {
+          "lang": "es",
+          "name": "Paquete de la aldea",
+          "description": "Contenido pixel art para mapas RPG: el tileset de la aldea, charsets de aldeanos y monstruos, retratos de combate y fondos de combate."
+        },
+        {
+          "lang": "zh",
+          "name": "村庄素材包",
+          "description": "RPG 地图用的像素美术内容：村庄瓦片集、村民和怪物的行走图、战斗立绘和战斗背景。"
+        },
+        {
+          "lang": "ja",
+          "name": "村パック",
+          "description": "RPG マップ用のドット絵コンテンツ：村のタイルセット、村人とモンスターのキャラチップ、バトル用の肖像とバトル背景。"
+        },
+        {
+          "lang": "ko",
+          "name": "마을 팩(RPG)",
+          "description": "RPG 맵용 픽셀 아트 콘텐츠: 마을 타일셋, 마을 사람과 몬스터의 캐릭터 시트, 전투 초상화와 전투 배경."
+        },
+        {
+          "lang": "vi",
+          "name": "Gói làng",
+          "description": "Nội dung pixel art cho bản đồ RPG: tileset làng, charset của dân làng và quái vật, chân dung chiến đấu và phông nền chiến đấu."
         }
       ],
       "category": "visual, characters",
@@ -1508,7 +3218,7 @@
         "visual",
         "characters"
       ],
-      "icon_url": "https://raw.githubusercontent.com/cthangover/mod_village_pack/master/mod.jpg",
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_village_pack/raw/branch/master/mod.jpg",
       "depends": [
         "rpg>=1"
       ],
@@ -1517,11 +3227,12 @@
         {
           "version": "1.0.0",
           "urls": [
+            "https://git.cthangover.ru/cthangover/mod_village_pack/releases/download/v1.0.0/mod_village_pack-v1.0.0.zip",
             "https://github.com/cthangover/mod_village_pack/releases/download/v1.0.0/mod_village_pack-v1.0.0.zip"
           ],
-          "size_bytes": 15458812,
-          "archive_sha256": "b23a1f458487a0194b12b62aca3490014ed4e3dd02a548626ee506e0440be338",
-          "install_sha256": "94e0742611e7dec93135e327f5412535b8b58443bfea43aff5df574f8463c3ec"
+          "size_bytes": 15464983,
+          "archive_sha256": "20bf322997f87e61affd9976253840fa0d131e162a84420c89984b10afeced7b",
+          "install_sha256": "5898713181469ff79c35b0109f65895331792356f45b4e064241faf447daca04"
         }
       ],
       "status": "stable"

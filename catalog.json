@@ -1,7 +1,7 @@
 {
   "catalog": {
     "version": 1,
-    "updated_at": "2026-10-29T08:53:42Z"
+    "updated_at": "2026-11-13T21:12:32Z"
   },
   "mods": [
     {
@@ -717,76 +717,6 @@
       "status": "stable"
     },
     {
-      "id": "cthangover_party",
-      "name": "Cthangover: Starter Party",
-      "author": "ct",
-      "version": "1.0.0",
-      "description": "Gives a new game of Cthangover its starting state: Marao in the party and the Slave Trader skill. Only code — the data lives in the base game and the skills engine.",
-      "locale": [
-        {
-          "lang": "en",
-          "name": "Cthangover: Starter Party",
-          "description": "Gives a new game of Cthangover its starting state: Marao in the party and the Slave Trader skill. Only code — the data lives in the base game and the skills engine."
-        },
-        {
-          "lang": "ru",
-          "name": "Cthangover: стартовая партия",
-          "description": "Задаёт стартовое состояние новой игры Cthangover: Марао в отряде и навык Работорговец. Только код — данные живут в базовой игре и движке навыков."
-        },
-        {
-          "lang": "es",
-          "name": "Cthangover: grupo inicial",
-          "description": "Da a una partida nueva de Cthangover su estado inicial: Marao en el grupo y la habilidad Tratante de esclavos. Solo código: los datos viven en el juego base y el motor de habilidades."
-        },
-        {
-          "lang": "zh",
-          "name": "Cthangover：初始队伍",
-          "description": "为 Cthangover 的新游戏提供初始状态：队伍中的马劳和“奴隶贩子”技能。只有代码——数据都在基础游戏和技能引擎里。"
-        },
-        {
-          "lang": "ja",
-          "name": "Cthangover：初期パーティ",
-          "description": "Cthangover のニューゲームに初期状態を与えます:パーティに入ったマラオとスキル「奴隷商人」。コードのみで、データはベースゲームとスキルエンジン側にあります。"
-        },
-        {
-          "lang": "ko",
-          "name": "Cthangover: 시작 파티",
-          "description": "Cthangover의 새 게임에 시작 상태를 부여합니다: 파티에 들어간 마라오와 스킬 ‘노예 상인’. 코드만 있고 데이터는 기본 게임과 스킬 엔진에 있습니다."
-        },
-        {
-          "lang": "vi",
-          "name": "Cthangover: Tổ đội khởi đầu",
-          "description": "Tạo trạng thái khởi đầu cho ván mới của Cthangover: Marao trong tổ đội và kỹ năng Kẻ buôn nô lệ. Chỉ có mã — dữ liệu nằm trong trò chơi gốc và engine kỹ năng."
-        }
-      ],
-      "category": "engine, library",
-      "tags": [
-        "cthangover",
-        "party",
-        "engine",
-        "library"
-      ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_cthangover_party/raw/branch/master/mod.png",
-      "depends": [
-        "cthangover_game>=1",
-        "skills_base>=1"
-      ],
-      "conflicts_with": [],
-      "downloads": [
-        {
-          "version": "1.0.0",
-          "urls": [
-            "https://git.cthangover.ru/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip",
-            "https://github.com/cthangover/mod_cthangover_party/releases/download/v1.0.0/mod_cthangover_party-v1.0.0.zip"
-          ],
-          "size_bytes": 84110,
-          "archive_sha256": "97aa8810c88d044a002c9a0225d5a1f397b825fdf71b11f1b9fb0fd8696c6aa0",
-          "install_sha256": "f5d460f469607a5d0002e43a5abc088dbb1d1658a7c77c7c845a9d9f65ebf664"
-        }
-      ],
-      "status": "stable"
-    },
-    {
       "id": "dialog_base",
       "name": "Dialog Engine",
       "author": "ct",
@@ -1348,6 +1278,134 @@
       "status": "stable"
     },
     {
+      "id": "junior_reaper_paper_grief",
+      "name": "Junior Reaper & Paper Grief",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "Два дела младшего менеджера по реанимации: повторные смерти стражника и еженедельный налёт дракона. Осмотр мельницы, опросы жителей, профсоюз NPC и иск против убийственного плана.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Junior Reaper & Paper Grief",
+          "description": "Stas died at work. Now he has another job. An opening with the isometric Bureau office, Death and the first case."
+        },
+        {
+          "lang": "ru",
+          "name": "Junior Reaper & Paper Grief",
+          "description": "Стас умер на работе. Теперь ему выдали другую. Два расследования: стражник у мельницы и дракон с планом на пятьсот смертей. Бюро Некроуслуг, профсоюз NPC и борьба за свободный вторник Смерти."
+        }
+      ],
+      "categories": [
+        "story"
+      ],
+      "tags": [
+        "junior",
+        "reaper",
+        "paper",
+        "grief",
+        "story"
+      ],
+      "depends": [
+        "rpg>=0.1.0",
+        "tile_isometric_base>=0.1.0",
+        "dialog_base>=0.1.0",
+        "characters_base>=0.1.0",
+        "items_base>=0.1.0",
+        "quests_base>=0.1.0",
+        "interactive_base>=0.1.0",
+        "ui_base>=0.1.0",
+        "npc_barks_base>=0.1.0"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_junior_reaper_paper_grief/releases/download/v0.1.0/mod_junior_reaper_paper_grief-v0.1.0.zip",
+            "https://github.com/cthangover/mod_junior_reaper_paper_grief/releases/download/v0.1.0/mod_junior_reaper_paper_grief-v0.1.0.zip"
+          ],
+          "size_bytes": 154453333,
+          "archive_sha256": "b926eb06ae5fa3d0035f5b2026b0197600ff90b1b820876c406c32e7dbf9f13f",
+          "install_sha256": "887f40c760e4f1a132c87903fedaec002fe4f0545787d303bc90d32ba4e9d0d0"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "light_editor",
+      "name": "Light Editor",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "Edit scene lights and their placement on backgrounds.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Light Editor",
+          "description": "Light Editor"
+        },
+        {
+          "lang": "ru",
+          "name": "Редактор освещения",
+          "description": "Редактор освещения"
+        },
+        {
+          "lang": "es",
+          "name": "Editor de luces",
+          "description": "Editor de luces"
+        },
+        {
+          "lang": "zh",
+          "name": "光照编辑器",
+          "description": "光照编辑器"
+        },
+        {
+          "lang": "ja",
+          "name": "ライトエディター",
+          "description": "ライトエディター"
+        },
+        {
+          "lang": "ko",
+          "name": "조명 에디터",
+          "description": "조명 에디터"
+        },
+        {
+          "lang": "vi",
+          "name": "Trình sửa ánh sáng",
+          "description": "Trình sửa ánh sáng"
+        }
+      ],
+      "categories": [
+        "tools",
+        "editor"
+      ],
+      "tags": [
+        "light",
+        "editor",
+        "tools"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_light_editor/raw/branch/master/mod.jpg",
+      "depends": [
+        "tools_base>=0.1.0",
+        "time_base>=0.1.0",
+        "ui_base>=0.1.0",
+        "scenario_tools_base>=0.1.0"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_light_editor/releases/download/v0.1.0/mod_light_editor-v0.1.0.zip",
+            "https://github.com/cthangover/mod_light_editor/releases/download/v0.1.0/mod_light_editor-v0.1.0.zip"
+          ],
+          "size_bytes": 2782401,
+          "archive_sha256": "9954f24ee85a21b9021703244946404ba9884e26226794481dda2af93fb19286",
+          "install_sha256": "1bb9ab3eaa536f7dd425e6c415068411f057be434e5425b3d8a631d933c485fe"
+        }
+      ],
+      "status": "stable"
+    },
+    {
       "id": "live2d_base",
       "name": "Live2D Cubism",
       "author": "ct",
@@ -1459,7 +1517,10 @@
           "description": "Vẽ mọi khóa dịch của mọi mod: mỗi ngôn ngữ khai báo gì, các khóa được dùng ở đâu, và cái gì không ổn — khóa thiếu, rỗng, chưa khai báo hoặc trùng lặp cùng các vấn đề mã hóa."
         }
       ],
-      "category": "tools, debug",
+      "categories": [
+        "tools",
+        "debug"
+      ],
       "tags": [
         "locale",
         "atlas",
@@ -1476,9 +1537,9 @@
             "https://git.cthangover.ru/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip"
           ],
-          "size_bytes": 157791,
-          "archive_sha256": "2fd1e8e99e309119d635797ba416dcce6c5869b0090d6eca520f5f811e5d2dd6",
-          "install_sha256": "cc4e03510defa8ee486b16b3b9a5570ccb6c4e30fe88667e9697a5072928b409"
+          "size_bytes": 226486,
+          "archive_sha256": "6939db3863fc3e215fc057684324e2f79475bdf2bc5b8b694ad96295ea0faeea",
+          "install_sha256": "12ce9382272a6fdc6fa8578726764539ef4b19e01f6d660c61f5c68f1501248a"
         }
       ],
       "status": "stable"
@@ -1832,6 +1893,56 @@
       "status": "stable"
     },
     {
+      "id": "npc_barks_base",
+      "name": "NPC Ambient Scenarios",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "Concurrent ambient scenario hosts, speech cues and NPC attention. Prototype.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "NPC ambient conversations",
+          "description": "Concurrent ambient scenarios, speech bubbles and reactions to speech cues."
+        },
+        {
+          "lang": "ru",
+          "name": "Фоновые разговоры НПС",
+          "description": "Независимые фоновые сценарии, реплики над НПС и реакции на услышанные фразы."
+        }
+      ],
+      "categories": [
+        "engine",
+        "library"
+      ],
+      "tags": [
+        "npc",
+        "barks",
+        "base",
+        "engine",
+        "library"
+      ],
+      "depends": [
+        "rpg>=0.1.0",
+        "dialog_base>=0.1.0",
+        "ui_base>=0.1.0",
+        "tile_render_base>=0.1.0"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0.zip"
+          ],
+          "size_bytes": 11686472,
+          "archive_sha256": "add30043fa9b49bc5a7c28d8112bdd0f61ff85291f4863519fd773c66cb63aea",
+          "install_sha256": "b78f19a3b83204016097deba017a25ef3c572ff28fa715d762be396aa0f5414b"
+        }
+      ],
+      "status": "stable"
+    },
+    {
       "id": "quests_base",
       "name": "Quests Engine",
       "author": "ct",
@@ -2013,7 +2124,10 @@
           "description": "Vẽ ra mod nào dùng tài nguyên của mod nào và mỗi liên kết có được depends bảo trợ hay không — bắt các phụ thuộc chưa khai báo và các bên cung cấp trùng nhau mà thứ tự depends nào cũng không phân thắng bại được."
         }
       ],
-      "category": "tools, debug",
+      "categories": [
+        "tools",
+        "debug"
+      ],
       "tags": [
         "resource",
         "atlas",
@@ -2022,7 +2136,7 @@
       ],
       "icon_url": "https://git.cthangover.ru/cthangover/mod_resource_atlas/raw/branch/master/mod.jpg",
       "depends": [
-        "validator>=0.1"
+        "validator>=0.1.0"
       ],
       "conflicts_with": [],
       "downloads": [
@@ -2032,9 +2146,9 @@
             "https://git.cthangover.ru/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip"
           ],
-          "size_bytes": 124915,
-          "archive_sha256": "413d1843583b656a991a920c06b1814bd3156ba5c2cc68864c2ba69e5f687955",
-          "install_sha256": "900bb4891a9af7cb99ce07ff52c3e259d35077fa3cbe465a895dba5944c8cf13"
+          "size_bytes": 239538,
+          "archive_sha256": "cf6c1e8e747a750f38522a9ef1cbcedf44689d46d85867b42a230cc629c4aa78",
+          "install_sha256": "9339abbe013d88acdcff51358b8aadf01aff6c5607a9abd9cb7dd17efbde6ae9"
         }
       ],
       "status": "stable"
@@ -2107,81 +2221,6 @@
           "size_bytes": 511457,
           "archive_sha256": "5a86af25c17bfd1407252f26c047862f1200ab7d892dede6ee68addf46d0b918",
           "install_sha256": "2c164571c6548d72b94764cacdbdb507fe033bc5ccc49276a968c0f59647df85"
-        }
-      ],
-      "status": "stable"
-    },
-    {
-      "id": "rpg_demo_game",
-      "name": "RPG Demo",
-      "author": "ct",
-      "version": "1.0.0",
-      "description": "A small tile-map adventure: a village, the elder's house and a wolf at the forest cave — data and scenarios only, a working example of a tile-map game.",
-      "locale": [
-        {
-          "lang": "en",
-          "name": "RPG Demo",
-          "description": "A small tile-map adventure: a village, the elder's house and a wolf at the forest cave — data and scenarios only, a working example of a tile-map game."
-        },
-        {
-          "lang": "ru",
-          "name": "RPG-демо",
-          "description": "Небольшое приключение на тайловой карте: деревня, дом старосты и волк у пещеры в лесу. Только данные и сценарии — работающий пример игры на тайлах."
-        },
-        {
-          "lang": "es",
-          "name": "RPG Demo",
-          "description": "Una pequeña aventura de mapa de tiles: una aldea, la casa del anciano y un lobo en la cueva del bosque. Solo datos y escenarios, un ejemplo funcional de un juego de tiles."
-        },
-        {
-          "lang": "zh",
-          "name": "RPG Demo",
-          "description": "一段小型的图块地图冒险：一座村庄、村长的家，以及森林洞穴旁的一只狼。只有数据和剧本，一个可运行的图块地图游戏示例。"
-        },
-        {
-          "lang": "ja",
-          "name": "RPG Demo",
-          "description": "小さなタイルマップの冒険:村、村長の家、森の洞窟にいる狼。データとシナリオだけの、実際に動くタイルマップゲームの例。"
-        },
-        {
-          "lang": "ko",
-          "name": "RPG Demo",
-          "description": "작은 타일맵 모험: 마을, 촌장의 집, 숲 동굴의 늑대. 데이터와 시나리오만으로 이룬, 실제 작동하는 타일맵 게임의 예시."
-        },
-        {
-          "lang": "vi",
-          "name": "RPG Demo",
-          "description": "Một cuộc phiêu lưu tile-map nhỏ: một ngôi làng, nhà trưởng làng và con sói bên hang trong rừng. Chỉ dữ liệu và kịch bản — một ví dụ chạy được của trò chơi tile-map."
-        }
-      ],
-      "category": "story",
-      "tags": [
-        "rpg",
-        "demo",
-        "game",
-        "story"
-      ],
-      "icon_url": "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/raw/branch/master/mod.jpg",
-      "depends": [
-        "rpg>=1",
-        "village_pack>=1",
-        "characters_base>=1",
-        "dialog_base>=1",
-        "items_base>=1",
-        "trading>=1",
-        "music_pack>=1"
-      ],
-      "conflicts_with": [],
-      "downloads": [
-        {
-          "version": "1.0.0",
-          "urls": [
-            "https://git.cthangover.ru/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip",
-            "https://github.com/cthangover/mod_rpg_demo_game/releases/download/v1.0.0/mod_rpg_demo_game-v1.0.0.zip"
-          ],
-          "size_bytes": 454010,
-          "archive_sha256": "3fb38af5c2e1c7f44691ac34c7e85e3b79a04e1adfccd36339beec6d3823fa79",
-          "install_sha256": "8a4a5fe15d9975d9c93e56eb8654bf936a01e444fa22f54632ad0ae0850f0b5c"
         }
       ],
       "status": "stable"
@@ -2379,7 +2418,10 @@
           "description": "Bảng gắn bên cạnh trò chơi đang chạy, cho tạm dừng, đi từng bước và chỉnh sửa kịch bản đang chơi: điểm ngắt, khởi động lại với hoàn tác trạng thái, chỉnh sửa trực tiếp vào mod hoặc lớp riêng của từng game."
         }
       ],
-      "category": "tools, editor",
+      "categories": [
+        "tools",
+        "editor"
+      ],
       "tags": [
         "scenario",
         "studio",
@@ -2388,8 +2430,9 @@
       ],
       "icon_url": "https://git.cthangover.ru/cthangover/mod_scenario_studio/raw/branch/master/mod.jpg",
       "depends": [
-        "ui_base>=1",
-        "dialog_base>=1"
+        "ui_base>=0.1.0",
+        "dialog_base>=0.1.0",
+        "scenario_tools_base>=0.1.0"
       ],
       "conflicts_with": [],
       "downloads": [
@@ -2399,9 +2442,156 @@
             "https://git.cthangover.ru/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip",
             "https://github.com/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip"
           ],
-          "size_bytes": 394706,
-          "archive_sha256": "b8486c4e97ce0d89164d64a0b79391ca1a4cb0fb1e006aaefcbf63c4e7743af4",
-          "install_sha256": "54ba2111c6d77fd0dc4990707f2f97bf09a06a8b84b22324fae95d9a43132a42"
+          "size_bytes": 424556,
+          "archive_sha256": "3170d9a5e133ae494bc37e529fefb09096160512d1844f35b4f785111610926b",
+          "install_sha256": "3a1bae84c54a6e43796334b6d14ae9bbfc4d417a2b74a8c88aac35c6ea9ad5a0"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "scene_builder",
+      "name": "Godot Scene Builder",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "Inspect and edit Godot scene nodes and their properties with a live preview.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Scene Builder",
+          "description": "Scene Builder"
+        },
+        {
+          "lang": "ru",
+          "name": "Конструктор сцен",
+          "description": "Конструктор сцен"
+        },
+        {
+          "lang": "es",
+          "name": "Constructor de escenas",
+          "description": "Constructor de escenas"
+        },
+        {
+          "lang": "zh",
+          "name": "场景构建器",
+          "description": "场景构建器"
+        },
+        {
+          "lang": "ja",
+          "name": "シーンビルダー",
+          "description": "シーンビルダー"
+        },
+        {
+          "lang": "ko",
+          "name": "장면 빌더",
+          "description": "장면 빌더"
+        },
+        {
+          "lang": "vi",
+          "name": "Trình dựng cảnh",
+          "description": "Trình dựng cảnh"
+        }
+      ],
+      "categories": [
+        "tools",
+        "editor"
+      ],
+      "tags": [
+        "scene",
+        "builder",
+        "tools",
+        "editor"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_scene_builder/raw/branch/master/mod.jpg",
+      "depends": [
+        "tools_base>=0.1.0",
+        "ui_base>=0.1.0"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_scene_builder/releases/download/v0.1.0/mod_scene_builder-v0.1.0.zip",
+            "https://github.com/cthangover/mod_scene_builder/releases/download/v0.1.0/mod_scene_builder-v0.1.0.zip"
+          ],
+          "size_bytes": 211665,
+          "archive_sha256": "0243c3bf61dd6340363033fb73594d961fb9b5ea8f8ce1b616629a9dc670a2d8",
+          "install_sha256": "254ec259f8a51c58ea68f760ebdc4ba3a8f51f5c55167258ee1f1e755f922b4e"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "scene_editor",
+      "name": "Scene Editor",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "Create and edit logical scenes, backgrounds, ambient sound and scenario bindings.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Scene editor",
+          "description": "Scene editor"
+        },
+        {
+          "lang": "ru",
+          "name": "Редактор сцен",
+          "description": "Редактор сцен"
+        },
+        {
+          "lang": "es",
+          "name": "Editor de escenas",
+          "description": "Editor de escenas"
+        },
+        {
+          "lang": "zh",
+          "name": "场景编辑器",
+          "description": "场景编辑器"
+        },
+        {
+          "lang": "ja",
+          "name": "シーンエディター",
+          "description": "シーンエディター"
+        },
+        {
+          "lang": "ko",
+          "name": "장면 에디터",
+          "description": "장면 에디터"
+        },
+        {
+          "lang": "vi",
+          "name": "Trình sửa cảnh",
+          "description": "Trình sửa cảnh"
+        }
+      ],
+      "categories": [
+        "tools",
+        "editor"
+      ],
+      "tags": [
+        "scene",
+        "editor",
+        "tools"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_scene_editor/raw/branch/master/mod.jpg",
+      "depends": [
+        "tools_base>=0.1.0",
+        "scenario_tools_base>=0.1.0",
+        "dialog_base>=0.1.0",
+        "ui_base>=0.1.0"
+      ],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_scene_editor/releases/download/v0.1.0/mod_scene_editor-v0.1.0.zip",
+            "https://github.com/cthangover/mod_scene_editor/releases/download/v0.1.0/mod_scene_editor-v0.1.0.zip"
+          ],
+          "size_bytes": 318087,
+          "archive_sha256": "7f65d8cd2d009183c995dfbfe339e77abe6308c8f293acb45afe384594474c06",
+          "install_sha256": "2996fa03b43132c82c638ca47a2662293dae77e01793da0d2b52974cdb34ba41"
         }
       ],
       "status": "stable"
@@ -2898,6 +3088,74 @@
       "status": "stable"
     },
     {
+      "id": "test_integrations",
+      "name": "Test Integrations",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "A test fixture, not content: hosts the integration 'probe' that joins a mod set only together with quests_base, so the tests can check both the boot and the in-process mounting gate. Never part of a game.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Test Integrations",
+          "description": "A test fixture, not content: hosts an integration that joins a mod set only together with quests_base. Never part of a game."
+        },
+        {
+          "lang": "ru",
+          "name": "Тестовые интеграции",
+          "description": "Тестовая фикстура, не контент: интеграция, которая входит в набор модов только вместе с quests_base. Никогда не входит в игру."
+        },
+        {
+          "lang": "es",
+          "name": "Integraciones de prueba",
+          "description": "Un recurso de prueba, no contenido: aloja una integración que entra en un conjunto de mods solo junto con quests_base. Nunca forma parte de un juego."
+        },
+        {
+          "lang": "zh",
+          "name": "测试集成",
+          "description": "测试夹具，不是内容：包含一个只有与 quests_base 一起时才加入模组集合的集成。从不属于任何游戏。"
+        },
+        {
+          "lang": "ja",
+          "name": "テスト用連携",
+          "description": "テスト用フィクスチャでありコンテンツではない：quests_base と一緒のときだけ MOD セットに加わる連携を持つ。ゲームには含まれない。"
+        },
+        {
+          "lang": "ko",
+          "name": "테스트 통합",
+          "description": "테스트 픽스처이며 콘텐츠가 아님: quests_base와 함께일 때만 모드 세트에 들어가는 통합을 담고 있음. 게임에 포함되지 않음."
+        },
+        {
+          "lang": "vi",
+          "name": "Tích hợp kiểm thử",
+          "description": "Fixture kiểm thử, không phải nội dung: chứa một tích hợp chỉ vào bộ mod khi có quests_base. Không bao giờ thuộc một game."
+        }
+      ],
+      "categories": [
+        "other"
+      ],
+      "tags": [
+        "test",
+        "integrations",
+        "other"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_test_integrations/raw/branch/master/mod.jpg",
+      "depends": [],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_test_integrations/releases/download/v0.1.0/mod_test_integrations-v0.1.0.zip",
+            "https://github.com/cthangover/mod_test_integrations/releases/download/v0.1.0/mod_test_integrations-v0.1.0.zip"
+          ],
+          "size_bytes": 125617,
+          "archive_sha256": "15805ee9eb18b5b6fda07460fd6eec475b084192ab3fd4c7234bf2f93e6fd5e7",
+          "install_sha256": "48a20cb47dd8afaa6eefd96fc64f3410bddc5d072c03ae70cd197f20cb08af83"
+        }
+      ],
+      "status": "stable"
+    },
+    {
       "id": "tile_topdown_base",
       "name": "Top-down Tiles",
       "author": "ct",
@@ -3353,16 +3611,18 @@
           "description": "Kiểm tra mọi mod mà không cần chạy game: tham chiếu hỏng, lệnh kịch bản lạ, tham số sai, phụ thuộc còn thiếu — báo cáo mỗi lần khởi động game."
         }
       ],
-      "category": "debug",
+      "categories": [
+        "debug"
+      ],
       "tags": [
         "validator",
         "debug"
       ],
       "icon_url": "https://git.cthangover.ru/cthangover/mod_validator/raw/branch/master/mod.jpg",
       "depends": [
-        "dialog_base>=1",
-        "interactive_base>=1",
-        "schema_base>=1"
+        "dialog_base>=0.1.0",
+        "interactive_base>=0.1.0",
+        "schema_base>=0.1.0"
       ],
       "conflicts_with": [],
       "downloads": [
@@ -3372,9 +3632,9 @@
             "https://git.cthangover.ru/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip",
             "https://github.com/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip"
           ],
-          "size_bytes": 136685,
-          "archive_sha256": "398404ea9bc6517fd59538ec92d1b1ab2947d2c2aef3551603fdd1493f467b7a",
-          "install_sha256": "f2e796d1de4f0e2a3dd45540050e78da054dfa7a85fd818e07741ee2c7225cff"
+          "size_bytes": 259188,
+          "archive_sha256": "88eebd61f6f0d7d38893315e9905940e17a80cadb5c88fafc2a254f8e9550875",
+          "install_sha256": "ec4d79935e892542545e66be118d461e8a9ee98e8e3f696c17862f39690f2e2d"
         }
       ],
       "status": "stable"

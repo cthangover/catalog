@@ -1,7 +1,7 @@
 {
   "catalog": {
     "version": 1,
-    "updated_at": "2026-11-25T20:40:46Z"
+    "updated_at": "2026-11-25T20:43:44Z"
   },
   "mods": [
     {
@@ -905,6 +905,74 @@
           "size_bytes": 10546271,
           "archive_sha256": "1e7f35bcb9768b832d3b8cb9006b843f1cfd3f485a10613f90c76de7b4a0a48f",
           "install_sha256": "e75cabd721613bc03ad8af4a5f5f5a074188539dcb7071843a1ee3f5584ddf9a"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "debug_client",
+      "name": "Debug Client",
+      "author": "ct",
+      "version": "0.1.0",
+      "description": "A local MCP connection for inspecting and controlling a running Cthangover session.",
+      "locale": [
+        {
+          "lang": "en",
+          "name": "Debug Client",
+          "description": "Connect an MCP client to this game session to inspect runtime state and run development commands."
+        },
+        {
+          "lang": "ru",
+          "name": "Клиент отладки",
+          "description": "Подключает MCP-клиент к игровой сессии для просмотра состояния игры и выполнения отладочных команд."
+        },
+        {
+          "lang": "es",
+          "name": "Cliente de depuración",
+          "description": "Conecta un cliente MCP a esta sesión de juego para inspeccionar su estado y ejecutar comandos de desarrollo."
+        },
+        {
+          "lang": "zh",
+          "name": "调试客户端",
+          "description": "将 MCP 客户端连接到当前游戏会话，检查游戏状态并执行开发命令。"
+        },
+        {
+          "lang": "ja",
+          "name": "デバッグクライアント",
+          "description": "MCP クライアントをゲームセッションに接続し、ゲームの状態を調べたり開発コマンドを実行したりします。"
+        },
+        {
+          "lang": "ko",
+          "name": "디버그 클라이언트",
+          "description": "MCP 클라이언트를 게임 세션에 연결하여 게임 상태를 확인하고 개발 명령을 실행합니다."
+        },
+        {
+          "lang": "vi",
+          "name": "Máy khách gỡ lỗi",
+          "description": "Kết nối máy khách MCP với phiên trò chơi để kiểm tra trạng thái và chạy các lệnh phát triển."
+        }
+      ],
+      "categories": [
+        "tools"
+      ],
+      "tags": [
+        "debug",
+        "client",
+        "tools"
+      ],
+      "icon_url": "https://git.cthangover.ru/cthangover/mod_debug_client/raw/branch/master/mod.jpg",
+      "depends": [],
+      "conflicts_with": [],
+      "downloads": [
+        {
+          "version": "0.1.0",
+          "urls": [
+            "https://git.cthangover.ru/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0-c1b4613da0c6.zip",
+            "https://github.com/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0-c1b4613da0c6.zip"
+          ],
+          "size_bytes": 2100109,
+          "archive_sha256": "c1b4613da0c64a7509cf16a29a1856853eef4ca55562bb70b773d37611e4a685",
+          "install_sha256": "e27b4153197127077b252f7497931d57be002fe69fdf26dce81122d12c7d0103"
         }
       ],
       "status": "stable"

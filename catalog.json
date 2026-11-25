@@ -1,7 +1,7 @@
 {
   "catalog": {
     "version": 1,
-    "updated_at": "2026-11-25T20:43:44Z"
+    "updated_at": "2026-11-25T20:59:23Z"
   },
   "mods": [
     {
@@ -967,8 +967,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0-c1b4613da0c6.zip",
-            "https://github.com/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0-c1b4613da0c6.zip"
+            "https://git.cthangover.ru/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0.zip",
+            "https://github.com/cthangover/mod_debug_client/releases/download/v0.1.0/mod_debug_client-v0.1.0.zip"
           ],
           "size_bytes": 2100109,
           "archive_sha256": "c1b4613da0c64a7509cf16a29a1856853eef4ca55562bb70b773d37611e4a685",
@@ -2183,7 +2183,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0-4976b00621f0.zip",
+            "https://git.cthangover.ru/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_locale_atlas/releases/download/v0.1.0/mod_locale_atlas-v0.1.0.zip"
           ],
           "size_bytes": 236912,
@@ -2256,8 +2256,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_locale_editor/releases/download/v0.1.0/mod_locale_editor-v0.1.0-091e896cde60.zip",
-            "https://github.com/cthangover/mod_locale_editor/releases/download/v0.1.0/mod_locale_editor-v0.1.0-091e896cde60.zip"
+            "https://git.cthangover.ru/cthangover/mod_locale_editor/releases/download/v0.1.0/mod_locale_editor-v0.1.0.zip",
+            "https://github.com/cthangover/mod_locale_editor/releases/download/v0.1.0/mod_locale_editor-v0.1.0.zip"
           ],
           "size_bytes": 237503,
           "archive_sha256": "091e896cde60e01db148f1b9ba48ad01f8762712d67295977c7d24cc2aa263f4",
@@ -2303,8 +2303,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_map2d_base/releases/download/v0.1.0/mod_map2d_base-v0.1.0-0dc0a70540d7.zip",
-            "https://github.com/cthangover/mod_map2d_base/releases/download/v0.1.0/mod_map2d_base-v0.1.0-0dc0a70540d7.zip"
+            "https://git.cthangover.ru/cthangover/mod_map2d_base/releases/download/v0.1.0/mod_map2d_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_map2d_base/releases/download/v0.1.0/mod_map2d_base-v0.1.0.zip"
           ],
           "size_bytes": 151588,
           "archive_sha256": "0dc0a70540d7e458d25f9c2e60063e1517dd14cebf6b9248cc8c2d4e93fef2f3",
@@ -2350,8 +2350,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_map2d_editor/releases/download/v0.1.0/mod_map2d_editor-v0.1.0-55590ed0a759.zip",
-            "https://github.com/cthangover/mod_map2d_editor/releases/download/v0.1.0/mod_map2d_editor-v0.1.0-55590ed0a759.zip"
+            "https://git.cthangover.ru/cthangover/mod_map2d_editor/releases/download/v0.1.0/mod_map2d_editor-v0.1.0.zip",
+            "https://github.com/cthangover/mod_map2d_editor/releases/download/v0.1.0/mod_map2d_editor-v0.1.0.zip"
           ],
           "size_bytes": 1432868,
           "archive_sha256": "55590ed0a75999a7768826fd56ebfb3254de4f5ee5df36b1872d42855dcc5a16",
@@ -2468,8 +2468,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_map_battle/releases/download/v0.1.0/mod_map_battle-v0.1.0-69dc1de932cf.zip",
-            "https://github.com/cthangover/mod_map_battle/releases/download/v0.1.0/mod_map_battle-v0.1.0-69dc1de932cf.zip"
+            "https://git.cthangover.ru/cthangover/mod_map_battle/releases/download/v0.1.0/mod_map_battle-v0.1.0.zip",
+            "https://github.com/cthangover/mod_map_battle/releases/download/v0.1.0/mod_map_battle-v0.1.0.zip"
           ],
           "size_bytes": 499111,
           "archive_sha256": "69dc1de932cf6121d3986ecb059465a41f7ace91869cc3f5804f6a1b7f76bc10",
@@ -2929,8 +2929,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0-4c5428c84351.zip",
-            "https://github.com/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0-4c5428c84351.zip"
+            "https://git.cthangover.ru/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_npc_barks_base/releases/download/v0.1.0/mod_npc_barks_base-v0.1.0.zip"
           ],
           "size_bytes": 11827871,
           "archive_sha256": "4c5428c84351cfc1b015785ecfa2f5df64e5259dc03f660d1983c981815fab40",
@@ -2975,8 +2975,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_perf_overlay/releases/download/v0.1.0/mod_perf_overlay-v0.1.0-6c547033a7ad.zip",
-            "https://github.com/cthangover/mod_perf_overlay/releases/download/v0.1.0/mod_perf_overlay-v0.1.0-6c547033a7ad.zip"
+            "https://git.cthangover.ru/cthangover/mod_perf_overlay/releases/download/v0.1.0/mod_perf_overlay-v0.1.0.zip",
+            "https://github.com/cthangover/mod_perf_overlay/releases/download/v0.1.0/mod_perf_overlay-v0.1.0.zip"
           ],
           "size_bytes": 537303,
           "archive_sha256": "6c547033a7ad9d5ef594df971be8ab0bb7fb77c6223e6485803b4ce45e230503",
@@ -3191,7 +3191,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0-2cf8f680669b.zip",
+            "https://git.cthangover.ru/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip",
             "https://github.com/cthangover/mod_resource_atlas/releases/download/v0.1.0/mod_resource_atlas-v0.1.0.zip"
           ],
           "size_bytes": 249653,
@@ -3418,8 +3418,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_rpg_object_editor/releases/download/v0.1.0/mod_rpg_object_editor-v0.1.0-185f35049725.zip",
-            "https://github.com/cthangover/mod_rpg_object_editor/releases/download/v0.1.0/mod_rpg_object_editor-v0.1.0-185f35049725.zip"
+            "https://git.cthangover.ru/cthangover/mod_rpg_object_editor/releases/download/v0.1.0/mod_rpg_object_editor-v0.1.0.zip",
+            "https://github.com/cthangover/mod_rpg_object_editor/releases/download/v0.1.0/mod_rpg_object_editor-v0.1.0.zip"
           ],
           "size_bytes": 2665171,
           "archive_sha256": "185f350497250e6a7c2736040bd47cde2d07c70845f4cea6de66239dcddc81c5",
@@ -3650,7 +3650,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0-c1685e2d3f08.zip",
+            "https://git.cthangover.ru/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip",
             "https://github.com/cthangover/mod_scenario_studio/releases/download/v0.1.0/mod_scenario_studio-v0.1.0.zip"
           ],
           "size_bytes": 717893,
@@ -4380,8 +4380,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_tile_isometric_base/releases/download/v0.1.0/mod_tile_isometric_base-v0.1.0-3a0db5eef07d.zip",
-            "https://github.com/cthangover/mod_tile_isometric_base/releases/download/v0.1.0/mod_tile_isometric_base-v0.1.0-3a0db5eef07d.zip"
+            "https://git.cthangover.ru/cthangover/mod_tile_isometric_base/releases/download/v0.1.0/mod_tile_isometric_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_tile_isometric_base/releases/download/v0.1.0/mod_tile_isometric_base-v0.1.0.zip"
           ],
           "size_bytes": 381663,
           "archive_sha256": "3a0db5eef07dbccaf34ccdf7f29b809e8d7ca711ab9d48675066942a6995074e",
@@ -4454,8 +4454,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_tile_render_base/releases/download/v0.1.0/mod_tile_render_base-v0.1.0-386e03c785bd.zip",
-            "https://github.com/cthangover/mod_tile_render_base/releases/download/v0.1.0/mod_tile_render_base-v0.1.0-386e03c785bd.zip"
+            "https://git.cthangover.ru/cthangover/mod_tile_render_base/releases/download/v0.1.0/mod_tile_render_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_tile_render_base/releases/download/v0.1.0/mod_tile_render_base-v0.1.0.zip"
           ],
           "size_bytes": 353063,
           "archive_sha256": "386e03c785bd419125b070330645bebddb4681beaf2d8de47d294c37f17580a2",
@@ -4672,8 +4672,8 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_tools_base/releases/download/v0.1.0/mod_tools_base-v0.1.0-212cf239b818.zip",
-            "https://github.com/cthangover/mod_tools_base/releases/download/v0.1.0/mod_tools_base-v0.1.0-212cf239b818.zip"
+            "https://git.cthangover.ru/cthangover/mod_tools_base/releases/download/v0.1.0/mod_tools_base-v0.1.0.zip",
+            "https://github.com/cthangover/mod_tools_base/releases/download/v0.1.0/mod_tools_base-v0.1.0.zip"
           ],
           "size_bytes": 332762,
           "archive_sha256": "212cf239b8187696754439481dbe0d76abd43c0b722b639c0b25df3469606db1",
@@ -5026,7 +5026,7 @@
         {
           "version": "0.1.0",
           "urls": [
-            "https://git.cthangover.ru/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0-ea96b84fd974.zip",
+            "https://git.cthangover.ru/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip",
             "https://github.com/cthangover/mod_validator/releases/download/v0.1.0/mod_validator-v0.1.0.zip"
           ],
           "size_bytes": 286572,
